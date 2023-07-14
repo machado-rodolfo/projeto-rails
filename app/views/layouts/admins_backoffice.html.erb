@@ -44,7 +44,7 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
-                    <ul class="dropdown-menu dropdown-user">                        
+                    <ul class="dropdown-menu dropdown-user">
                         <li>
                             <%= link_to destroy_admin_session_path, method: :delete do %>
                                 <i class="fa fa-sign-out fa-fw"></i> Logout
@@ -72,8 +72,8 @@
                         <li>
                             <%= link_to admins_backoffice_admins_path do %>
                               <i class="fa fa-users fa-fw"></i> Administradores
-                            <% end %>  
-                        </li>                        
+                            <% end %>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -102,7 +102,17 @@
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag 'admins_backoffice' %>
 
+    <% if notice %>
+        <%= javascript_tag do %>
+            $.bootstrapGrowl('<%= notice %>', {
+            type: 'success', // (null, 'info', 'danger', 'success')
+            align: 'right', // ('left', 'right', or 'center')
+            allow_dismiss: true, // If true then will display a cross to close the popup.
+            stackup_spacing: 10 // spacing between consecutively stacked growls.
+            });
+        <% end %>
+    <% end %>
+
 </body>
 
 </html>
-
