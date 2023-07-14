@@ -1,2 +1,9 @@
 https://startbootstrap.com/theme/freelancer -> tema para parte de vendas do projeto
 
+para repor depois em views/edit.html.erb
+
+->
+<p> ID: <%= @admin.id %> </p>
+<p> E-mail: <%= @admin.email %> </p>
+<p> Criado em: <%= @admin.created_at.strftime("%d/%m/%Y às %H:%M:%S") %> </p>
+<p> Atualizado em: <%= @admin.updated_at.strftime("%d/%m/%Y às %H:%M:%S") %> </p>
