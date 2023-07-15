@@ -9457,3 +9457,125 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2023-07-15 12:44:56 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (5.4ms)
+Completed 200 OK in 360ms (Views: 358.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2023-07-15 12:45:12 -0300
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2023-07-15 12:45:12 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/admin_devise
+  Rendered admins/sessions/new.html.erb within layouts/admin_devise (2.5ms)
+Completed 200 OK in 60ms (Views: 54.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/admins/sign_in" for ::1 at 2023-07-15 12:45:16 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ccPLKzvspmi6ieSfq5iFdFJ0CpyZsbkHalsx6sFxXNnZTVQ9SRAmWrTiekzFBghTuFdH9boRE9nikGdWM5weiw==", "admin"=>{"email"=>"admin@admin.com.br", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "admin@admin.com.br"], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admins_backoffice/welcome/index
+Completed 303 See Other in 222ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2023-07-15 12:45:17 -0300
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice (0.7ms)
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2023-07-15 12:45:21 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/admins/index.html.erb:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:41
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (15.0ms)
+Completed 200 OK in 52ms (Views: 47.3ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/admins/sign_out" for ::1 at 2023-07-15 12:45:24 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aGGo8YYmv0lDcYdLEGkODWVanJh6NnU3ThpAiNDEAprEWaBnzP9dCYa9xpCW6iX8GthjbALDKVGfw2VV7Rxeeg=="}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 303 See Other in 9ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2023-07-15 12:45:24 -0300
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (0.9ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users_backoffice/welcome/index" for ::1 at 2023-07-15 12:45:26 -0300
+Processing by UsersBackoffice::WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-07-15 12:45:26 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/user_devise
+  Rendered users/sessions/new.html.erb within layouts/user_devise (1.5ms)
+Completed 200 OK in 41ms (Views: 33.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-07-15 12:45:31 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J06PsJ1mSOJ9lynpVd14Y55U3wZQKKDMxE/SXR8++lKLdocm17+qorhbaDLTXlOS4dYg8ijd/KoVlveAIuamsg==", "user"=>{"email"=>"user@user.com.br", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "user@user.com.br"], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/users_backoffice/welcome/index
+Completed 303 See Other in 220ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users_backoffice/welcome/index" for ::1 at 2023-07-15 12:45:31 -0300
+Processing by UsersBackoffice::WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering users_backoffice/welcome/index.html.erb within layouts/users_backoffice
+  Rendered users_backoffice/welcome/index.html.erb within layouts/users_backoffice (0.5ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2023-07-15 12:45:39 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OLBIoweS7WQXw7vFaAEgGw280ZD3qdye72t21AxxFR0J235bZw9ISCzLDgFeoh110oPFE3qsbL7LtkuOrd7h6A=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 303 See Other in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2023-07-15 12:45:39 -0300
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (1.0ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
