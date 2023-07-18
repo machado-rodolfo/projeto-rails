@@ -1,10 +1,11 @@
-  <%= render partial: 'admins_backoffice/subjects/shared/form',
-           locals: { subject: @subject,
+  <%= render partial: 'admins_backoffice/questions/shared/form',
+           locals: { question: @question,
                      action_message: 'Editando' } %>
 
   <% if action_name == 'edit' %>
-    <p> ID: <%= @subject.id %> </p>
-    <p> Descrição: <%= @subject.description %> </p>
-    <p> Criado em: <%= @subject.created_at.strftime("%d/%m/%Y às %H:%M:%S") %> </p>
-    <p> Atualizado em: <%= @subject.updated_at.strftime("%d/%m/%Y às %H:%M:%S") %> </p>
+    <p> ID: <%= @question.id %> </p>
+    <p> Descrição: <%= @question.description %> </p>
+    <p> Matéria: <%= @question.subject.description %> </p>
+    <p> Criado em: <%= @question.created_at.strftime("%d/%m/%Y às %H:%M:%S") %> </p>
+    <p> Atualizado em: <%= @question.updated_at.strftime("%d/%m/%Y às %H:%M:%S") %> </p>
   <% end %>
