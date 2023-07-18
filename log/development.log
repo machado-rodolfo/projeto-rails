@@ -16671,3 +16671,60 @@ Completed 200 OK in 45ms (Views: 41.0ms | ActiveRecord: 0.2ms)
   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
   [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+Started GET "/admins_backoffice/admins" for ::1 at 2023-07-18 11:47:47 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/admins/index.html.erb:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:41
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (141.9ms)
+Completed 200 OK in 485ms (Views: 475.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2023-07-18 11:47:48 -0300
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice (1.1ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2023-07-18 11:48:34 -0300
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice (1.2ms)
+Completed 200 OK in 53ms (Views: 49.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-07-18 11:53:44 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [57 times] (8.5ms)
+  Rendered collection of /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (2.3ms)
+  Rendered /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=sub" for ::1 at 2023-07-18 11:53:49 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"sub"}
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=subject" for ::1 at 2023-07-18 11:53:50 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"subject"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
