@@ -16728,3 +16728,2384 @@ Processing by Rails::InfoController#routes as */*
 Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2023-07-18 14:35:42 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/site/welcome/index.html.erb:10
+  Rendered site/welcome/index.html.erb within layouts/site (13.3ms)
+Completed 200 OK in 423ms (Views: 421.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-07-18 14:35:46 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/user_devise
+  Rendered users/sessions/new.html.erb within layouts/user_devise (2.2ms)
+Completed 200 OK in 47ms (Views: 39.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2023-07-18 14:35:51 -0300
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice (0.7ms)
+Completed 200 OK in 71ms (Views: 68.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2023-07-18 14:35:59 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/admins/index.html.erb:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:41
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (109.8ms)
+Completed 200 OK in 143ms (Views: 138.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2023-07-18 14:36:16 -0300
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice (0.8ms)
+Completed 200 OK in 41ms (Views: 37.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-07-18 14:39:22 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [57 times] (6.3ms)
+  Rendered collection of /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (8.0ms)
+  Rendered /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=subject" for ::1 at 2023-07-18 14:39:28 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"subject"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2023-07-18 14:41:02 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice (0.8ms)
+Completed 200 OK in 451ms (Views: 438.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:41:03 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (8.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<Subject:0x00007f7b9c4e7bf8>):
+    22:             <% @subjects.each do |subject| %>
+    23:             <tr>
+    24:                 <td> <%= subject.id %> </td>
+    25:                 <td> <%= subject.email %> </td>
+    26:                 <td style="width: 85px">
+    27: 
+    28:                   <%= link_to edit_admins_backoffice_subject_path(subject), class:"btn btn-primary btn-circle" do %>
+  
+app/views/admins_backoffice/subjects/index.html.erb:25:in `block in _app_views_admins_backoffice_subjects_index_html_erb__1144044620948985590_23900'
+app/views/admins_backoffice/subjects/index.html.erb:22:in `_app_views_admins_backoffice_subjects_index_html_erb__1144044620948985590_23900'
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:41:37 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (121.3ms)
+Completed 200 OK in 156ms (Views: 150.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/admins_backoffice/subjects/524" for ::1 at 2023-07-18 14:42:36 -0300
+Processing by AdminsBackoffice::SubjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NAOQapXzzt3gytak6gGug/1w6xdY2Kbw7aLJmUOY9ZDJAnTu1zbtCWesdjgrC+5jYCmsCe763Hmlcb3Da6yByQ==", "id"=>"524"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 524], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:47
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:33
+  [1m[36mSubject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "subjects" WHERE "subjects"."id" = ?[0m  [["id", 524]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:33
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:33
+Redirected to http://localhost:3000/admins_backoffice/subjects
+Completed 302 Found in 11ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:42:36 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (10.7ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2023-07-18 14:44:39 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/admins/index.html.erb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:41
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (8.8ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins_backoffice/admins/2/edit" for ::1 at 2023-07-18 14:44:41 -0300
+Processing by AdminsBackoffice::AdminsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:48
+  Rendering admins_backoffice/admins/edit.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/shared/_form.html.erb (8.9ms)
+  Rendered admins_backoffice/admins/edit.html.erb within layouts/admins_backoffice (10.8ms)
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:44:47 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (13.7ms)
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins_backoffice/subjects/506/edit" for ::1 at 2023-07-18 14:44:48 -0300
+Processing by AdminsBackoffice::SubjectsController#edit as HTML
+  Parameters: {"id"=>"506"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 506], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:47
+  Rendering admins_backoffice/subjects/edit.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/shared/_form.html.erb (2.3ms)
+  Rendered admins_backoffice/subjects/edit.html.erb within layouts/admins_backoffice (3.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     7: 
+     8: <div class="row">
+     9: 
+    10:     <% if @admin.errors.any? %>
+    11:         <div class="alert alert-danger alert-dismissable">
+    12:             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+    13: 
+  
+app/views/admins_backoffice/admins/shared/_form.html.erb:10:in `_app_views_admins_backoffice_admins_shared__form_html_erb__2775258467174137768_25440'
+app/views/admins_backoffice/subjects/edit.html.erb:1:in `_app_views_admins_backoffice_subjects_edit_html_erb___4070169310235768619_25420'
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:45:28 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (14.6ms)
+Completed 200 OK in 49ms (Views: 44.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins_backoffice/subjects/505/edit" for ::1 at 2023-07-18 14:45:30 -0300
+Processing by AdminsBackoffice::SubjectsController#edit as HTML
+  Parameters: {"id"=>"505"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 505], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:47
+  Rendering admins_backoffice/subjects/edit.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/shared/_form.html.erb (1.9ms)
+  Rendered admins_backoffice/subjects/edit.html.erb within layouts/admins_backoffice (2.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     7: 
+     8: <div class="row">
+     9: 
+    10:     <% if @admin.errors.any? %>
+    11:         <div class="alert alert-danger alert-dismissable">
+    12:             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+    13: 
+  
+app/views/admins_backoffice/admins/shared/_form.html.erb:10:in `_app_views_admins_backoffice_admins_shared__form_html_erb__2775258467174137768_26160'
+app/views/admins_backoffice/subjects/edit.html.erb:1:in `_app_views_admins_backoffice_subjects_edit_html_erb___4070169310235768619_26140'
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:45:59 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (12.4ms)
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins_backoffice/subjects/505/edit" for ::1 at 2023-07-18 14:46:00 -0300
+Processing by AdminsBackoffice::SubjectsController#edit as HTML
+  Parameters: {"id"=>"505"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 505], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:47
+  Rendering admins_backoffice/subjects/edit.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/subjects/shared/_form.html.erb (2.4ms)
+  Rendered admins_backoffice/subjects/edit.html.erb within layouts/admins_backoffice (3.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     7: 
+     8: <div class="row">
+     9: 
+    10:     <% if @admin.errors.any? %>
+    11:         <div class="alert alert-danger alert-dismissable">
+    12:             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+    13: 
+  
+app/views/admins_backoffice/subjects/shared/_form.html.erb:10:in `_app_views_admins_backoffice_subjects_shared__form_html_erb__267394707558805999_26920'
+app/views/admins_backoffice/subjects/edit.html.erb:1:in `_app_views_admins_backoffice_subjects_edit_html_erb___4070169310235768619_26900'
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:50:04 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (12.0ms)
+Completed 200 OK in 45ms (Views: 42.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins_backoffice/subjects/506/edit" for ::1 at 2023-07-18 14:50:06 -0300
+Processing by AdminsBackoffice::SubjectsController#edit as HTML
+  Parameters: {"id"=>"506"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 506], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:47
+  Rendering admins_backoffice/subjects/edit.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/subjects/shared/_form.html.erb (2.1ms)
+  Rendered admins_backoffice/subjects/edit.html.erb within layouts/admins_backoffice (3.7ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/admins_backoffice/subjects/506" for ::1 at 2023-07-18 14:52:06 -0300
+Processing by AdminsBackoffice::SubjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O77YCdIytRpaahwUFaEKR8eE0CAeyJ6poVL8mOD6BszGvzyNkPeWzt0MvIjUq0qnWt2XPqjq5CDpgYjCyM5ylQ==", "subject"=>{"description"=>"Administração de Recursos Materiaisssssss"}, "id"=>"506"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 506], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:47
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:25
+  [1m[36mSubject Update (0.3ms)[0m  [1m[33mUPDATE "subjects" SET "description" = ?, "updated_at" = ? WHERE "subjects"."id" = ?[0m  [["description", "Administração de Recursos Materiaisssssss"], ["updated_at", "2023-07-18 17:52:06.798267"], ["id", 506]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:25
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:25
+Redirected to http://localhost:3000/admins_backoffice/subjects
+Completed 302 Found in 13ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:52:06 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (10.4ms)
+Completed 200 OK in 45ms (Views: 42.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/subjects/506/edit" for ::1 at 2023-07-18 14:52:08 -0300
+Processing by AdminsBackoffice::SubjectsController#edit as HTML
+  Parameters: {"id"=>"506"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 506], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:47
+  Rendering admins_backoffice/subjects/edit.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/subjects/shared/_form.html.erb (1.6ms)
+  Rendered admins_backoffice/subjects/edit.html.erb within layouts/admins_backoffice (3.1ms)
+Completed 200 OK in 40ms (Views: 35.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/admins_backoffice/subjects/506" for ::1 at 2023-07-18 14:52:11 -0300
+Processing by AdminsBackoffice::SubjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t9RPQB9loysEjqJomzvLl9NkfFRWRNLMrros6L/y4kBK1avEXaCA/4PoAvRaMYt3Tj07SuBmqEXmaViyl8aWGQ==", "subject"=>{"description"=>"Administração de Recursos Materiais"}, "id"=>"506"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 506], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:47
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:25
+  [1m[36mSubject Update (0.5ms)[0m  [1m[33mUPDATE "subjects" SET "description" = ?, "updated_at" = ? WHERE "subjects"."id" = ?[0m  [["description", "Administração de Recursos Materiais"], ["updated_at", "2023-07-18 17:52:11.107129"], ["id", 506]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:25
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:25
+Redirected to http://localhost:3000/admins_backoffice/subjects
+Completed 302 Found in 12ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:52:11 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (9.5ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins_backoffice/subjects/new" for ::1 at 2023-07-18 14:52:22 -0300
+Processing by AdminsBackoffice::SubjectsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/subjects/shared/_form.html.erb (1.4ms)
+  Rendered admins_backoffice/subjects/new.html.erb within layouts/admins_backoffice (2.6ms)
+Completed 200 OK in 48ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:52:25 -0300
+Processing by AdminsBackoffice::SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kk4cMDquu8vm9muMBXrUiVPMATs4zWCz9rgLJvsYaSBvT/i0eGuYH2GQyxDEcJRpzpVGJY7vGjq+a3980ywdeQ==", "subject"=>{"description"=>"Algoritmos"}}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:14
+  [1m[36mSubject Create (0.3ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Algoritmos"], ["created_at", "2023-07-18 17:52:25.065747"], ["updated_at", "2023-07-18 17:52:25.065747"]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:14
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:14
+Redirected to http://localhost:3000/admins_backoffice/subjects
+Completed 302 Found in 9ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:52:25 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (8.9ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/subjects?page=11" for ::1 at 2023-07-18 14:52:31 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  Parameters: {"page"=>"11"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 250]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (8.7ms)
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins_backoffice/subjects?page=10" for ::1 at 2023-07-18 14:52:42 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  Parameters: {"page"=>"10"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 225]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (11.9ms)
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/subjects?page=8" for ::1 at 2023-07-18 14:52:45 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  Parameters: {"page"=>"8"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 175]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (17.9ms)
+Completed 200 OK in 54ms (Views: 50.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admins_backoffice/subjects?page=4" for ::1 at 2023-07-18 14:52:47 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 75]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (14.8ms)
+Completed 200 OK in 54ms (Views: 50.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins_backoffice/subjects?page=2" for ::1 at 2023-07-18 14:52:55 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 25]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (15.0ms)
+Completed 200 OK in 55ms (Views: 51.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:53:01 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (11.9ms)
+Completed 200 OK in 49ms (Views: 42.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:53:05 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (10.3ms)
+Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mSubject Load (1.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdmins (20230711190320)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20230711190320_devise_create_admins.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  ↳ db/migrate/20230711190320_devise_create_admins.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  ↳ db/migrate/20230711190320_devise_create_admins.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230711190320"]]
+  ↳ bin/rails:9
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20230711190332)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20230711190332_devise_create_users.rb:5
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20230711190332_devise_create_users.rb:39
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20230711190332_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230711190332"]]
+  ↳ bin/rails:9
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateSubjects (20230718115530)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20230718115530_create_subjects.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230718115530"]]
+  ↳ bin/rails:9
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateAnswers (20230718115957)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "answers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "question_id" integer, "description" text NOT NULL, "correct" boolean DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_3d5ed4418f"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  ↳ db/migrate/20230718115957_create_answers.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_answers_on_question_id" ON "answers" ("question_id")[0m
+  ↳ db/migrate/20230718115957_create_answers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230718115957"]]
+  ↳ bin/rails:9
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateQuestions (20230718120456)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text NOT NULL, "suject_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_8fa12b08f1"
+FOREIGN KEY ("suject_id")
+  REFERENCES "sujects" ("id")
+)[0m
+  ↳ db/migrate/20230718120456_create_questions.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_questions_on_suject_id" ON "questions" ("suject_id")[0m
+  ↳ db/migrate/20230718120456_create_questions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230718120456"]]
+  ↳ bin/rails:9
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-07-18 17:54:34.228244"], ["updated_at", "2023-07-18 17:54:34.228244"]]
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:23
+  [1m[36mAdmin Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "admin@admin.com.br"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:23
+  [1m[36mAdmin Create (0.6ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "admin@admin.com.br"], ["encrypted_password", "$2a$12$CT/rpsvFEtJ4xagjxMqdW.D0exFORtuApCu6a2GPfK1GRhgsKsQwe"], ["created_at", "2023-07-18 17:54:35.412130"], ["updated_at", "2023-07-18 17:54:35.412130"]]
+  ↳ lib/tasks/dev.rake:23
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "cassidy@jakubowski-jacobi.example"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Create (0.2ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "cassidy@jakubowski-jacobi.example"], ["encrypted_password", "$2a$12$1v./CHCuzbA0ZZS9Up1VBuiYqqUZnRbeQrWARH1GZt7MT871vAsCW"], ["created_at", "2023-07-18 17:54:36.726848"], ["updated_at", "2023-07-18 17:54:36.726848"]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "rudolf.volkman@effertz.test"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Create (0.2ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "rudolf.volkman@effertz.test"], ["encrypted_password", "$2a$12$zThVNpmSBxxzz1D4ekSOLO1Klw8sYn1oV638b5to.k0Bm6n5CYxki"], ["created_at", "2023-07-18 17:54:36.944877"], ["updated_at", "2023-07-18 17:54:36.944877"]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "brad.schaefer@little-doyle.test"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Create (0.2ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "brad.schaefer@little-doyle.test"], ["encrypted_password", "$2a$12$yV4Jo0qX8PwjxJ2Iqqx6fO0yZSNmkaUXWc2/935t715LKOO6hB1Oy"], ["created_at", "2023-07-18 17:54:37.161219"], ["updated_at", "2023-07-18 17:54:37.161219"]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "ferdinand@boyle.test"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Create (0.1ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "ferdinand@boyle.test"], ["encrypted_password", "$2a$12$p23IPpmdMMiYGUI11ocgreRk7zdJxX64MQ86FwjKF2dK4ERTmZH3."], ["created_at", "2023-07-18 17:54:37.377151"], ["updated_at", "2023-07-18 17:54:37.377151"]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "wilfredo.turner@nader.example"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Create (0.2ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "wilfredo.turner@nader.example"], ["encrypted_password", "$2a$12$ZGdf.q1Fatd/csALixyYmeyZVdk2jyg/eBpkmOxeIJx8X6hJk6ojO"], ["created_at", "2023-07-18 17:54:37.590642"], ["updated_at", "2023-07-18 17:54:37.590642"]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "vennie@cassin.example"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Create (0.2ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "vennie@cassin.example"], ["encrypted_password", "$2a$12$Bnk9IaVjB35PRF7gQC7cMOaJV1KKfsoJ68xOGkSNtHS0sjueADEge"], ["created_at", "2023-07-18 17:54:37.803818"], ["updated_at", "2023-07-18 17:54:37.803818"]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "todd_bartell@macgyver-rowe.test"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Create (0.2ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "todd_bartell@macgyver-rowe.test"], ["encrypted_password", "$2a$12$SjD4E3TvACxJpNx4NrXxveUr01rOTT/pd0j/I0HSkEICj./2EkOVC"], ["created_at", "2023-07-18 17:54:38.016707"], ["updated_at", "2023-07-18 17:54:38.016707"]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "shaneka_homenick@ankunding.test"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Create (0.2ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "shaneka_homenick@ankunding.test"], ["encrypted_password", "$2a$12$.44tEE.wOjyOdhrbKqQLgOJMvJFMyXob04krUYUkkNAdMeNILFRPy"], ["created_at", "2023-07-18 17:54:38.231097"], ["updated_at", "2023-07-18 17:54:38.231097"]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "karon@sawayn-kassulke.test"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Create (0.6ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "karon@sawayn-kassulke.test"], ["encrypted_password", "$2a$12$eBDPN7yk5NBiQt3/DVuf3ekZWoRLzDz5lfiN2o0FgkC2taxs48DCu"], ["created_at", "2023-07-18 17:54:38.450313"], ["updated_at", "2023-07-18 17:54:38.450313"]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "trinidad.dach@pagac.test"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[36mAdmin Create (0.2ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "trinidad.dach@pagac.test"], ["encrypted_password", "$2a$12$iAd9BM2AS3VSQS/EuHTQ/.PaxfYazYNMQuDaADEtO/E/lCQnDeE3S"], ["created_at", "2023-07-18 17:54:38.663832"], ["updated_at", "2023-07-18 17:54:38.663832"]]
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:43
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user@user.com.br"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:43
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "user@user.com.br"], ["encrypted_password", "$2a$12$Om5HeYwl5gD7aS5ckcBIOe4dMBxoio9e92FOYxzEDUgS0X/bVByky"], ["created_at", "2023-07-18 17:54:39.855174"], ["updated_at", "2023-07-18 17:54:39.855174"]]
+  ↳ lib/tasks/dev.rake:43
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:43
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Acionamentos e controles elétricos"], ["created_at", "2023-07-18 17:54:40.808520"], ["updated_at", "2023-07-18 17:54:40.808520"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Administração de Recursos Materiais"], ["created_at", "2023-07-18 17:54:40.816440"], ["updated_at", "2023-07-18 17:54:40.816440"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.3ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Administração Financeira e Orçamentária"], ["created_at", "2023-07-18 17:54:40.820563"], ["updated_at", "2023-07-18 17:54:40.820563"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Administração Geral"], ["created_at", "2023-07-18 17:54:40.825219"], ["updated_at", "2023-07-18 17:54:40.825219"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Administração Pública"], ["created_at", "2023-07-18 17:54:40.829569"], ["updated_at", "2023-07-18 17:54:40.829569"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Agronomia"], ["created_at", "2023-07-18 17:54:40.833744"], ["updated_at", "2023-07-18 17:54:40.833744"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Álgebra"], ["created_at", "2023-07-18 17:54:40.838414"], ["updated_at", "2023-07-18 17:54:40.838414"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Algoritmos e Estrutura de Dados"], ["created_at", "2023-07-18 17:54:40.842527"], ["updated_at", "2023-07-18 17:54:40.842527"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Análise de Balanços"], ["created_at", "2023-07-18 17:54:40.846373"], ["updated_at", "2023-07-18 17:54:40.846373"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Análise de sistemas elétricos"], ["created_at", "2023-07-18 17:54:40.850153"], ["updated_at", "2023-07-18 17:54:40.850153"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Anatomia Aplicada à Odontologia"], ["created_at", "2023-07-18 17:54:40.853782"], ["updated_at", "2023-07-18 17:54:40.853782"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Anatomia Dental"], ["created_at", "2023-07-18 17:54:40.857393"], ["updated_at", "2023-07-18 17:54:40.857393"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Anatomia Humana"], ["created_at", "2023-07-18 17:54:40.860855"], ["updated_at", "2023-07-18 17:54:40.860855"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Antropologia"], ["created_at", "2023-07-18 17:54:40.864368"], ["updated_at", "2023-07-18 17:54:40.864368"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Aritmética"], ["created_at", "2023-07-18 17:54:40.869520"], ["updated_at", "2023-07-18 17:54:40.869520"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Arqueologia"], ["created_at", "2023-07-18 17:54:40.873647"], ["updated_at", "2023-07-18 17:54:40.873647"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Arquitetura"], ["created_at", "2023-07-18 17:54:40.877278"], ["updated_at", "2023-07-18 17:54:40.877278"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Arquitetura de Computadores"], ["created_at", "2023-07-18 17:54:40.880926"], ["updated_at", "2023-07-18 17:54:40.880926"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Arquitetura de Software"], ["created_at", "2023-07-18 17:54:40.884786"], ["updated_at", "2023-07-18 17:54:40.884786"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Arquivologia"], ["created_at", "2023-07-18 17:54:40.888791"], ["updated_at", "2023-07-18 17:54:40.888791"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Artes Gráficas"], ["created_at", "2023-07-18 17:54:40.892825"], ["updated_at", "2023-07-18 17:54:40.892825"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Atendimento (Escriturário)"], ["created_at", "2023-07-18 17:54:40.897972"], ["updated_at", "2023-07-18 17:54:40.897972"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Atendimento ao Público"], ["created_at", "2023-07-18 17:54:40.902353"], ["updated_at", "2023-07-18 17:54:40.902353"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Atualidades"], ["created_at", "2023-07-18 17:54:40.906407"], ["updated_at", "2023-07-18 17:54:40.906407"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Atuária"], ["created_at", "2023-07-18 17:54:40.909952"], ["updated_at", "2023-07-18 17:54:40.909952"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Áudio e Vídeo"], ["created_at", "2023-07-18 17:54:40.913328"], ["updated_at", "2023-07-18 17:54:40.913328"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Auditoria"], ["created_at", "2023-07-18 17:54:40.916606"], ["updated_at", "2023-07-18 17:54:40.916606"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Auditoria de Obras Públicas"], ["created_at", "2023-07-18 17:54:40.919981"], ["updated_at", "2023-07-18 17:54:40.919981"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Auditoria Governamental"], ["created_at", "2023-07-18 17:54:40.923411"], ["updated_at", "2023-07-18 17:54:40.923411"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Banco de Dados"], ["created_at", "2023-07-18 17:54:40.926954"], ["updated_at", "2023-07-18 17:54:40.926954"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Biblioteconomia"], ["created_at", "2023-07-18 17:54:40.930565"], ["updated_at", "2023-07-18 17:54:40.930565"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Biologia"], ["created_at", "2023-07-18 17:54:40.933872"], ["updated_at", "2023-07-18 17:54:40.933872"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Censo"], ["created_at", "2023-07-18 17:54:40.937514"], ["updated_at", "2023-07-18 17:54:40.937514"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Ciências da Natureza e suas Tecnologias"], ["created_at", "2023-07-18 17:54:40.941086"], ["updated_at", "2023-07-18 17:54:40.941086"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Ciências Humanas e suas Tecnologias"], ["created_at", "2023-07-18 17:54:40.944526"], ["updated_at", "2023-07-18 17:54:40.944526"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Ciências Políticas"], ["created_at", "2023-07-18 17:54:40.947819"], ["updated_at", "2023-07-18 17:54:40.947819"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Ciências Sociais"], ["created_at", "2023-07-18 17:54:40.951154"], ["updated_at", "2023-07-18 17:54:40.951154"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Circuitos elétricos"], ["created_at", "2023-07-18 17:54:40.954490"], ["updated_at", "2023-07-18 17:54:40.954490"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Código de Organização Judiciária"], ["created_at", "2023-07-18 17:54:40.957995"], ["updated_at", "2023-07-18 17:54:40.957995"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Código Disciplinar da Polícia Militar do Estado do Ceará"], ["created_at", "2023-07-18 17:54:40.961238"], ["updated_at", "2023-07-18 17:54:40.961238"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Comércio Internacional (Exterior)"], ["created_at", "2023-07-18 17:54:40.964470"], ["updated_at", "2023-07-18 17:54:40.964470"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Comunicação Social"], ["created_at", "2023-07-18 17:54:40.967566"], ["updated_at", "2023-07-18 17:54:40.967566"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Conhecimentos Bancários"], ["created_at", "2023-07-18 17:54:40.970725"], ["updated_at", "2023-07-18 17:54:40.970725"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Conhecimentos de Serviços Gerais"], ["created_at", "2023-07-18 17:54:40.973945"], ["updated_at", "2023-07-18 17:54:40.973945"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Conhecimentos Gerais"], ["created_at", "2023-07-18 17:54:40.977399"], ["updated_at", "2023-07-18 17:54:40.977399"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Contabilidade Bancária"], ["created_at", "2023-07-18 17:54:40.980647"], ["updated_at", "2023-07-18 17:54:40.980647"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Contabilidade Comercial"], ["created_at", "2023-07-18 17:54:40.984119"], ["updated_at", "2023-07-18 17:54:40.984119"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Contabilidade de Custos"], ["created_at", "2023-07-18 17:54:40.987747"], ["updated_at", "2023-07-18 17:54:40.987747"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Contabilidade de Seguros"], ["created_at", "2023-07-18 17:54:40.991523"], ["updated_at", "2023-07-18 17:54:40.991523"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Contabilidade Geral"], ["created_at", "2023-07-18 17:54:40.995188"], ["updated_at", "2023-07-18 17:54:40.995188"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Contabilidade Gerencial"], ["created_at", "2023-07-18 17:54:40.999614"], ["updated_at", "2023-07-18 17:54:40.999614"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Contabilidade Pública"], ["created_at", "2023-07-18 17:54:41.003352"], ["updated_at", "2023-07-18 17:54:41.003352"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Contabilidade Tributária"], ["created_at", "2023-07-18 17:54:41.007247"], ["updated_at", "2023-07-18 17:54:41.007247"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Controle Externo"], ["created_at", "2023-07-18 17:54:41.010929"], ["updated_at", "2023-07-18 17:54:41.010929"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Correição no Poder Executivo Federal"], ["created_at", "2023-07-18 17:54:41.014815"], ["updated_at", "2023-07-18 17:54:41.014815"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Crescimento e Desenvolvimento Econômico"], ["created_at", "2023-07-18 17:54:41.018533"], ["updated_at", "2023-07-18 17:54:41.018533"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Criminalística"], ["created_at", "2023-07-18 17:54:41.022203"], ["updated_at", "2023-07-18 17:54:41.022203"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Cultura Geral"], ["created_at", "2023-07-18 17:54:41.025664"], ["updated_at", "2023-07-18 17:54:41.025664"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Desenho Industrial"], ["created_at", "2023-07-18 17:54:41.028951"], ["updated_at", "2023-07-18 17:54:41.028951"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Desenvolvimento de Sistemas"], ["created_at", "2023-07-18 17:54:41.032233"], ["updated_at", "2023-07-18 17:54:41.032233"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Designer Gráfico"], ["created_at", "2023-07-18 17:54:41.035750"], ["updated_at", "2023-07-18 17:54:41.035750"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Administrativo"], ["created_at", "2023-07-18 17:54:41.039310"], ["updated_at", "2023-07-18 17:54:41.039310"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Agrário"], ["created_at", "2023-07-18 17:54:41.043007"], ["updated_at", "2023-07-18 17:54:41.043007"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Ambiental"], ["created_at", "2023-07-18 17:54:41.046471"], ["updated_at", "2023-07-18 17:54:41.046471"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Civil"], ["created_at", "2023-07-18 17:54:41.049707"], ["updated_at", "2023-07-18 17:54:41.049707"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Comercial (Empresarial)"], ["created_at", "2023-07-18 17:54:41.052890"], ["updated_at", "2023-07-18 17:54:41.052890"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Comunitário"], ["created_at", "2023-07-18 17:54:41.056372"], ["updated_at", "2023-07-18 17:54:41.056372"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Constitucional"], ["created_at", "2023-07-18 17:54:41.059783"], ["updated_at", "2023-07-18 17:54:41.059783"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito da Criança e do Adolescente"], ["created_at", "2023-07-18 17:54:41.063395"], ["updated_at", "2023-07-18 17:54:41.063395"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito do Consumidor"], ["created_at", "2023-07-18 17:54:41.066982"], ["updated_at", "2023-07-18 17:54:41.066982"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito do Trabalho"], ["created_at", "2023-07-18 17:54:41.070294"], ["updated_at", "2023-07-18 17:54:41.070294"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Econômico-Financeiro"], ["created_at", "2023-07-18 17:54:41.073646"], ["updated_at", "2023-07-18 17:54:41.073646"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Eleitoral"], ["created_at", "2023-07-18 17:54:41.076975"], ["updated_at", "2023-07-18 17:54:41.076975"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Internacional Privado"], ["created_at", "2023-07-18 17:54:41.080432"], ["updated_at", "2023-07-18 17:54:41.080432"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Internacional Público"], ["created_at", "2023-07-18 17:54:41.083903"], ["updated_at", "2023-07-18 17:54:41.083903"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Marítimo"], ["created_at", "2023-07-18 17:54:41.087496"], ["updated_at", "2023-07-18 17:54:41.087496"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Notarial e Registral"], ["created_at", "2023-07-18 17:54:41.092155"], ["updated_at", "2023-07-18 17:54:41.092155"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Penal"], ["created_at", "2023-07-18 17:54:41.096305"], ["updated_at", "2023-07-18 17:54:41.096305"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Penal Militar"], ["created_at", "2023-07-18 17:54:41.100358"], ["updated_at", "2023-07-18 17:54:41.100358"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Previdenciário"], ["created_at", "2023-07-18 17:54:41.104233"], ["updated_at", "2023-07-18 17:54:41.104233"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Processual Civil"], ["created_at", "2023-07-18 17:54:41.108107"], ["updated_at", "2023-07-18 17:54:41.108107"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Processual do Trabalho"], ["created_at", "2023-07-18 17:54:41.111544"], ["updated_at", "2023-07-18 17:54:41.111544"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Processual Penal"], ["created_at", "2023-07-18 17:54:41.114903"], ["updated_at", "2023-07-18 17:54:41.114903"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Processual Penal Militar"], ["created_at", "2023-07-18 17:54:41.118244"], ["updated_at", "2023-07-18 17:54:41.118244"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Sanitário"], ["created_at", "2023-07-18 17:54:41.122098"], ["updated_at", "2023-07-18 17:54:41.122098"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Tributário"], ["created_at", "2023-07-18 17:54:41.125719"], ["updated_at", "2023-07-18 17:54:41.125719"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direito Urbanístico"], ["created_at", "2023-07-18 17:54:41.129115"], ["updated_at", "2023-07-18 17:54:41.129115"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direitos Difusos e Coletivos"], ["created_at", "2023-07-18 17:54:41.132558"], ["updated_at", "2023-07-18 17:54:41.132558"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Direitos Humanos"], ["created_at", "2023-07-18 17:54:41.135933"], ["updated_at", "2023-07-18 17:54:41.135933"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Economia"], ["created_at", "2023-07-18 17:54:41.139473"], ["updated_at", "2023-07-18 17:54:41.139473"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Economia Brasileira"], ["created_at", "2023-07-18 17:54:41.142827"], ["updated_at", "2023-07-18 17:54:41.142827"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Economia do Trabalho"], ["created_at", "2023-07-18 17:54:41.146123"], ["updated_at", "2023-07-18 17:54:41.146123"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Economia internacional"], ["created_at", "2023-07-18 17:54:41.149373"], ["updated_at", "2023-07-18 17:54:41.149373"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Edificações"], ["created_at", "2023-07-18 17:54:41.152636"], ["updated_at", "2023-07-18 17:54:41.152636"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Educação Física"], ["created_at", "2023-07-18 17:54:41.156049"], ["updated_at", "2023-07-18 17:54:41.156049"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Eletricidade"], ["created_at", "2023-07-18 17:54:41.159425"], ["updated_at", "2023-07-18 17:54:41.159425"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Eletroeletrônica"], ["created_at", "2023-07-18 17:54:41.162690"], ["updated_at", "2023-07-18 17:54:41.162690"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Eletromagnetismo"], ["created_at", "2023-07-18 17:54:41.166056"], ["updated_at", "2023-07-18 17:54:41.166056"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Eletrônica Analógica"], ["created_at", "2023-07-18 17:54:41.169413"], ["updated_at", "2023-07-18 17:54:41.169413"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Eletrônica de Potência"], ["created_at", "2023-07-18 17:54:41.173297"], ["updated_at", "2023-07-18 17:54:41.173297"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Eletrônica Digital"], ["created_at", "2023-07-18 17:54:41.176770"], ["updated_at", "2023-07-18 17:54:41.176770"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Endodontia"], ["created_at", "2023-07-18 17:54:41.180125"], ["updated_at", "2023-07-18 17:54:41.180125"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Enfermagem"], ["created_at", "2023-07-18 17:54:41.183361"], ["updated_at", "2023-07-18 17:54:41.183361"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia Aeronáutica"], ["created_at", "2023-07-18 17:54:41.186882"], ["updated_at", "2023-07-18 17:54:41.186882"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia Agronômica"], ["created_at", "2023-07-18 17:54:41.190779"], ["updated_at", "2023-07-18 17:54:41.190779"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia Ambiental"], ["created_at", "2023-07-18 17:54:41.194830"], ["updated_at", "2023-07-18 17:54:41.194830"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia Civil"], ["created_at", "2023-07-18 17:54:41.199460"], ["updated_at", "2023-07-18 17:54:41.199460"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia de Automação e Controle"], ["created_at", "2023-07-18 17:54:41.203719"], ["updated_at", "2023-07-18 17:54:41.203719"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia de Materiais"], ["created_at", "2023-07-18 17:54:41.208382"], ["updated_at", "2023-07-18 17:54:41.208382"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia de Minas"], ["created_at", "2023-07-18 17:54:41.211868"], ["updated_at", "2023-07-18 17:54:41.211868"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia de Pesca"], ["created_at", "2023-07-18 17:54:41.215282"], ["updated_at", "2023-07-18 17:54:41.215282"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia de Produção"], ["created_at", "2023-07-18 17:54:41.218827"], ["updated_at", "2023-07-18 17:54:41.218827"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia de Qualidade"], ["created_at", "2023-07-18 17:54:41.222303"], ["updated_at", "2023-07-18 17:54:41.222303"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia de Software"], ["created_at", "2023-07-18 17:54:41.225859"], ["updated_at", "2023-07-18 17:54:41.225859"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia de Telecomunicações"], ["created_at", "2023-07-18 17:54:41.229333"], ["updated_at", "2023-07-18 17:54:41.229333"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia Elétrica"], ["created_at", "2023-07-18 17:54:41.232854"], ["updated_at", "2023-07-18 17:54:41.232854"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia Eletrônica"], ["created_at", "2023-07-18 17:54:41.236264"], ["updated_at", "2023-07-18 17:54:41.236264"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia Florestal"], ["created_at", "2023-07-18 17:54:41.239556"], ["updated_at", "2023-07-18 17:54:41.239556"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia Mecânica"], ["created_at", "2023-07-18 17:54:41.242839"], ["updated_at", "2023-07-18 17:54:41.242839"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia Naval"], ["created_at", "2023-07-18 17:54:41.246128"], ["updated_at", "2023-07-18 17:54:41.246128"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia Química"], ["created_at", "2023-07-18 17:54:41.249513"], ["updated_at", "2023-07-18 17:54:41.249513"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Engenharia Sanitária"], ["created_at", "2023-07-18 17:54:41.252794"], ["updated_at", "2023-07-18 17:54:41.252794"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Epidemiologia"], ["created_at", "2023-07-18 17:54:41.256206"], ["updated_at", "2023-07-18 17:54:41.256206"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Espanhol"], ["created_at", "2023-07-18 17:54:41.259539"], ["updated_at", "2023-07-18 17:54:41.259539"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Estatística"], ["created_at", "2023-07-18 17:54:41.262920"], ["updated_at", "2023-07-18 17:54:41.262920"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Estatuto da Advocacia e da OAB"], ["created_at", "2023-07-18 17:54:41.266234"], ["updated_at", "2023-07-18 17:54:41.266234"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Estatuto dos Militares Estaduais do Ceará"], ["created_at", "2023-07-18 17:54:41.269593"], ["updated_at", "2023-07-18 17:54:41.269593"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Ética na Administração Pública"], ["created_at", "2023-07-18 17:54:41.272997"], ["updated_at", "2023-07-18 17:54:41.272997"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Farmácia"], ["created_at", "2023-07-18 17:54:41.276138"], ["updated_at", "2023-07-18 17:54:41.276138"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Filosofia e Ética"], ["created_at", "2023-07-18 17:54:41.279445"], ["updated_at", "2023-07-18 17:54:41.279445"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Filosofia e Sociologia do Direito"], ["created_at", "2023-07-18 17:54:41.282791"], ["updated_at", "2023-07-18 17:54:41.282791"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Finanças"], ["created_at", "2023-07-18 17:54:41.286257"], ["updated_at", "2023-07-18 17:54:41.286257"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Finanças Públicas"], ["created_at", "2023-07-18 17:54:41.290083"], ["updated_at", "2023-07-18 17:54:41.290083"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Física"], ["created_at", "2023-07-18 17:54:41.294891"], ["updated_at", "2023-07-18 17:54:41.294891"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Fisioterapia"], ["created_at", "2023-07-18 17:54:41.298606"], ["updated_at", "2023-07-18 17:54:41.298606"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Fonoaudiologia"], ["created_at", "2023-07-18 17:54:41.302609"], ["updated_at", "2023-07-18 17:54:41.302609"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Francês"], ["created_at", "2023-07-18 17:54:41.306727"], ["updated_at", "2023-07-18 17:54:41.306727"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Geografia"], ["created_at", "2023-07-18 17:54:41.311608"], ["updated_at", "2023-07-18 17:54:41.311608"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Geologia"], ["created_at", "2023-07-18 17:54:41.315179"], ["updated_at", "2023-07-18 17:54:41.315179"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Geometria"], ["created_at", "2023-07-18 17:54:41.318834"], ["updated_at", "2023-07-18 17:54:41.318834"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Geometria Analítica"], ["created_at", "2023-07-18 17:54:41.322719"], ["updated_at", "2023-07-18 17:54:41.322719"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Geração, transmissão e distribuição de energia elétrica."], ["created_at", "2023-07-18 17:54:41.326334"], ["updated_at", "2023-07-18 17:54:41.326334"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Gerência de Projetos"], ["created_at", "2023-07-18 17:54:41.329837"], ["updated_at", "2023-07-18 17:54:41.329837"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Gerenciamento do Risco"], ["created_at", "2023-07-18 17:54:41.333265"], ["updated_at", "2023-07-18 17:54:41.333265"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Gestão Ambiental"], ["created_at", "2023-07-18 17:54:41.336796"], ["updated_at", "2023-07-18 17:54:41.336796"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Gestão de Investimento"], ["created_at", "2023-07-18 17:54:41.340498"], ["updated_at", "2023-07-18 17:54:41.340498"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Gestão de Pessoas"], ["created_at", "2023-07-18 17:54:41.344069"], ["updated_at", "2023-07-18 17:54:41.344069"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Gestão de Processos (BPM)"], ["created_at", "2023-07-18 17:54:41.347381"], ["updated_at", "2023-07-18 17:54:41.347381"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Gestão de Produtos e Operações"], ["created_at", "2023-07-18 17:54:41.350654"], ["updated_at", "2023-07-18 17:54:41.350654"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Gestão Documental Pública"], ["created_at", "2023-07-18 17:54:41.354504"], ["updated_at", "2023-07-18 17:54:41.354504"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Gestão Financeira"], ["created_at", "2023-07-18 17:54:41.358099"], ["updated_at", "2023-07-18 17:54:41.358099"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Governança de TI"], ["created_at", "2023-07-18 17:54:41.361481"], ["updated_at", "2023-07-18 17:54:41.361481"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "História Antiga"], ["created_at", "2023-07-18 17:54:41.365539"], ["updated_at", "2023-07-18 17:54:41.365539"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "História do Brasil"], ["created_at", "2023-07-18 17:54:41.369015"], ["updated_at", "2023-07-18 17:54:41.369015"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "História e Geografia de Estados e Municípios"], ["created_at", "2023-07-18 17:54:41.372439"], ["updated_at", "2023-07-18 17:54:41.372439"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "História e Geografia de Minas Gerais"], ["created_at", "2023-07-18 17:54:41.375667"], ["updated_at", "2023-07-18 17:54:41.375667"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "História e Geografia de Rondônia"], ["created_at", "2023-07-18 17:54:41.379108"], ["updated_at", "2023-07-18 17:54:41.379108"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "História e Geografia do Amapá"], ["created_at", "2023-07-18 17:54:41.382722"], ["updated_at", "2023-07-18 17:54:41.382722"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "História e Geografia do Rio Grande do Norte"], ["created_at", "2023-07-18 17:54:41.386388"], ["updated_at", "2023-07-18 17:54:41.386388"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "História Econômica, Administrativa e Política de São Paulo"], ["created_at", "2023-07-18 17:54:41.390497"], ["updated_at", "2023-07-18 17:54:41.390497"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "História Geral"], ["created_at", "2023-07-18 17:54:41.394560"], ["updated_at", "2023-07-18 17:54:41.394560"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "História Mundial"], ["created_at", "2023-07-18 17:54:41.398592"], ["updated_at", "2023-07-18 17:54:41.398592"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Informática"], ["created_at", "2023-07-18 17:54:41.406301"], ["updated_at", "2023-07-18 17:54:41.406301"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Inglês"], ["created_at", "2023-07-18 17:54:41.409722"], ["updated_at", "2023-07-18 17:54:41.409722"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Instalações elétricas"], ["created_at", "2023-07-18 17:54:41.412946"], ["updated_at", "2023-07-18 17:54:41.412946"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Jornalismo"], ["created_at", "2023-07-18 17:54:41.416160"], ["updated_at", "2023-07-18 17:54:41.416160"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Legislação da ABIN"], ["created_at", "2023-07-18 17:54:41.419325"], ["updated_at", "2023-07-18 17:54:41.419325"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Legislação da AGU"], ["created_at", "2023-07-18 17:54:41.423902"], ["updated_at", "2023-07-18 17:54:41.423902"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Legislação da DPU"], ["created_at", "2023-07-18 17:54:41.427479"], ["updated_at", "2023-07-18 17:54:41.427479"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Legislação de Seguros"], ["created_at", "2023-07-18 17:54:41.430857"], ["updated_at", "2023-07-18 17:54:41.430857"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Legislação de Trânsito"], ["created_at", "2023-07-18 17:54:41.434050"], ["updated_at", "2023-07-18 17:54:41.434050"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Legislação do MPE"], ["created_at", "2023-07-18 17:54:41.437422"], ["updated_at", "2023-07-18 17:54:41.437422"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Legislação do MPU"], ["created_at", "2023-07-18 17:54:41.440707"], ["updated_at", "2023-07-18 17:54:41.440707"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Legislação Estadual"], ["created_at", "2023-07-18 17:54:41.443870"], ["updated_at", "2023-07-18 17:54:41.443870"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Legislação Federal"], ["created_at", "2023-07-18 17:54:41.446935"], ["updated_at", "2023-07-18 17:54:41.446935"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Legislação Municipal"], ["created_at", "2023-07-18 17:54:41.450035"], ["updated_at", "2023-07-18 17:54:41.450035"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Legislação Previdenciária"], ["created_at", "2023-07-18 17:54:41.453332"], ["updated_at", "2023-07-18 17:54:41.453332"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Legislação Tributária"], ["created_at", "2023-07-18 17:54:41.456684"], ["updated_at", "2023-07-18 17:54:41.456684"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Legislação Tributária do AP"], ["created_at", "2023-07-18 17:54:41.460034"], ["updated_at", "2023-07-18 17:54:41.460034"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Legislação Tributária do RN"], ["created_at", "2023-07-18 17:54:41.463541"], ["updated_at", "2023-07-18 17:54:41.463541"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Lei Orgânica do DF"], ["created_at", "2023-07-18 17:54:41.466927"], ["updated_at", "2023-07-18 17:54:41.466927"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Leis Orgânicas"], ["created_at", "2023-07-18 17:54:41.470274"], ["updated_at", "2023-07-18 17:54:41.470274"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Linguagens e Códigos e suas Tecnologias"], ["created_at", "2023-07-18 17:54:41.473734"], ["updated_at", "2023-07-18 17:54:41.473734"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Literatura"], ["created_at", "2023-07-18 17:54:41.483538"], ["updated_at", "2023-07-18 17:54:41.483538"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Logística"], ["created_at", "2023-07-18 17:54:41.487054"], ["updated_at", "2023-07-18 17:54:41.487054"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Macroeconomia"], ["created_at", "2023-07-18 17:54:41.491611"], ["updated_at", "2023-07-18 17:54:41.491611"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.4ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Máquinas elétricas"], ["created_at", "2023-07-18 17:54:41.496032"], ["updated_at", "2023-07-18 17:54:41.496032"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.3ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Marketing"], ["created_at", "2023-07-18 17:54:41.502720"], ["updated_at", "2023-07-18 17:54:41.502720"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.3ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Matemática"], ["created_at", "2023-07-18 17:54:41.508599"], ["updated_at", "2023-07-18 17:54:41.508599"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.3ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Matemática Atuarial"], ["created_at", "2023-07-18 17:54:41.513933"], ["updated_at", "2023-07-18 17:54:41.513933"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Matemática e suas Tecnologias"], ["created_at", "2023-07-18 17:54:41.518602"], ["updated_at", "2023-07-18 17:54:41.518602"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Matemática Financeira"], ["created_at", "2023-07-18 17:54:41.522364"], ["updated_at", "2023-07-18 17:54:41.522364"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Mecânica de Autos"], ["created_at", "2023-07-18 17:54:41.526029"], ["updated_at", "2023-07-18 17:54:41.526029"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Medicina"], ["created_at", "2023-07-18 17:54:41.529471"], ["updated_at", "2023-07-18 17:54:41.529471"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Medicina do Trabalho"], ["created_at", "2023-07-18 17:54:41.532918"], ["updated_at", "2023-07-18 17:54:41.532918"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Medicina Legal"], ["created_at", "2023-07-18 17:54:41.536249"], ["updated_at", "2023-07-18 17:54:41.536249"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Medidas elétricas"], ["created_at", "2023-07-18 17:54:41.539582"], ["updated_at", "2023-07-18 17:54:41.539582"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Meio Ambiente"], ["created_at", "2023-07-18 17:54:41.543463"], ["updated_at", "2023-07-18 17:54:41.543463"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Metodologia da Investigação Policial"], ["created_at", "2023-07-18 17:54:41.547001"], ["updated_at", "2023-07-18 17:54:41.547001"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Microeconomia"], ["created_at", "2023-07-18 17:54:41.551024"], ["updated_at", "2023-07-18 17:54:41.551024"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Modelagem de Processos de Negócio"], ["created_at", "2023-07-18 17:54:41.554202"], ["updated_at", "2023-07-18 17:54:41.554202"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Museologia"], ["created_at", "2023-07-18 17:54:41.557635"], ["updated_at", "2023-07-18 17:54:41.557635"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Noções de Arquivologia"], ["created_at", "2023-07-18 17:54:41.560950"], ["updated_at", "2023-07-18 17:54:41.560950"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Noções de Informática"], ["created_at", "2023-07-18 17:54:41.564220"], ["updated_at", "2023-07-18 17:54:41.564220"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Noções de Telecomunicações"], ["created_at", "2023-07-18 17:54:41.567382"], ["updated_at", "2023-07-18 17:54:41.567382"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Nutrição"], ["created_at", "2023-07-18 17:54:41.570646"], ["updated_at", "2023-07-18 17:54:41.570646"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Oceanografia Geológica"], ["created_at", "2023-07-18 17:54:41.573879"], ["updated_at", "2023-07-18 17:54:41.573879"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Odontologia"], ["created_at", "2023-07-18 17:54:41.577148"], ["updated_at", "2023-07-18 17:54:41.577148"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Organização da Justiça Militar da União"], ["created_at", "2023-07-18 17:54:41.580330"], ["updated_at", "2023-07-18 17:54:41.580330"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Organização Judiciária"], ["created_at", "2023-07-18 17:54:41.583540"], ["updated_at", "2023-07-18 17:54:41.583540"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Patologia"], ["created_at", "2023-07-18 17:54:41.587168"], ["updated_at", "2023-07-18 17:54:41.587168"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Patologia e Semiologia Odontológicas"], ["created_at", "2023-07-18 17:54:41.591347"], ["updated_at", "2023-07-18 17:54:41.591347"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Pedagogia"], ["created_at", "2023-07-18 17:54:41.595067"], ["updated_at", "2023-07-18 17:54:41.595067"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Periodontia"], ["created_at", "2023-07-18 17:54:41.598748"], ["updated_at", "2023-07-18 17:54:41.598748"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Política Internacional"], ["created_at", "2023-07-18 17:54:41.603867"], ["updated_at", "2023-07-18 17:54:41.603867"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Políticas Nacionais"], ["created_at", "2023-07-18 17:54:41.609044"], ["updated_at", "2023-07-18 17:54:41.609044"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Políticas Sociais e de Infra-Estrutura no Brasil"], ["created_at", "2023-07-18 17:54:41.613308"], ["updated_at", "2023-07-18 17:54:41.613308"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Português"], ["created_at", "2023-07-18 17:54:41.616779"], ["updated_at", "2023-07-18 17:54:41.616779"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Primeiros Socorros"], ["created_at", "2023-07-18 17:54:41.620148"], ["updated_at", "2023-07-18 17:54:41.620148"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Princípios, Normas e Atribuições Institucionais"], ["created_at", "2023-07-18 17:54:41.623726"], ["updated_at", "2023-07-18 17:54:41.623726"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Programação"], ["created_at", "2023-07-18 17:54:41.627336"], ["updated_at", "2023-07-18 17:54:41.627336"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Psicologia"], ["created_at", "2023-07-18 17:54:41.630777"], ["updated_at", "2023-07-18 17:54:41.630777"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Psicologia Jurídica"], ["created_at", "2023-07-18 17:54:41.634234"], ["updated_at", "2023-07-18 17:54:41.634234"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Psiquiatria"], ["created_at", "2023-07-18 17:54:41.637778"], ["updated_at", "2023-07-18 17:54:41.637778"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Química"], ["created_at", "2023-07-18 17:54:41.641206"], ["updated_at", "2023-07-18 17:54:41.641206"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Raciocínio-Lógico"], ["created_at", "2023-07-18 17:54:41.644608"], ["updated_at", "2023-07-18 17:54:41.644608"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Redação Oficial"], ["created_at", "2023-07-18 17:54:41.648071"], ["updated_at", "2023-07-18 17:54:41.648071"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Redes de Computadores"], ["created_at", "2023-07-18 17:54:41.651474"], ["updated_at", "2023-07-18 17:54:41.651474"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Regime Jurídico do Ministério Público"], ["created_at", "2023-07-18 17:54:41.654811"], ["updated_at", "2023-07-18 17:54:41.654811"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Regimento Interno"], ["created_at", "2023-07-18 17:54:41.658712"], ["updated_at", "2023-07-18 17:54:41.658712"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Relações Humanas"], ["created_at", "2023-07-18 17:54:41.662417"], ["updated_at", "2023-07-18 17:54:41.662417"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Relações Públicas"], ["created_at", "2023-07-18 17:54:41.665740"], ["updated_at", "2023-07-18 17:54:41.665740"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Saúde Pública"], ["created_at", "2023-07-18 17:54:41.669157"], ["updated_at", "2023-07-18 17:54:41.669157"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Secretariado"], ["created_at", "2023-07-18 17:54:41.672621"], ["updated_at", "2023-07-18 17:54:41.672621"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Segurança da Informação"], ["created_at", "2023-07-18 17:54:41.678002"], ["updated_at", "2023-07-18 17:54:41.678002"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Segurança e Saúde no Trabalho"], ["created_at", "2023-07-18 17:54:41.684195"], ["updated_at", "2023-07-18 17:54:41.684195"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Segurança e Transporte"], ["created_at", "2023-07-18 17:54:41.687583"], ["updated_at", "2023-07-18 17:54:41.687583"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Serviço Social"], ["created_at", "2023-07-18 17:54:41.691498"], ["updated_at", "2023-07-18 17:54:41.691498"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Sistema Elétrico Brasileiro"], ["created_at", "2023-07-18 17:54:41.695299"], ["updated_at", "2023-07-18 17:54:41.695299"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Sistema Financeiro Nacional"], ["created_at", "2023-07-18 17:54:41.699125"], ["updated_at", "2023-07-18 17:54:41.699125"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Sistemas de controle"], ["created_at", "2023-07-18 17:54:41.702997"], ["updated_at", "2023-07-18 17:54:41.702997"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.2ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Sistemas de Informação"], ["created_at", "2023-07-18 17:54:41.706739"], ["updated_at", "2023-07-18 17:54:41.706739"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Sistemas Operacionais"], ["created_at", "2023-07-18 17:54:41.710196"], ["updated_at", "2023-07-18 17:54:41.710196"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Sociologia"], ["created_at", "2023-07-18 17:54:41.713681"], ["updated_at", "2023-07-18 17:54:41.713681"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Supervisão de Instituições Financeiras"], ["created_at", "2023-07-18 17:54:41.717154"], ["updated_at", "2023-07-18 17:54:41.717154"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Telecomunicações"], ["created_at", "2023-07-18 17:54:41.721210"], ["updated_at", "2023-07-18 17:54:41.721210"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Teoria Geral da Administração"], ["created_at", "2023-07-18 17:54:41.724751"], ["updated_at", "2023-07-18 17:54:41.724751"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Teoria Geral do Processo"], ["created_at", "2023-07-18 17:54:41.728056"], ["updated_at", "2023-07-18 17:54:41.728056"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Teoria Política Aplicada"], ["created_at", "2023-07-18 17:54:41.731524"], ["updated_at", "2023-07-18 17:54:41.731524"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Trigonometria"], ["created_at", "2023-07-18 17:54:41.734965"], ["updated_at", "2023-07-18 17:54:41.734965"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Turismo"], ["created_at", "2023-07-18 17:54:41.738364"], ["updated_at", "2023-07-18 17:54:41.738364"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:56
+  [1m[36mSubject Create (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Veterinária"], ["created_at", "2023-07-18 17:54:41.741770"], ["updated_at", "2023-07-18 17:54:41.741770"]]
+  ↳ lib/tasks/dev.rake:56
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:56
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:54:49 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2023-07-18 14:54:49 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/admin_devise
+  Rendered admins/sessions/new.html.erb within layouts/admin_devise (2.4ms)
+Completed 200 OK in 358ms (Views: 357.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for ::1 at 2023-07-18 14:54:54 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3P2UlhZVwinsKaRp+TOMlxwT9Oe1KP2Z5Ni95p//y3Yh/HASVJDh/WtPBPU4Ocx3gUqz+QMKhxCsC8m8t8u/Lw==", "admin"=>{"email"=>"admin@admin.com.br", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "admin@admin.com.br"], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admins_backoffice/subjects
+Completed 303 See Other in 214ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:54:54 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (22.8ms)
+Completed 200 OK in 75ms (Views: 70.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admins_backoffice/subjects?page=11" for ::1 at 2023-07-18 14:55:01 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  Parameters: {"page"=>"11"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 250]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (8.6ms)
+Completed 200 OK in 67ms (Views: 64.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:55:02 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (13.5ms)
+Completed 200 OK in 54ms (Views: 49.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins_backoffice/subjects/new" for ::1 at 2023-07-18 14:55:05 -0300
+Processing by AdminsBackoffice::SubjectsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/subjects/shared/_form.html.erb (3.9ms)
+  Rendered admins_backoffice/subjects/new.html.erb within layouts/admins_backoffice (5.3ms)
+Completed 200 OK in 54ms (Views: 50.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:55:09 -0300
+Processing by AdminsBackoffice::SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F+1LgV7IfJpuriFmNRq2GGpkZfL/TcnCIQwxxBR3gO7xKXzsRlMJ6gMUwvJeZLg7CisM0Wwv90/zP7psBL+3nQ==", "subject"=>{"description"=>"Algoritmo"}}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:14
+  [1m[36mSubject Create (0.8ms)[0m  [1m[32mINSERT INTO "subjects" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Algoritmo"], ["created_at", "2023-07-18 17:55:09.540109"], ["updated_at", "2023-07-18 17:55:09.540109"]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:14
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:14
+Redirected to http://localhost:3000/admins_backoffice/subjects
+Completed 302 Found in 14ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:55:09 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (16.7ms)
+Completed 200 OK in 64ms (Views: 61.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:56:46 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" ORDER BY "subjects"."description" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (12.2ms)
+Completed 200 OK in 57ms (Views: 45.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admins_backoffice/subjects/1/edit" for ::1 at 2023-07-18 14:58:12 -0300
+Processing by AdminsBackoffice::SubjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:47
+  Rendering admins_backoffice/subjects/edit.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/subjects/shared/_form.html.erb (1.8ms)
+  Rendered admins_backoffice/subjects/edit.html.erb within layouts/admins_backoffice (3.3ms)
+Completed 200 OK in 38ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2023-07-18 14:58:16 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/admins/index.html.erb:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:41
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (15.2ms)
+Completed 200 OK in 56ms (Views: 52.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins_backoffice/subjects" for ::1 at 2023-07-18 14:58:17 -0300
+Processing by AdminsBackoffice::SubjectsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" ORDER BY "subjects"."description" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "subjects"[0m
+  ↳ app/views/admins_backoffice/subjects/index.html.erb:41
+  Rendered admins_backoffice/subjects/index.html.erb within layouts/admins_backoffice (11.3ms)
+Completed 200 OK in 55ms (Views: 50.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins_backoffice/subjects/1/edit" for ::1 at 2023-07-18 14:58:21 -0300
+Processing by AdminsBackoffice::SubjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/rodolfo/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/subjects_controller.rb:47
+  Rendering admins_backoffice/subjects/edit.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/subjects/shared/_form.html.erb (1.8ms)
+  Rendered admins_backoffice/subjects/edit.html.erb within layouts/admins_backoffice (3.3ms)
+Completed 200 OK in 40ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
