@@ -67,8 +67,23 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <%= yield %>
+          <h1>Site::Welcome#index</h1>
+          <p>Find me in app/views/site/welcome/index.html.erb</p>
+
+          <% if user_signed_in? %>
+            <p>Usuário <strong>LOGADO</strong> / <%= current_user.email %></p>
+          <% else %>
+            <p>Usuário <strong>NÃO</strong> está logado</p>
+          <% end %>
+
+          <% if admin_signed_in? %>
+            <p>Administrador <strong>LOGADO</strong> <%= current_admin.email %></p>
+          <% else %>
+            <p>Administrador <strong>NÃO</strong> está logado</p>
+          <% end %>
       </div>
+
+      <%= yield %>
     </div> <!-- /container -->
 
 
