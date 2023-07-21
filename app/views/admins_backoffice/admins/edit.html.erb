@@ -1,6 +1,5 @@
   <%= render partial: 'admins_backoffice/admins/shared/form',
-           locals: { admin: @admin,
-                     action_message: 'Editando' } %>
+             locals: { action_message: t('message.editing', model: @admin.model_name.human) } %>
 
   <% if action_name == 'edit' %>
     <p> ID: <%= @admin.id %> </p>

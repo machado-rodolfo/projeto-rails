@@ -7,3 +7,21 @@ para repor depois em views/edit.html.erb
 <p> E-mail: <%= @admin.email %> </p>
 <p> Criado em: <%= @admin.created_at.strftime("%d/%m/%Y às %H:%M:%S") %> </p>
 <p> Atualizado em: <%= @admin.updated_at.strftime("%d/%m/%Y às %H:%M:%S") %> </p>
+
+
+
+Utilizado anteriormente no site.html.erb em layout:
+
+          <p>Find me in app/views/site/welcome/index.html.erb</p>
+
+          <% if user_signed_in? %>
+            <p>Usuário <strong>LOGADO</strong> / <%= current_user.email %></p>
+          <% else %>
+            <p>Usuário <strong>NÃO</strong> está logado</p>
+          <% end %>
+
+          <% if admin_signed_in? %>
+            <p>Administrador <strong>LOGADO</strong> <%= current_admin.email %></p>
+          <% else %>
+            <p>Administrador <strong>NÃO</strong> está logado</p>
+          <% end %>
