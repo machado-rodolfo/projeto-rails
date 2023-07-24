@@ -6,8 +6,9 @@ Rails.application.routes.draw do
     post 'answer', to: 'answer#question'
   end
   namespace :users_backoffice do
-    get 'welcome/index'
-    get 'profile', to: 'profile#edit'
+    get   'welcome/index'
+    get   'profile', to: 'profile#edit'
+    patch 'profile', to: 'profile#update'
   end
   namespace :admins_backoffice do
     get 'welcome/index'  # Dashboard
