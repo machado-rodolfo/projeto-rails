@@ -22,7 +22,7 @@ DEFAULT_FILES_PATH = File.join(Rails.root, 'lib', 'tmp')
   desc "Adiciona o administrador padrão"
   task add_default_admin: :environment do
     Admin.create(
-      email:'admin@admin.com.br',
+      email:'admin@admin.com',
       password: DEFAULT_PASSWORD,
       password_confirmation: DEFAULT_PASSWORD
     )
