@@ -1,8 +1,19 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-#Devise Config
+# Devise Config
   config.action_mailer.default_url_options = { host: "Localhost", port: 3000 }
+
+# Mailtrap Config
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :user_name => '2a5aa4e79023ae',
+    :password => 'd0b3de2d2c6a2b',
+    :address => 'sandbox.smtp.mailtrap.io',
+    :host => 'sandbox.smtp.mailtrap.io',
+    :port => '2525',
+    :authentication => :cram_md5
+  }
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
