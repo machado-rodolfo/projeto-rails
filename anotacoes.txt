@@ -25,3 +25,6 @@ Utilizado anteriormente no site.html.erb em layout:
           <% else %>
             <p>Administrador <strong>NÃO</strong> está logado</p>
           <% end %>
+
+
+<%= link_to 'Fazer Logoff [USUÁRIO]', destroy_user_session_path, method: :delete %>
