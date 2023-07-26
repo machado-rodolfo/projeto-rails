@@ -28,3 +28,59 @@ Utilizado anteriormente no site.html.erb em layout:
 
 
 <%= link_to 'Fazer Logoff [USUÁRIO]', destroy_user_session_path, method: :delete %>
+
+
+
+  [
+    {
+      subject: "Nome do asssunto 1",
+      questions: [
+        {
+          description: 'Uma pergunta aleatória',
+          correct_answer: 'A resposta correta',
+          incorrect_answers: [
+            'Resposta incorreta 1',
+            'Resposta incorreta 2'
+          ]
+        },
+        {
+          description: 'Uma pergunta aleatória 2',
+          correct_answer: 'A resposta correta 2',
+          incorrect_answers: [
+            'Resposta incorreta 1',
+            'Resposta incorreta 2'
+          ]
+        }
+      ]
+    },
+    {
+      subject: "Nome do assunto 2",
+      questions: [
+        ...
+      ]
+    }
+  ]
+
+  def create_question_params(subject = Subject.all.sample)
+    resposta_do_chat_gpt.each do |element|
+      subject    = Subject.find_by_description(element[:subject_id])
+      questions  = element[:questions]
+
+      questions.each do |question|
+        description       = question[:description]
+        correct_answer    = question[:correct_answer]
+        incorrect_answers = question[:incorrect_answers]
+
+        pergunta_criada = criar_pergunta(subject, description)
+        criar_resposta_correta(correct_answer, pergunta_criada)
+
+        incorrect_answers.each do |incorrect_answer|
+          criar_resposta_incorreta(incorrect_answer, pergunta_criada)
+        end
+      end
+
+
+
+      question = element['question']
+      correct_answer = element['correct_answer']
+      wrong_asnwers
