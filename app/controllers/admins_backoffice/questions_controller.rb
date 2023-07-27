@@ -4,8 +4,8 @@ class AdminsBackoffice::QuestionsController < AdminsBackofficeController
 
   def index
     respond_to do |format|
-    format.html { @questions = Question.includes(:subject).all.order(:description).page(params[:page]) }
-    format.pdf { @questions = Question.includes(:subject).all.order(:description) }
+    format.html { @questions = Question.includes(:subject).page(params[:page]) }
+    format.pdf { @questions = Question.includes(:subject) }
     end
   end
 
@@ -34,10 +34,11 @@ class AdminsBackoffice::QuestionsController < AdminsBackofficeController
   end
 
   def destroy
+    @question = Question.find(params[:id])
     if @question.destroy
     redirect_to admins_backoffice_questions_path, notice: "Questão excluída com sucesso!"
     else
-         render :index
+      render :index
     end
   end
 

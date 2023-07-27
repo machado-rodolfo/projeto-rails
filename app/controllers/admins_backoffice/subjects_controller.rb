@@ -3,8 +3,8 @@ class AdminsBackoffice::SubjectsController < AdminsBackofficeController
 
     def index
         respond_to do |format|
-          format.html { @subjects = Subject.all.order(:description).page(params[:page]) }
-          format.pdf { @subjects = Subject.all.order(:description) }
+          format.html { @subjects = Subject.page(params[:page]) }
+          format.pdf { @subjects = Subject(:description) }
         end
     end
 
