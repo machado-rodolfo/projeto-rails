@@ -1,5 +1,7 @@
 namespace :dev do
 
+require 'faker'
+
 DEFAULT_PASSWORD = 123456
 DEFAULT_FILES_PATH = File.join(Rails.root, 'lib', 'tmp')
 
@@ -30,12 +32,21 @@ DEFAULT_FILES_PATH = File.join(Rails.root, 'lib', 'tmp')
 
   desc "Adiciona administradores extras"
   task add_extra_admins: :environment do
+    emails = []
+
     10.times do |i|
+      email = Faker::Internet.email
+      emails << email
+
       Admin.create(
-        email: Faker::Internet.email,
+        email: email,
         password: DEFAULT_PASSWORD,
         password_confirmation: DEFAULT_PASSWORD
       )
+    end
+
+    File.open('faker_email_list.txt', 'w') do |file|
+      file.puts(emails)
     end
   end
 
@@ -48,67 +59,69 @@ DEFAULT_FILES_PATH = File.join(Rails.root, 'lib', 'tmp')
     )
   end
 
-  desc "Adiciona assuntos padrão"
-  task add_subjects: :environment do
-    file_name = 'subjects.txt'
-    file_path = File.join(DEFAULT_FILES_PATH, file_name)
+# Adiciona assuntos padrão
+desc "Adiciona assuntos padrão"
+task add_subjects: :environment do
+  # Código para adicionar assuntos padrão (se necessário)
+end
 
-    File.open(file_path, 'r').each do |line|
-      Subject.create!(description: line.strip)
+# Adiciona perguntas e respostas
+desc "Adiciona perguntas e respostas"
+task add_answers_and_questions: :environment do
+  subjects_data = []
+
+  # Lê o arquivo "answers_and_questions.txt" e popula o array subjects_data
+  file_name = 'answers_and_questions.txt'
+  file_path = File.join(DEFAULT_FILES_PATH, file_name)
+
+  current_subject = nil
+  current_question = nil
+  current_answers = []
+  correct_answer = nil
+  File.open(file_path, 'r').each do |line|
+    line = line.strip
+    if line.start_with?('S:')
+      current_subject = line[2..].strip
+      current_question = nil
+    elsif line.start_with?('Q:')
+      current_question = line[2..].strip
+      current_answers = []
+      correct_answer = nil
+    elsif line.start_with?('A:')
+      current_answers << line[2..].strip
+    elsif line.start_with?('CA:')
+      correct_answer = line[3..].strip
+      current_answers << correct_answer unless current_answers.include?(correct_answer)
+      subjects_data << { subject: current_subject, question: current_question, answers: current_answers, correct: correct_answer }
     end
   end
 
-  desc "Adiciona perguntas e respostas"
-  task add_answers_and_questions: :environment do
-    Subject.all.each do |subject|
-      rand(5..10).times do |i|
-        params = create_question_params(subject)
-        answers_array = params[:question][:answers_attributes]
+  create_questions_and_answers(subjects_data)
+end
 
-          add_answers(answers_array)
-          elect_true_answer(answers_array)
+# Método para criar perguntas e respostas com base nos dados lidos do arquivo
+def create_questions_and_answers(subjects_data)
+  subjects_data.each do |data|
+    subject = Subject.find_or_create_by(description: data[:subject])
+    question = Question.create!(description: data[:question], subject: subject)
 
-        Question.create!(params[:question])
-      end
+    data[:answers].shuffle!  # Embaralha as respostas para que a resposta correta não seja sempre a primeira
+
+    data[:answers].each do |answer|
+      question.answers.create!(description: answer, correct: answer == data[:correct])
     end
   end
+end
 
-  desc "Reseta o contador dos assuntos"
-  task reset_subject_counter: :environment do
-    show_spinner("Resetando contador dos assuntos...") do
-      Subject.find_each do |subject|
-        Subject.reset_counters(subject.id, :questions)
-      end
-    end
-  end
 
-  private
+# Reseta o contador dos assuntos
+desc "Reseta o contador dos assuntos"
+task reset_subject_counter: :environment do
+  # Código para resetar o contador dos assuntos (se necessário)
+end
 
-  def create_question_params(subject = Subject.all.sample)
-    { question: {
-          description: "#{Faker::Lorem.paragraph} #{Faker::Lorem.question}",
-          subject: subject,
-          answers_attributes: []
-                }
-    }
-  end
+private
 
-  def create_answer_params(correct = false)
-    { description: Faker::Lorem.sentence, correct: correct }
-  end
-
-  def add_answers(answers_array = [])
-    rand(2..5).times do |j|
-      answers_array.push(
-        create_answer_params
-      )
-    end
-  end
-
-  def elect_true_answer(answers_array = [])
-    selected_index = rand(answers_array.size)
-    answers_array[selected_index] = create_answer_params(true)
-  end
 
   def show_spinner(msg_start, msg_end = "Concluído!")
     spinner = TTY::Spinner.new("[:spinner] #{msg_start}")

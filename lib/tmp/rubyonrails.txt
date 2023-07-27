@@ -1,0 +1,22 @@
+Introdução à Ruby e sua história
+Instalação do ambiente Ruby (Ruby Interpreter e RubyGems)
+Variáveis e tipos de dados em Ruby XXXXXXXXXXXXX
+Operadores e expressões
+Estruturas condicionais (if, elsif, else)
+Estruturas de repetição (while, for, each)
+Coleções de dados: Arrays e Hashes
+Funções e métodos em Ruby
+Scoping de variáveis
+Classes e Objetos em Ruby
+Herança e Encapsulamento
+Módulos e Mixins
+Tratamento de exceções (try, catch)
+Manipulação de arquivos em Ruby
+Manipulação de Strings
+Expressões regulares em Ruby
+Introdução ao desenvolvimento web com Ruby (Ruby on Rails)
+Manipulação de bancos de dados com Ruby
+Testes automatizados com RSpec
+Boas práticas de programação em Ruby
+Lógica da programação
+Algoritmos

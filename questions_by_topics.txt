@@ -1,0 +1,208 @@
+Introdução à Ruby e sua história:
+
+Quem foi o criador da linguagem Ruby e em que ano foi criada?
+Quais são os principais princípios e filosofia que guiam o desenvolvimento do Ruby?
+Quais são as características que tornam o Ruby uma linguagem tão popular?
+Quais são as principais aplicações do Ruby no cenário de desenvolvimento atual?
+O que é a "Matz's Ruby Interpreter" (MRI) e qual é o seu papel no ecossistema Ruby?
+Como o RubyGems facilita o gerenciamento de pacotes em projetos Ruby?
+Quais são as principais diferenças entre Ruby e outras linguagens de programação populares?
+Como o Ruby lida com a orientação a objetos?
+Quais são os tipos de dados básicos em Ruby?
+Quais são as principais formas de interagir com o Ruby (interpretador de linha de comando, scripts, etc.)?
+
+
+Instalação do ambiente Ruby:
+
+Quais são os sistemas operacionais suportados para a instalação do Ruby?
+Como verificar se o Ruby já está instalado em um sistema?
+Quais são as etapas para instalar o Ruby através de gerenciadores de pacotes (por exemplo, apt, yum, brew)?
+Como instalar o Ruby usando versões de compilação a partir do código-fonte?
+O que são RubyGems e como eles são úteis no desenvolvimento Ruby?
+Como verificar a versão do Ruby e do RubyGems instalada?
+Como instalar e gerenciar várias versões do Ruby em um mesmo sistema?
+Quais são as práticas recomendadas para atualização do Ruby e das Gems?
+Como configurar as variáveis de ambiente necessárias após a instalação?
+Como instalar uma versão específica do Ruby usando o Ruby Version Manager (RVM) ou outros gerenciadores de versão?
+
+
+Variáveis e tipos de dados em Ruby:
+
+Quais são os diferentes tipos de variáveis em Ruby e como declará-las?
+Como atribuir um valor a uma variável em Ruby?
+Quais são as regras para nomear variáveis em Ruby?
+Como verificar o tipo de uma variável usando métodos Ruby?
+O que é uma constante em Ruby e como ela se diferencia de uma variável normal?
+Quais são os tipos de dados básicos em Ruby (Integer, Float, String, Boolean, etc.)?
+Como converter entre diferentes tipos de dados em Ruby?
+O que é a interpolação de strings e como utilizá-la?
+Quais são os métodos comuns para manipulação de strings em Ruby?
+Como criar e utilizar arrays e hashes em Ruby?
+
+
+Operadores e expressões:
+
+Quais são os principais operadores aritméticos em Ruby e como usá-los?
+Como funcionam os operadores de atribuição em Ruby?
+Quais são os operadores de comparação em Ruby e como eles retornam os resultados?
+O que são operadores lógicos e como eles são usados para combinar expressões booleanas?
+Quais são os operadores de incremento e decremento em Ruby e como utilizá-los?
+Como funciona a precedência dos operadores em expressões complexas?
+Como utilizar parênteses para controlar a ordem de avaliação de expressões?
+Quais são os operadores bitwise em Ruby e para que são usados?
+Como utilizar operadores ternários para expressões condicionais compactas?
+Como trabalhar com operadores especiais, como o operador de concatenação de strings e o operador splat?
+
+
+Estruturas condicionais (if, elsif, else):
+
+Como utilizar a estrutura condicional "if" em Ruby?
+Quais são as diferentes formas de usar a estrutura "if" em conjunto com "else"?
+Como lidar com várias condições usando "elsif"?
+O que é o operador ternário e como ele pode ser aplicado em estruturas condicionais?
+Como utilizar a estrutura "unless" em vez de "if" para expressar condições negativas?
+Como combinar múltiplas condições com os operadores lógicos em estruturas condicionais?
+Quais são as práticas recomendadas para escrever estruturas condicionais legíveis?
+Como lidar com condições complexas usando parênteses para agrupamento?
+Como utilizar o operador "case" para simplificar estruturas condicionais em casos específicos?
+Como evitar erros comuns relacionados a estruturas condicionais aninhadas?
+
+
+Estruturas de repetição (while, for, each):
+
+Como usar a estrutura de repetição "while" em Ruby?
+Quais são as diferenças entre as estruturas "while" e "until"?
+Como utilizar a estrutura "for" para percorrer uma faixa de valores?
+Quais são as práticas recomendadas para o uso de loops "for" em Ruby?
+Como iterar por uma coleção de elementos usando o método "each"?
+Quais são as outras formas de iteração disponíveis para coleções em Ruby?
+Como usar os comandos "break" e "next" para controlar loops?
+O que é a iteração com blocos em Ruby e como ela se relaciona com o "each"?
+Como evitar loops infinitos e garantir a finalização adequada de loops?
+Quais são os cenários ideais para usar "while", "for" ou "each" em uma situação específica?
+
+
+Coleções de dados: Arrays e Hashes:
+
+Como criar e inicializar um array em Ruby?
+Quais são as diferentes formas de acessar elementos dentro de um array?
+Como adicionar e remover elementos em um array?
+Como verificar se um elemento específico existe em um array?
+Quais são os métodos úteis disponíveis para manipulação de arrays em Ruby?
+O que é um hash em Ruby e como ele difere de um array?
+Como criar e acessar valores de um hash?
+Quais são os métodos disponíveis para adicionar, remover e verificar elementos em um hash?
+Como iterar por um array ou hash usando diferentes estruturas de repetição?
+Como combinar arrays e hashes e realizar operações complexas com essas coleções?
+
+
+Funções e métodos em Ruby:
+
+Como definir uma função (método) em Ruby?
+Quais são os diferentes tipos de parâmetros que podem ser usados em uma função?
+Como definir parâmetros padrão para uma função?
+O que é o retorno de uma função e como é especificado?
+Como chamar uma função e passar argumentos para ela?
+Quais são as práticas recomendadas para nomear funções em Ruby?
+Como funciona o escopo de variáveis dentro de funções em Ruby?
+O que acontece quando uma função é chamada recursivamente em Ruby?
+Como usar funções anônimas (lambda) em Ruby?
+Como utilizar a instrução "return" para encerrar a execução de uma função antecipadamente?
+
+
+Scoping de variáveis:
+
+O que é o conceito de escopo de uma variável em Ruby?
+Quais são os diferentes níveis de escopo em Ruby (local, instância, classe e global)?
+Como diferenciar variáveis locais de variáveis de instância e de classe?
+Quais são as regras para determinar qual variável é acessada em um determinado escopo?
+O que acontece quando há uma colisão de nomes entre variáveis de diferentes escopos?
+Como evitar conflitos de escopo e garantir a clareza do código?
+O que são constantes em Ruby e como elas se comportam em diferentes contextos?
+Como criar e utilizar constantes em classes e módulos?
+Quais são as práticas recomendadas para o uso de variáveis com nomes descritivos?
+Como utilizar blocos e lambdas para controlar o escopo de variáveis em determinadas situações?
+
+
+Classes e Objetos em Ruby:
+
+O que é uma classe em Ruby e como ela é declarada?
+Quais são os construtores especiais disponíveis em uma classe?
+Como criar objetos a partir de uma classe e manipulá-los?
+O que são atributos de instância e como eles são acessados e definidos?
+Como definir métodos de instância em uma classe e utilizá-los?
+Quais são os métodos de classe e como eles diferem dos métodos de instância?
+Como utilizar o método "initialize" para inicializar objetos com valores específicos?
+O que é o conceito de herança em Ruby e como criar classes derivadas?
+Como acessar métodos e atributos da classe pai em uma classe derivada?
+Quais são as práticas recomendadas para organizar e documentar classes e objetos em Ruby?
+
+
+Herança e Encapsulamento:
+
+O que é herança múltipla e por que Ruby não a suporta?
+Como criar uma hierarquia de classes com herança em Ruby?
+Quais são os modificadores de acesso em Ruby (public, private, protected) e como eles funcionam?
+Como definir métodos acessores (getters) e modificadores (setters) para atributos de uma classe?
+O que é o encapsulamento em Ruby e por que é importante?
+Quais são as práticas recomendadas para implementar uma herança limpa e eficiente?
+Como evitar o acoplamento excessivo entre classes e promover uma arquitetura flexível?
+O que é o método "super" e como ele é utilizado em classes derivadas?
+Como sobrescrever métodos da classe pai em uma classe derivada?
+Como utilizar módulos para compartilhar funcionalidades entre classes sem a necessidade de herança?
+
+
+Módulos e Mixins:
+
+O que são módulos em Ruby e como eles diferem de classes?
+Como definir um módulo e incluí-lo em uma classe?
+Quais são os benefícios de usar módulos em comparação com herança múltipla?
+O que é um mixin em Ruby e como ele é usado para adicionar comportamentos às classes?
+Como resolver conflitos de métodos quando vários mixins são incluídos em uma classe?
+Quais são as práticas recomendadas para nomear e organizar módulos?
+Como usar módulos para compartilhar métodos e constantes entre várias classes?
+Como utilizar os métodos "extend" e "prepend" para adicionar funcionalidades em tempo de execução?
+O que é a herança de módulos e como ela pode ser aplicada?
+Quais são as diferenças entre "include", "extend" e "prepend" em relação à inclusão de módulos em classes?
+
+
+Tratamento de exceções (try, catch):
+
+O que são exceções em Ruby e como elas são representadas?
+Como usar a estrutura "begin", "rescue" e "end" para tratar exceções?
+Quais são as vantagens de usar tratamento de exceções em vez de condicionais?
+Como lançar (raise) uma exceção manualmente em um determinado ponto do código?
+O que é o bloco "ensure" e como ele é utilizado para garantir a execução de código crítico?
+Como criar classes de exceção personalizadas para situações específicas?
+Quais são os tipos de exceções padrão em Ruby e quando usá-las?
+Como aninhar blocos "rescue" para tratar diferentes tipos de exceções?
+O que é a cláusula "else" no tratamento de exceções e como ela pode ser útil?
+Como garantir uma finalização adequada em caso de exceção para liberar recursos ou efetuar ações críticas?
+
+
+Manipulação de arquivos em Ruby:
+
+Como abrir, ler e fechar um arquivo em Ruby?
+Quais são os diferentes modos de abertura de arquivos (leitura, escrita, apêndice, etc.)?
+Como verificar a existência de um arquivo antes de abri-lo?
+Como gravar dados em um arquivo usando métodos de escrita em Ruby?
+Quais são os métodos disponíveis para manipular a posição do cursor em um arquivo?
+Como ler e escrever arquivos em formato binário em Ruby?
+O que é a captura de erros ao manipular arquivos e como tratar exceções relacionadas?
+Como percorrer um arquivo linha por linha usando loops e blocos?
+Quais são as melhores práticas para lidar com arquivos grandes e evitar gargalos de desempenho?
+Como utilizar a biblioteca "FileUtils" para executar operações comuns de manipulação de arquivos?
+
+
+Manipulação de Strings:
+
+Como criar strings literais em Ruby?
+Quais são as principais diferenças entre strings delimitadas por aspas simples e aspas duplas?
+Como interpolar variáveis e expressões dentro de uma string em Ruby?
+Quais são os métodos disponíveis para manipulação de strings em Ruby?
+Como dividir e unir strings usando métodos específicos?
+O que são as expressões regulares e como elas são usadas para buscar e substituir padrões em strings?
+Quais são os principais métodos para modificar o conteúdo de uma string sem alterá-la diretamente?
+Como converter strings entre maiúsculas e minúsculas em Ruby?
+Como remover espaços em branco e caracteres especiais de uma string?
+Como utilizar a biblioteca "StringIO" para criar strings que se comportam como arquivos?
