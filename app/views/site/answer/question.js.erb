@@ -5,6 +5,7 @@ element.classList.remove('btn-success');
 element.classList.remove('btn-danger');
 
 <% if @already_answered %>
+  element.classList.add('answered-btn');
   alert('Você já respondeu a esta pergunta.');
 <% else %>
   element.classList.add('<%= @answer.correct ? "btn-success" : "btn-danger" %>');

@@ -9,9 +9,8 @@ class Site::AnswerController < SiteController
       UserStatistic.set_statistic(@answer, current_user)
       AnswerAttempt.create(user: current_user, question: question, answer: @answer)
 
-      # Criar um registro em AnswerAttempt após salvar a resposta
-      AnswerAttempt.create(user: current_user, question: question, answer: @answer)
-
+      question.update(answered: true)
     end
+
   end
 end
