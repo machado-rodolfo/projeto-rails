@@ -4,8 +4,8 @@ class AdminsBackoffice::QuestionsController < AdminsBackofficeController
 
   def index
     respond_to do |format|
-    format.html { @questions = Question.includes(:subject).page(params[:page]) }
-    format.pdf { @questions = Question.includes(:subject) }
+      format.html { @questions = Question.includes(:subject).page(params[:page]) }
+      format.pdf  { @questions = Question.includes(:subject) }
     end
   end
 

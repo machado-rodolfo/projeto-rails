@@ -25,7 +25,7 @@
             <% @subjects.each do |subject| %>
             <tr>
                 <td> <%= subject.id %> </td>
-                <td> <%= subject.description %> </td>
+                <td> <%= link_to "#{subject.description} (#{subject.questions_count})", site_search_subject_path(subject.id, subject.description) %> </td>
                 <td style="width: 85px">
 
                   <%= link_to edit_admins_backoffice_subject_path(subject), class:"btn btn-primary btn-circle" do %>

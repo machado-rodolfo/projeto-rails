@@ -1,6 +1,6 @@
 <!-- Main component for a primary marketing message or call to action -->
 <div class="jumbotron">
-  <h3><%= msg_jumbotron %></h3>
+  <h2><%= msg_jumbotron %></h2>
 </div>
 
 <% @questions.each do |question| %>
@@ -35,8 +35,8 @@
   <% end %>
 <% end %>
 
-<% if user_signed_in? %>
-  <div class="text-center">
+    <% if user_signed_in? %>
+      <div class="text-center">
     <%= paginate @questions %>
   </div>
 <% else %>
