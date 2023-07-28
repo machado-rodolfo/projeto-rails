@@ -5,6 +5,7 @@ class AdminsBackoffice::SubjectsController < AdminsBackofficeController
         respond_to do |format|
           format.html { @subjects = Subject.page(params[:page]) }
           format.pdf { @subjects = Subject.order(:id) }
+          format.json { @subjects = Subject.order(:id)}
         end
     end
 
