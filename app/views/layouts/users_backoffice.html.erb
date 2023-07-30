@@ -22,7 +22,9 @@
         <div class="col-md-3 left_col menu_fixed">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="#index" class="site_title"><i class="fa fa-space-shuttle"></i> <span>Projeto Rodolfo</span></a>
+              <%= link_to begin_path, class: "site_title" do %>
+                <span>Home Page</span>
+              <% end %>
             </div>
 
             <div class="clearfix"></div>
@@ -104,13 +106,6 @@
                       <a>
                         <span class="image">
                           <%= image_tag 'images.png', alt:"Profile Image" %>
-                        </span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
                         </span>
                       </a>
                     </li>

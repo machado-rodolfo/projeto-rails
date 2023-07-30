@@ -1,0 +1,89 @@
+/* Estilo compartilhado para todas as páginas */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #2e76a7;
+  color: #fff;
+}
+
+/* Estilo para o header */
+header {
+  background-color: #102069;
+  color: #fff;
+  padding: 10px;
+  position: relative; /* Adicionamos position relative para posicionar os elementos filhos */
+}
+
+/* Estilo para centralizar o texto do header */
+.header-title {
+  text-align: center;
+  font-size: 45px; /* Ajustar o tamanho da fonte do título */
+  text-shadow: 20px 20px 20px rgb(0, 0, 0); /* Adicionar sombra preta à linha do título */
+}
+
+/* Estilo para o horário e os botões no header */
+#header-content {
+  display: flex;
+  flex-direction: row; /* Modificado para exibir os botões em linha */
+  align-items: center; /* Centraliza verticalmente os elementos no header */
+  justify-content: space-between; /* Distribui os elementos para que fiquem nas extremidades */
+  position: absolute;
+  top: 10px; /* Posiciona o header-content no canto superior esquerdo */
+  left: 10px;
+  right: 10px; /* Aumenta a área ocupada pelo header-content */
+}
+
+#header-time {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Estilo para os links em cor branca e maior tamanho de fonte */
+.header-button {
+  color: #fff;
+  font-size: 20px; /* Aumentar o valor para aumentar o tamanho da fonte */
+  padding: 6px 12px; /* Adiciona um espaçamento interno para os botões */
+  background-color: transparent; /* Remove o fundo padrão dos links */
+  border: 2px solid white; /* Adiciona uma borda branca de 2px */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+/* Estilo para os links de botão quando estiverem em foco ou ativos (após clicados) */
+.header-button:hover,
+.header-button:focus,
+.header-button:active {
+  background-color: #fff; /* Muda o fundo do botão para branco quando estiver em foco, hover ou ativo */
+  color: #102069; /* Muda a cor do texto para azul escuro quando o botão estiver em foco, hover ou ativo */
+  border-color: #ccc; /* Muda a cor da borda para cinza quando o botão estiver em foco, hover ou ativo */
+}
+
+/* Estilo para o footer */
+footer {
+  margin-top: auto;
+  background-color: #102069;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Estilo para a imagem de fundo */
+body::after {
+  content: "";
+  background-image: url('cilia1.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.9; /* Defina a opacidade desejada para a imagem de fundo, valores entre 0 (totalmente transparente) e 1 (opaco) */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
