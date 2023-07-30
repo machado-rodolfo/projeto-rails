@@ -1,0 +1,11 @@
+=> [[32m#<ActiveRecord::Reflection::HasOneReflection:0x00005614b54bcd58[0m
+  @active_record[32m=[0m[1;34;4mUser[0m (call [31m[1;31m'[0m[31mUser.connection[1;31m'[0m[31m[0m to establish a connection),
+  @association_scope_cache[32m=[0m[32m#<Concurrent::Map:0x00005614b54bcc18 entries=0 default_proc=nil>[0m,
+  @constructable[32m=[0m[1;36mtrue[0m,
+  @foreign_type[32m=[0m[1;36mnil[0m,
+  @klass[32m=[0m[1;36mnil[0m,
+  @name[32m=[0m[33m:user_profile[0m,
+  @options[32m=[0m{[33m:autosave[0m=>[1;36mtrue[0m},
+  @plural_name[32m=[0m[31m[1;31m"[0m[31muser_profiles[1;31m"[0m[31m[0m,
+  @scope[32m=[0m[1;36mnil[0m,
+  @type[32m=[0m[1;36mnil[0m[32m>[0m]

@@ -11,7 +11,7 @@ class User < ApplicationRecord
   after_create :set_statistic
 
   # Validations
-  validates :first_name, presence: true, length: { minimum: 3 }, on: :update, unless: :reset_password_token_present?
+#  validates :first_name, presence: true, length: { minimum: 3 }, on: :update, unless: :reset_password_token_present?
 
     # Virtual Attributes
   def full_name

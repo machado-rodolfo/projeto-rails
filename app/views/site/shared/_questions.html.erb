@@ -8,11 +8,15 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">
-        <span class="label label-info", style="margin-right: 10px">
-          <%= link_to "#{question.subject.description} (#{question.subject.questions_count})", site_search_subject_path(question.subject_id, question.subject.description), style:"color: white;" %>
-        </span>
-            <%= question.description %>
-          </h3>
+          <span class="label label-info" style="margin-right: 10px">
+        <% if user_signed_in? %>
+          <%= link_to "#{question.subject.description} (#{question.subject.questions_count})", site_search_subject_path(question.subject_id, question.subject.description), style: "color: white;" %>
+        <% else %>
+          <%= "#{question.subject.description} (#{question.subject.questions_count})" %>
+        <% end %>
+          </span>
+          <%= question.description %>
+        </h3>
       </div>
       <div class="panel-body">
         <ul>
@@ -27,7 +31,11 @@
             </li>
           <% end %>
           <li style="list-style:none;" >
-          <%= form.submit "Responder", class:"btn btn-default", id: "submit_#{question.id}" %>
+            <% if user_signed_in? %>
+              <%= form.submit "Responder", class: "btn btn-default", id: "submit_#{question.id}" %>
+            <% else %>
+              <%= link_to "Responder", new_user_session_path, class: "btn btn-default", id: "submit_#{question.id}" %>
+            <% end %>
           </li>
         </ul>
       </div>
@@ -35,12 +43,12 @@
   <% end %>
 <% end %>
 
-    <% if user_signed_in? %>
-      <div class="text-center">
+<% if user_signed_in? %>
+  <div class="text-center">
     <%= paginate @questions %>
   </div>
 <% else %>
   <div class="alert alert-warning" role="alert">
-  Efetue o login para poder continuar respondendo as questões...
+    Cadastre-se ou faça login para responder as questões...
   </div>
 <% end %>
