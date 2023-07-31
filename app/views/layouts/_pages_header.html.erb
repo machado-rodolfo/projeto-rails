@@ -1,9 +1,13 @@
 <header>
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'pages' %>
+
   <!-- Elemento para exibir o Local, Data e Hora no header -->
   <div id="header-content">
     <span id="header-info"></span>
-
-    <%= stylesheet_link_tag 'pages' %>
 
     <!-- Botões no header -->
     <div class="header-buttons">
@@ -20,7 +24,7 @@
         <%= link_to "Ranking", "/ranking", class: "header-button" %>
         <%= link_to "Perguntas", "/site/welcome/index", class: "header-button" %>
         <%= link_to "Meu Perfil", users_backoffice_welcome_index_path, class: "header-button" %>
-        <%= link_to "Sair", destroy_user_session_path, method: :delete, class: "header-button" %>
+        <%= button_to "Sair", destroy_user_session_path, method: :delete, class: "header-button" %>
       <% end %>
     </div>
   </div>
@@ -49,3 +53,17 @@
   // Chama a função para exibir o Local, Data e Hora atual ao carregar a página
   window.onload = displayCurrentDateTime;
 </script>
+
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'site' %>
+
+    <% if notice %>
+       <%= javascript_tag do %>
+          $.bootstrapGrowl('<%= notice %>', {
+          type: 'success', // (null, 'info', 'danger', 'success')
+          align: 'center', // ('left', 'right', or 'center')
+          allow_dismiss: true, // If true then will display a cross to close the popup.
+          stackup_spacing: 10 // spacing between consecutively stacked growls.
+          });
+      <% end %>
+    <% end %>

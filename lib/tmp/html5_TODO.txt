@@ -1,0 +1,15 @@
+Introdução ao HTML5 e sua evolução
+Estrutura básica de uma página HTML5 (doctype, head, body)
+Tags de texto em HTML5 (h1, p, strong, em, etc.)
+Listas ordenadas e não ordenadas em HTML5 (ul, ol, li)
+Links e ancoras em HTML5 (a)
+Imagens em HTML5 (img)
+Tabelas em HTML5 (table, tr, td, th)
+Formulários em HTML5 (form, input, select, textarea, button)
+Elementos de formulário avançados em HTML5 (input types: email, number, date, etc.)
+Áudio e vídeo em HTML5 (audio, video)
+Semântica em HTML5 (header, nav, article, section, footer, etc.)
+Elementos interativos em HTML5 (canvas, svg)
+Estruturação de layout com HTML5 (div, span, main, aside)
+Metadados e otimização para buscadores (meta, title)
+Integração com CSS e JavaScript em HTML5.

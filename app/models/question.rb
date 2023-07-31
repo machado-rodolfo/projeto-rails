@@ -23,7 +23,7 @@ class Question < ApplicationRecord
   }
 
   scope :last_questions, ->(page) {
-    includes(:answers).order('created_at desc').page(page)
+    includes(:answers).order('RANDOM()').page(page)
   }
 
   private

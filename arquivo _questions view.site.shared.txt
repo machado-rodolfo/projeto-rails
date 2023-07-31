@@ -20,17 +20,20 @@
       </div>
       <div class="panel-body">
         <ul>
-          <% user_answer_id = AnswerAttempt.find_by(user_id: current_user.id, question_id: question.id)&.answer_id %>
+        <% user_answer_id = AnswerAttempt.find_by(user_id: current_user.id, question_id: question.id)&.answer_id %>
           <% question.answers.each do |answer| %>
             <li style="list-style:none;" >
               <div class="radio">
                 <label>
                   <%= radio_button_tag 'answer_id', answer.id %>
-                  <%= answer.description %>
+          <!--   <%= radio_button_tag 'answer_id', answer.id, checked: (answer.id == user_answer_id), disabled: !user_answer_id.nil? %> -->
+
+                    <%= answer.description %>
                 </label>
               </div>
             </li>
           <% end %>
+          <% unless question.answered %>
           <li style="list-style:none;" >
             <% if user_signed_in? %>
               <%= form.submit "Responder", class: "btn btn-default", id: "submit_#{question.id}" %>
@@ -38,6 +41,7 @@
               <%= link_to "Responder", new_user_session_path, class: "btn btn-default", id: "submit_#{question.id}" %>
             <% end %>
           </li>
+            <% end %>
         </ul>
       </div>
     </div>

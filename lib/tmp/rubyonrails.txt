@@ -1,6 +1,6 @@
 Introdução à Ruby e sua história
 Instalação do ambiente Ruby (Ruby Interpreter e RubyGems)
-Variáveis e tipos de dados em Ruby XXXXXXXXXXXXX
+Variáveis e tipos de dados em Ruby
 Operadores e expressões
 Estruturas condicionais (if, elsif, else)
 Estruturas de repetição (while, for, each)

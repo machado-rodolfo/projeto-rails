@@ -1,10 +1,23 @@
+/*
+*= require bootstrap/dist/css/bootstrap
+*= require surface-fix
+*= require navbar
+*= require font-awesome/css/font-awesome
+*/
 /* Estilo compartilhado para todas as páginas */
 body {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh; /* Mantém o body com pelo menos a altura da viewport */
+  margin: 0; /* Remove as margens padrão do body */
   background-color: #2e76a7;
   color: #fff;
+  padding: 0;
+}
+
+/* Adicione um wrapper para o conteúdo principal, exceto header e footer */
+.main-content {
+  flex: 1; /* Ocupa o espaço disponível restante, empurrando o footer para a parte inferior */
 }
 
 /* Estilo para o header */
@@ -13,6 +26,7 @@ header {
   color: #fff;
   padding: 10px;
   position: relative; /* Adicionamos position relative para posicionar os elementos filhos */
+  margin: 0;
 }
 
 /* Estilo para centralizar o texto do header */
@@ -48,7 +62,7 @@ header {
 /* Estilo para os links em cor branca e maior tamanho de fonte */
 .header-button {
   color: #fff;
-  font-size: 20px; /* Aumentar o valor para aumentar o tamanho da fonte */
+  font-size: 12px; /* Aumentar o valor para aumentar o tamanho da fonte */
   padding: 6px 12px; /* Adiciona um espaçamento interno para os botões */
   background-color: transparent; /* Remove o fundo padrão dos links */
   border: 2px solid white; /* Adiciona uma borda branca de 2px */
@@ -67,6 +81,7 @@ header {
 /* Estilo para o footer */
 footer {
   margin-top: auto;
+  font-size: 14px;
   background-color: #102069;
   color: #fff;
   padding: 10px;

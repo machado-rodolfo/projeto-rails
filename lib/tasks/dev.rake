@@ -12,7 +12,7 @@ DEFAULT_FILES_PATH = File.join(Rails.root, 'lib', 'tmp')
       show_spinner("Criando banco de dados...") { %x(rails db:create) }
       show_spinner("Migrando banco de dados...") { %x(rails db:migrate) }
       show_spinner("Cadastrando o administrador padrão...") { %x(rails dev:add_default_admin) }
-      show_spinner("Cadastrando administradores extras...") { %x(rails dev:add_extra_admins) }
+      #show_spinner("Cadastrando administradores extras...") { %x(rails dev:add_extra_admins) }
       show_spinner("Cadastrando o usuário padrão...") { %x(rails dev:add_default_user) }
       show_spinner("Cadastrando assuntos padrões...") { %x(rails dev:add_subjects) }
       show_spinner("Cadastrando perguntas e respostas...") { %x(rails dev:add_answers_and_questions) }

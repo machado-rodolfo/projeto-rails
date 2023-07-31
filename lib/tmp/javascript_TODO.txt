@@ -1,0 +1,10 @@
+Introdução ao JavaScript e sua evolução
+Ambiente de execução JavaScript (navegadores, Node.js)
+Variáveis e tipos de dados em JavaScript
+Operadores e expressões em JavaScript
+Estruturas condicionais (if, else if, else, switch) em JavaScript
+Estruturas de repetição (for, while, do-while) em JavaScript
+Arrays e manipulação de arrays em JavaScript
+Objetos em JavaScript (criação, propriedades, métodos)
+Funções em JavaScript (declaração, expressão, arrow functions)
+Manipulação do DOM (Document Object Model) com JavaScript
