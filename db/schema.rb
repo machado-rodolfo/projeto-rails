@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_07_28_213216) do
+ActiveRecord::Schema.define(version: 2023_07_31_143507) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -72,6 +72,10 @@ ActiveRecord::Schema.define(version: 2023_07_28_213216) do
     t.index ["question_id"], name: "index_answers_on_question_id"
   end
 
+  create_table "languages", force: :cascade do |t|
+    t.string "language_name"
+  end
+
   create_table "questions", force: :cascade do |t|
     t.text "description", null: false
     t.integer "subject_id"
@@ -86,6 +90,8 @@ ActiveRecord::Schema.define(version: 2023_07_28_213216) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "questions_count"
+    t.string "language_name"
+    t.integer "language_id"
   end
 
   create_table "user_profiles", force: :cascade do |t|
