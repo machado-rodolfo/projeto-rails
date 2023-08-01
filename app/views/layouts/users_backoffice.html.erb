@@ -22,8 +22,7 @@
         <div class="col-md-3 left_col menu_fixed">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <%= link_to begin_path, class: "site_title" do %>
-                <span>Home Page</span>
+              <%= link_to begin_path, class: "site_title", style: "padding-left: 45px;" do %> Home Page
               <% end %>
             </div>
 
@@ -59,8 +58,13 @@
                   </li>
                   <li>
                     <%= link_to site_welcome_index_path do %>
-                      <i class="fa fa-gamepad"></i>Perguntas
+                      <i class="fa fa-gamepad"></i>Perguntas Mistas
                     <% end %>
+
+                    <%= link_to users_backoffice_list_questions_path do %>
+                      <i class="fa fa-language"></i> Languages, Subjects e Questions
+                    <% end %>
+
                   </li>
                 </ul>
               </div>

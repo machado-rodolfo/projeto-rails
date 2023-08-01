@@ -1,0 +1,56 @@
+<h1 style="font-size: 32px; color: blue; margin-bottom: 40px">Listagem de Perguntas por tópico</h1>
+
+<% @languages.each do |language| %>
+  <div class="language">
+    <h2 style="font-size: 26px">
+      <%= link_to language.language_name, users_backoffice_language_path(language), class: 'language-link' %>
+    </h2>
+
+    <div class="subjects" style="display: none;">
+      <% language.subjects.each do |subject| %>
+        <h3 style="font-size: 18px; color: red;">
+          <%= link_to "#{subject.description} (#{subject.questions_count} questões)", '#', class: 'subject-link' %>
+        </h3>
+
+        <ul style="display: none;">
+          <% subject.questions.each do |question| %>
+            <li style="font-size: 16px; color: red;">
+              <%= link_to question.description, users_backoffice_question_path(question) %>
+            </li>
+          <% end %>
+        </ul>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const languageLinks = document.querySelectorAll('.language-link');
+    const subjectLinks = document.querySelectorAll('.subject-link');
+
+    languageLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const subjectsDiv = this.parentNode.nextElementSibling;
+        toggleDisplay(subjectsDiv);
+      });
+    });
+
+    subjectLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const questionsList = this.parentNode.nextElementSibling;
+        toggleDisplay(questionsList);
+      });
+    });
+
+    function toggleDisplay(element) {
+      if (element.style.display === 'none') {
+        element.style.display = 'block';
+      } else {
+        element.style.display = 'none';
+      }
+    }
+  });
+</script>

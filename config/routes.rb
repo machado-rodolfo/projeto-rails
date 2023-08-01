@@ -10,17 +10,23 @@ Rails.application.routes.draw do
     get  'subject/:subject_id/:subject', to: 'search#subject', as: 'search_subject'
     post 'answer', to: 'answer#question'
   end
+
   namespace :users_backoffice do
     get   'welcome/index'
     get   'profile', to: 'profile#edit'
     patch 'profile', to: 'profile#update'
+    get   'list_questions', to: 'questions#list_questions', as: 'list_questions'
+    resources :languages, only: [:show]
+    resources :questions, only: [:show]
   end
+
   namespace :admins_backoffice do
     get 'welcome/index'  # Dashboard
     resources :admins    # Administradores
     resources :users     # Usuários
     resources :subjects  # Assuntos/Áreas
     resources :questions # Perguntas
+    resources :languages # Linguagens
   end
 
   devise_for :users
