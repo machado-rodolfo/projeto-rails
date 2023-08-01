@@ -14,14 +14,14 @@
       <% unless user_signed_in? %>
         <%= link_to "Home", "/begin", class: "header-button" %>
         <%= link_to "News", "/news", class: "header-button" %>
-        <%= link_to "Ranking", "/ranking", class: "header-button" %>
+        <%= link_to "Material", "/material", class: "header-button" %>
         <%= link_to "Perguntas", "/site/welcome/index", class: "header-button" %>
         <%= link_to "Entrar", users_backoffice_welcome_index_path, class: "header-button" %>
         <%= link_to "Cadastrar-se", new_user_registration_path, class: "header-button" %>
       <% else %>
         <%= link_to "Home", "/begin", class: "header-button" %>
         <%= link_to "News", "/news", class: "header-button" %>
-        <%= link_to "Ranking", "/ranking", class: "header-button" %>
+        <%= link_to "Material", "/material", class: "header-button" %>
         <%= link_to "Perguntas", "/site/welcome/index", class: "header-button" %>
         <%= link_to "Meu Perfil", users_backoffice_welcome_index_path, class: "header-button" %>
         <%= button_to "Sair", destroy_user_session_path, method: :delete, class: "header-button" %>

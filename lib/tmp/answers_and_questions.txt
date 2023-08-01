@@ -2878,3 +2878,2346 @@ A: O valor de retorno é definido usando a palavra-chave "return" seguida pelo v
 A: O valor de retorno é definido no início do método, usando a palavra-chave "result". Por exemplo: result = 10;
 A: O valor de retorno é definido usando a palavra-chave "return" seguida pelo tipo de dado que será retornado. Por exemplo: public int myMethod() { return int; }
 CA: O valor de retorno é definido usando a palavra-chave "return" seguida pelo valor que será retornado. Por exemplo: public int myMethod() { return 10; }
+
+L: HTML5
+S: Introdução ao HTML5 e sua evolução
+Q: Qual é a função principal do HTML5?
+A: Facilitar a estilização de páginas da web.
+A: Permitir a criação de aplicações desktop.
+A: Controlar a lógica de programação em um site.
+CA: Estruturar e apresentar conteúdo na web.
+
+Q: L: HTML5
+S: Introdução ao HTML5 e sua evolução
+Q: O que torna o HTML5 diferente de suas versões anteriores, como o HTML 4?
+A: O HTML5 introduziu suporte para aplicativos de desktop.
+A: O HTML5 não precisa mais de estilos CSS para formatação.
+A: O HTML5 inclui elementos de semântica aprimorada.
+CA: O HTML5 possui recursos nativos para áudio e vídeo.
+
+Q: L: HTML5
+S: Introdução ao HTML5 e sua evolução
+Q: Qual foi o objetivo principal ao desenvolver o HTML5?
+A: Substituir o CSS para estilos mais avançados.
+A: Unificar todas as linguagens de programação web em uma só.
+A: Fornecer recursos para criação de jogos em 3D.
+CA: Tornar a web mais poderosa com novos recursos e melhor semântica.
+
+Q: L: HTML5
+S: Introdução ao HTML5 e sua evolução
+Q: Além da marcação, o que mais o HTML5 oferece?
+A: Suporte para animações Flash.
+A: Capacidade de executar código PHP.
+A: Bibliotecas para manipulação de banco de dados.
+CA: APIs para recursos avançados, como geolocalização e armazenamento local.
+
+L: HTML5
+S: Estrutura básica do HTML5
+Q: Qual é o elemento usado para definir o conteúdo principal de uma página HTML5?
+A: <header>
+A: <content>
+A: <main>
+CA: <body>
+
+L: HTML5
+S: Elementos de semântica em HTML5
+Q: Qual é o elemento HTML5 usado para agrupar conteúdo relacionado, como cabeçalhos, parágrafos e listas?
+A: <section>
+A: <div>
+A: <group>
+CA: <article>
+
+L: HTML5
+S: Formulários em HTML5
+Q: Qual é o atributo usado em um campo de formulário para especificar um texto de ajuda que é exibido quando o usuário passa o mouse sobre o campo?
+A: placeholder
+A: tooltip
+A: info
+CA: title
+
+L: HTML5
+S: Áudio e Vídeo em HTML5
+Q: Qual é o formato de arquivo de áudio amplamente suportado pelo elemento <audio> em HTML5?
+A: .mp3
+A: .wav
+A: .ogg
+CA: .mp4
+
+L: HTML5
+S: Imagens em HTML5
+Q: Qual é o atributo usado para especificar uma descrição de texto para uma imagem em HTML5?
+A: alt
+A: title
+A: caption
+CA: alt-text
+
+L: HTML5
+S: Estilos CSS em HTML5
+Q: Qual é o elemento HTML5 usado para incluir folhas de estilo CSS em uma página?
+A: <link>
+A: <style>
+A: <css>
+CA: <link>
+
+L: HTML5
+S: Elementos de Texto em HTML5
+Q: Qual é o elemento HTML5 usado para criar um hyperlink em uma página?
+A: <a>
+A: <link>
+A: <href>
+CA: <a>
+
+L: HTML5
+S: Elementos de Listas em HTML5
+Q: Qual é o elemento HTML5 usado para criar uma lista ordenada?
+A: <ol>
+A: <ul>
+A: <dl>
+CA: <ol>
+
+L: HTML5
+S: Elementos de Tabelas em HTML5
+Q: Qual é o elemento HTML5 usado para criar uma célula de cabeçalho em uma tabela?
+A: <th>
+A: <td>
+A: <head>
+CA: <th>
+
+L: HTML5
+S: Armazenamento Web em HTML5
+Q: Qual é a API em HTML5 usada para armazenar dados no navegador de forma persistente?
+A: localStorage
+A: sessionStorage
+A: cacheStorage
+CA: localStorage
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para definir o título de uma página HTML5?
+A: <header>
+A: <title>
+A: <h1>
+CA: <title>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para incluir metadados sobre a página, como codificação de caracteres e descrição?
+A: <meta>
+A: <head>
+A: <link>
+CA: <meta>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para vincular um arquivo de estilo CSS externo a uma página HTML5?
+A: <style>
+A: <link>
+A: <css>
+CA: <link>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para agrupar o conteúdo de navegação, como links e menus, em uma página HTML5?
+A: <nav>
+A: <header>
+A: <footer>
+CA: <nav>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para criar uma seção de cabeçalho em uma página HTML5?
+A: <head>
+A: <header>
+A: <top>
+CA: <header>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para criar um parágrafo em uma página HTML5?
+A: <p>
+A: <para>
+A: <text>
+CA: <p>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para criar uma lista não ordenada em uma página HTML5?
+A: <ul>
+A: <ol>
+A: <li>
+CA: <ul>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para criar um link para outra página ou recurso em uma página HTML5?
+A: <a>
+A: <link>
+A: <href>
+CA: <a>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para criar uma imagem em uma página HTML5?
+A: <img>
+A: <image>
+A: <picture>
+CA: <img>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para criar uma tabela em uma página HTML5?
+A: <table>
+A: <tab>
+A: <tabel>
+CA: <table>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para criar uma célula de cabeçalho em uma tabela em HTML5?
+A: <th>
+A: <td>
+A: <head>
+CA: <th>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para criar um formulário em uma página HTML5?
+A: <form>
+A: <input>
+A: <fieldset>
+CA: <form>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para criar um campo de entrada de texto em uma página HTML5?
+A: <text>
+A: <input>
+A: <textfield>
+CA: <input>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para criar um botão em uma página HTML5?
+A: <button>
+A: <submit>
+A: <input>
+CA: <button>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para criar um rodapé em uma página HTML5?
+A: <footer>
+A: <bottom>
+A: <foot>
+CA: <footer>
+
+L: HTML5
+S: Estrutura básica de uma página HTML5
+Q: Qual é o elemento usado para criar um elemento de destaque ou ênfase em uma página HTML5?
+A: <strong>
+A: <em>
+A: <highlight>
+CA: <strong>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar um cabeçalho de nível 1 em uma página HTML5?
+A: <heading>
+A: <h1>
+A: <header>
+CA: <h1>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar um parágrafo em uma página HTML5?
+A: <paragraph>
+A: <para>
+A: <p>
+CA: <p>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para enfatizar o texto, aplicando estilo de ênfase em uma página HTML5?
+A: <italic>
+A: <emphasize>
+A: <em>
+CA: <em>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar um texto forte, aplicando um estilo de maior destaque em uma página HTML5?
+A: <strong>
+A: <bold>
+A: <b>
+CA: <strong>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar uma lista não ordenada em uma página HTML5?
+A: <unordered>
+A: <list>
+A: <ul>
+CA: <ul>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar uma lista ordenada em uma página HTML5?
+A: <ordered>
+A: <ol>
+A: <list>
+CA: <ol>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar um item de lista em uma página HTML5?
+A: <li>
+A: <list-item>
+A: <item>
+CA: <li>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar uma linha horizontal (linha divisória) em uma página HTML5?
+A: <hr>
+A: <line>
+A: <divider>
+CA: <hr>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar um link para outra página ou recurso em uma página HTML5?
+A: <a>
+A: <link>
+A: <href>
+CA: <a>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar um link para um endereço de email em uma página HTML5?
+A: <mail>
+A: <email>
+A: <mailto>
+CA: <mailto>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar uma citação em uma página HTML5?
+A: <cite>
+A: <quote>
+A: <quotation>
+CA: <cite>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar um trecho de código em uma página HTML5?
+A: <code>
+A: <coding>
+A: <program>
+CA: <code>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar um texto pré-formatado em uma página HTML5?
+A: <pre>
+A: <formatted>
+A: <fixed>
+CA: <pre>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar um texto suprimido (tachado) em uma página HTML5?
+A: <strike>
+A: <strikethrough>
+A: <s>
+CA: <s>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar um texto subscrito em uma página HTML5?
+A: <sub>
+A: <lower>
+A: <small>
+CA: <sub>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar um texto sobrescrito em uma página HTML5?
+A: <sup>
+A: <upper>
+A: <big>
+CA: <sup>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar um texto entre aspas em uma página HTML5?
+A: <q>
+A: <quote>
+A: <quoted>
+CA: <q>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar uma abreviação ou acrônimo em uma página HTML5?
+A: <abbr>
+A: <abbrev>
+A: <acronym>
+CA: <abbr>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar uma legenda para uma tabela em uma página HTML5?
+A: <caption>
+A: <legend>
+A: <table-caption>
+CA: <caption>
+
+L: HTML5
+S: Tags de texto em HTML5
+Q: Qual é a tag usada para criar uma área de texto de várias linhas em uma página HTML5?
+A: <textarea>
+A: <text>
+A: <multiline>
+CA: <textarea>
+
+L: HTML5
+S: Listas ordenadas e não ordenadas em HTML5
+Q: Qual é a tag usada para criar uma lista não ordenada em uma página HTML5?
+A: <unordered>
+A: <ul>
+A: <list>
+CA: <ul>
+
+L: HTML5
+S: Listas ordenadas e não ordenadas em HTML5
+Q: Qual é a tag usada para criar uma lista ordenada em uma página HTML5?
+A: <ordered>
+A: <ol>
+A: <list>
+CA: <ol>
+
+L: HTML5
+S: Listas ordenadas e não ordenadas em HTML5
+Q: Qual é a tag usada para criar um item de lista em uma lista não ordenada ou ordenada em HTML5?
+A: <item>
+A: <li>
+A: <list-item>
+CA: <li>
+
+L: HTML5
+S: Listas ordenadas e não ordenadas em HTML5
+Q: Como você pode especificar o estilo de marcadores em uma lista não ordenada em HTML5?
+A: Usando o atributo marker na tag <ul>.
+A: Usando o atributo style na tag <li>.
+A: Usando o atributo bullet na tag <ul>.
+CA: Usando o atributo type na tag <ul>.
+
+L: HTML5
+S: Listas ordenadas e não ordenadas em HTML5
+Q: Como você pode criar uma lista dentro de outra lista em HTML5?
+A: Usando a tag <nested-list>.
+A: Usando a tag <ul> dentro da tag <ol>.
+A: Usando a tag <sub-list> dentro da tag <li>.
+CA: Usando a tag <ul> ou <ol> dentro da tag <li>.
+
+L: HTML5
+S: Listas ordenadas e não ordenadas em HTML5
+Q: Qual é a tag usada para criar uma lista de definição (lista de descrição) em HTML5?
+A: <dl>
+A: <def>
+A: <description-list>
+CA: <dl>
+
+L: HTML5
+S: Listas ordenadas e não ordenadas em HTML5
+Q: Qual é a tag usada para criar um termo ou item de descrição em uma lista de definição em HTML5?
+A: <item>
+A: <def>
+A: <term>
+CA: <dt>
+
+L: HTML5
+S: Listas ordenadas e não ordenadas em HTML5
+Q: Qual é a tag usada para criar uma descrição de um termo ou item em uma lista de definição em HTML5?
+A: <description>
+A: <desc>
+A: <dd>
+CA: <dd>
+
+L: HTML5
+S: Links e ancoras em HTML5
+Q: Qual é a tag usada para criar um link para outra página ou recurso em uma página HTML5?
+A: <link>
+A: <url>
+A: <a>
+CA: <a>
+
+L: HTML5
+S: Links e ancoras em HTML5
+Q: Qual é o atributo usado na tag <a> para especificar o URL de destino do link?
+A: href
+A: src
+A: link
+CA: href
+
+L: HTML5
+S: Links e ancoras em HTML5
+Q: Como você pode abrir o link em uma nova janela do navegador quando o usuário clicar nele?
+A: Usando o atributo new na tag <a>.
+A: Usando o atributo target="_blank" na tag <a>.
+A: Usando o atributo window na tag <a>.
+CA: Usando o atributo target="_blank" na tag <a>.
+
+L: HTML5
+S: Links e ancoras em HTML5
+Q: Como criar um link para enviar um e-mail em HTML5?
+A: Usando o atributo email na tag <a>.
+A: Usando o atributo mailto na tag <a>.
+A: Usando o atributo href="mailto:email@example.com" na tag <a>.
+CA: Usando o atributo href="mailto:email@example.com" na tag <a>.
+
+L: HTML5
+S: Links e ancoras em HTML5
+Q: Qual é o atributo usado na tag <a> para especificar um texto alternativo que será exibido quando o link não pode ser carregado ou lido pelo leitor de tela?
+A: alt
+A: alt-text
+A: text
+CA: alt
+
+L: HTML5
+S: Links e ancoras em HTML5
+Q: Como criar um link para uma seção específica dentro da mesma página em HTML5?
+A: Usando o atributo anchor na tag <a> com o nome da âncora como valor.
+A: Usando a tag <anchor> para envolver a seção de destino.
+A: Usando o atributo href="#nome-da-secao" na tag <a>.
+CA: Usando o atributo href="#nome-da-secao" na tag <a>.
+
+L: HTML5
+S: Imagens em HTML5
+Q: Qual é a tag usada para inserir uma imagem em uma página HTML5?
+A: <img>
+A: <image>
+A: <picture>
+CA: <img>
+
+L: HTML5
+S: Imagens em HTML5
+Q: Qual é o atributo usado para especificar o caminho ou URL da imagem a ser exibida?
+A: source
+A: url
+A: link
+CA: src
+
+L: HTML5
+S: Imagens em HTML5
+Q: Qual é o atributo usado para especificar um texto alternativo para a imagem, que é exibido caso a imagem não possa ser carregada ou lida pelo leitor de tela?
+A: alt
+A: text
+A: description
+CA: alt
+
+L: HTML5
+S: Imagens em HTML5
+Q: Qual é o atributo usado para especificar a largura da imagem em pixels?
+A: width
+A: height
+A: size
+CA: width
+
+L: HTML5
+S: Imagens em HTML5
+Q: Qual é o atributo usado para especificar a altura da imagem em pixels?
+A: width
+A: height
+A: size
+CA: height
+
+L: HTML5
+S: Imagens em HTML5
+Q: Como fazer uma imagem funcionar como um link em HTML5?
+A: Envolver a tag <img> com a tag <a> e definir o atributo href na tag <a> com o URL de destino.
+A: Adicionar o atributo link na tag <img> com o URL de destino.
+A: Adicionar o atributo target na tag <img> com o URL de destino.
+CA: Envolver a tag <img> com a tag <a> e definir o atributo href na tag <a> com o URL de destino.
+
+L: HTML5
+S: Imagens em HTML5
+Q: Como fazer uma imagem ser carregada a partir de um arquivo local no seu computador em HTML5?
+A: Definir o atributo local na tag <img> com o caminho do arquivo local.
+A: É impossível carregar imagens de um arquivo local devido a restrições de segurança.
+A: Definir o atributo src na tag <img> com o caminho do arquivo local.
+CA: Definir o atributo src na tag <img> com o caminho do arquivo local.
+
+L: HTML5
+S: Imagens em HTML5
+Q: Qual é o atributo usado para adicionar uma descrição que é exibida quando o usuário passa o mouse sobre a imagem em HTML5?
+A: description
+A: title
+A: tooltip
+CA: title
+
+L: HTML5
+S: Imagens em HTML5
+Q: Qual é o atributo usado para especificar a largura e altura de uma imagem de forma mais simples em HTML5?
+A: size
+A: dimensions
+A: scale
+CA: width e height
+
+L: HTML5
+S: Tabelas em HTML5
+Q: Qual é a tag usada para criar uma tabela em uma página HTML5?
+A: <table>
+A: <tab>
+A: <grid>
+CA: <table>
+
+L: HTML5
+S: Tabelas em HTML5
+Q: Qual é a tag usada para criar uma linha em uma tabela em HTML5?
+A: <line>
+A: <row>
+A: <tr>
+CA: <tr>
+
+L: HTML5
+S: Tabelas em HTML5
+Q: Qual é a tag usada para criar uma célula de cabeçalho em uma tabela em HTML5?
+A: <cell>
+A: <th>
+A: <td>
+CA: <th>
+
+L: HTML5
+S: Tabelas em HTML5
+Q: Qual é a tag usada para criar uma célula de dados em uma tabela em HTML5?
+A: <td>
+A: <cell>
+A: <data>
+CA: <td>
+
+L: HTML5
+S: Tabelas em HTML5
+Q: Como fazer uma célula de dados se estender por várias colunas em uma tabela em HTML5?
+A: Usando o atributo colspan na tag <td> com o número de colunas que a célula deve se estender.
+A: Usando o atributo rowspan na tag <td> com o número de colunas que a célula deve se estender.
+A: É impossível fazer uma célula de dados se estender por várias colunas em HTML5.
+CA: Usando o atributo colspan na tag <td> com o número de colunas que a célula deve se estender.
+
+L: HTML5
+S: Tabelas em HTML5
+Q: Como fazer uma célula de dados se estender por várias linhas em uma tabela em HTML5?
+A: Usando o atributo colspan na tag <td> com o número de linhas que a célula deve se estender.
+A: Usando o atributo rowspan na tag <td> com o número de linhas que a célula deve se estender.
+A: É impossível fazer uma célula de dados se estender por várias linhas em HTML5.
+CA: Usando o atributo rowspan na tag <td> com o número de linhas que a célula deve se estender.
+
+L: HTML5
+S: Tabelas em HTML5
+Q: Como criar uma célula de cabeçalho que se estende por várias colunas em uma tabela em HTML5?
+A: Usando o atributo colspan na tag <th> com o número de colunas que a célula deve se estender.
+A: Usando o atributo rowspan na tag <th> com o número de colunas que a célula deve se estender.
+A: É impossível fazer uma célula de cabeçalho se estender por várias colunas em HTML5.
+CA: Usando o atributo colspan na tag <th> com o número de colunas que a célula deve se estender.
+
+L: HTML5
+S: Tabelas em HTML5
+Q: Como criar uma célula de cabeçalho que se estende por várias linhas em uma tabela em HTML5?
+A: Usando o atributo colspan na tag <th> com o número de linhas que a célula deve se estender.
+A: Usando o atributo rowspan na tag <th> com o número de linhas que a célula deve se estender.
+A: É impossível fazer uma célula de cabeçalho se estender por várias linhas em HTML5.
+CA: Usando o atributo rowspan na tag <th> com o número de linhas que a célula deve se estender.
+
+L: HTML5
+S: Tabelas em HTML5
+Q: Como definir uma borda para uma tabela em HTML5?
+A: Usando o atributo border na tag <table> e definindo um valor para a largura da borda em pixels.
+A: Usando o atributo border na tag <table> e definindo o nome de uma classe CSS que contém as configurações de borda.
+A: Não é possível definir borda para tabelas em HTML5.
+CA: Usando o atributo border na tag <table> e definindo um valor para a largura da borda em pixels.
+
+L: HTML5
+S: Tabelas em HTML5
+Q: Qual é a tag usada para criar uma legenda para uma tabela em HTML5?
+A: <caption>
+A: <legend>
+A: <table-caption>
+CA: <caption>
+
+L: HTML5
+S: Tabelas em HTML5
+Q: Como fazer uma tabela ser responsiva, adaptando-se a diferentes tamanhos de tela, em HTML5?
+A: Usando o atributo responsive na tag <table>.
+A: Usando CSS para definir a largura das células em porcentagem em vez de pixels.
+A: É impossível fazer uma tabela ser responsiva em HTML5.
+CA: Usando CSS para definir a largura das células em porcentagem em vez de pixels.
+
+L: HTML5
+S: Formulários em HTML5
+Q: Qual é a tag usada para criar um formulário em uma página HTML5?
+A: <form>
+A: <input>
+A: <fieldset>
+CA: <form>
+
+L: HTML5
+S: Formulários em HTML5
+Q: Qual é a tag usada para criar um campo de entrada de texto em uma página HTML5?
+A: <text>
+A: <input>
+A: <textfield>
+CA: <input>
+
+L: HTML5
+S: Formulários em HTML5
+Q: Qual é o atributo usado para especificar o tipo de campo em um elemento <input> em HTML5?
+A: type
+A: field
+A: input-type
+CA: type
+
+L: HTML5
+S: Formulários em HTML5
+Q: Qual é o tipo de campo usado para criar uma caixa de seleção (checkbox) em HTML5?
+A: checkbox
+A: select
+A: check
+CA: checkbox
+
+L: HTML5
+S: Formulários em HTML5
+Q: Qual é o tipo de campo usado para criar um botão de envio de formulário em HTML5?
+A: submit
+A: button
+A: send
+CA: submit
+
+L: HTML5
+S: Formulários em HTML5
+Q: Qual é o tipo de campo usado para criar um campo de senha (password) em HTML5?
+A: password
+A: text
+A: secure
+CA: password
+
+L: HTML5
+S: Formulários em HTML5
+Q: Qual é o tipo de campo usado para criar um campo de entrada numérica (número) em HTML5?
+A: number
+A: numeric
+A: integer
+CA: number
+
+L: HTML5
+S: Formulários em HTML5
+Q: Qual é o atributo usado para especificar um texto de ajuda que é exibido quando o usuário passa o mouse sobre o campo de formulário?
+A: tooltip
+A: help
+A: info
+CA: title
+
+L: HTML5
+S: Formulários em HTML5
+Q: Qual é o atributo usado para especificar o URL do script que será executado quando o formulário for submetido?
+A: action
+A: url
+A: submit
+CA: action
+
+L: HTML5
+S: Elementos de formulário avançados em HTML5
+Q: Qual é o tipo de campo usado para criar um campo de entrada de data em HTML5, onde o usuário pode selecionar uma data em um calendário?
+A: date
+A: calendar
+A: datetime
+CA: date
+
+L: HTML5
+S: Elementos de formulário avançados em HTML5
+Q: Qual é o tipo de campo usado para criar um campo de entrada de hora em HTML5, onde o usuário pode selecionar um horário?
+A: time
+A: hour
+A: clock
+CA: time
+
+L: HTML5
+S: Elementos de formulário avançados em HTML5
+Q: Qual é o tipo de campo usado para criar um controle deslizante (slider) em HTML5, onde o usuário pode selecionar um valor em um intervalo específico?
+A: range
+A: slider
+A: slide
+CA: range
+
+L: HTML5
+S: Elementos de formulário avançados em HTML5
+Q: Qual é o tipo de campo usado para criar um campo de busca (search) em HTML5, onde o usuário pode inserir termos de pesquisa?
+A: search
+A: find
+A: lookup
+CA: search
+
+L: HTML5
+S: Áudio e vídeo em HTML5
+Q: Qual é a tag usada para incorporar um elemento de áudio em uma página HTML5?
+A: <audio>
+A: <sound>
+A: <music>
+CA: <audio>
+
+L: HTML5
+S: Áudio e vídeo em HTML5
+Q: Qual é o atributo usado na tag <audio> para especificar a URL do arquivo de áudio a ser reproduzido?
+A: source
+A: url
+A: audio-src
+CA: src
+
+L: HTML5
+S: Áudio e vídeo em HTML5
+Q: Qual é a tag usada para incorporar um elemento de vídeo em uma página HTML5?
+A: <video>
+A: <movie>
+A: <media>
+CA: <video>
+
+L: HTML5
+S: Áudio e vídeo em HTML5
+Q: Qual é o atributo usado na tag <video> para especificar a URL do arquivo de vídeo a ser reproduzido?
+A: source
+A: url
+A: video-src
+CA: src
+
+L: HTML5
+S: Áudio e vídeo em HTML5
+Q: Como fazer um vídeo ser reproduzido automaticamente quando a página é carregada em HTML5?
+A: Definindo o atributo autoplay na tag <video>.
+A: Adicionando um script JavaScript para reproduzir o vídeo automaticamente.
+A: Não é possível fazer um vídeo ser reproduzido automaticamente em HTML5 devido a restrições de segurança.
+CA: Definindo o atributo autoplay na tag <video>.
+
+L: HTML5
+S: Semântica em HTML5
+Q: Qual é a principal vantagem de usar elementos semânticos em HTML5?
+A: Tornar o código HTML mais curto.
+A: Melhorar o desempenho do site.
+A: Facilitar a indexação e a compreensão do conteúdo pelos mecanismos de busca.
+CA: Facilitar a indexação e a compreensão do conteúdo pelos mecanismos de busca.
+
+L: HTML5
+S: Semântica em HTML5
+Q: Qual é o elemento usado para representar um cabeçalho de nível 1 em HTML5?
+A: <header>
+A: <h1>
+A: <heading>
+CA: <h1>
+
+L: HTML5
+S: Semântica em HTML5
+Q: Qual é o elemento usado para representar um parágrafo em HTML5?
+A: <paragraph>
+A: <p>
+A: <para>
+CA: <p>
+
+L: HTML5
+S: Semântica em HTML5
+Q: Qual é o elemento usado para representar uma seção de destaque ou ênfase em HTML5?
+A: <strong>
+A: <highlight>
+A: <em>
+CA: <em>
+
+L: HTML5
+S: Semântica em HTML5
+Q: Qual é o elemento usado para representar um link de navegação em HTML5?
+A: <nav>
+A: <navigation>
+A: <link>
+CA: <nav>
+
+L: HTML5
+S: Semântica em HTML5
+Q: Qual é o elemento usado para representar uma citação em HTML5?
+A: <cite>
+A: <quote>
+A: <quotation>
+CA: <cite>
+
+L: HTML5
+S: Semântica em HTML5
+Q: Qual é o elemento usado para agrupar conteúdo relacionado, como uma lista de itens ou uma seção de perguntas frequentes, em HTML5?
+A: <section>
+A: <group>
+A: <div>
+CA: <section>
+
+L: HTML5
+S: Semântica em HTML5
+Q: Qual é o elemento usado para representar o conteúdo principal de uma página em HTML5?
+A: <main>
+A: <content>
+A: <body>
+CA: <main>
+
+L: HTML5
+S: Semântica em HTML5
+Q: Qual é o elemento usado para representar o rodapé de uma página ou de uma seção em HTML5?
+A: <footer>
+A: <foot>
+A: <bottom>
+CA: <footer>
+
+L: HTML5
+S: Semântica em HTML5
+Q: Qual é o elemento usado para criar uma lista de definição (lista de descrição) em HTML5?
+A: <dl>
+A: <ul>
+A: <list>
+CA: <dl>
+
+L: HTML5
+S: Semântica em HTML5
+Q: Qual é o elemento usado para criar uma legenda para uma tabela em HTML5?
+A: <caption>
+A: <legend>
+A: <table-caption>
+CA: <caption>
+
+L: HTML5
+S: Elementos interativos em HTML5
+Q: Qual é o elemento usado para criar um botão clicável em HTML5?
+A: <btn>
+A: <button>
+A: <clickable>
+CA: <button>
+
+L: HTML5
+S: Elementos interativos em HTML5
+Q: Qual é o elemento usado para criar um campo de entrada de texto que permite ao usuário selecionar uma data em um calendário em HTML5?
+A: <date>
+A: <calendar>
+A: <datepicker>
+CA: <input type="date">
+
+L: HTML5
+S: Elementos interativos em HTML5
+Q: Qual é o elemento usado para criar um menu suspenso (dropdown) em HTML5?
+A: <dropdown>
+A: <menu>
+A: <select>
+CA: <select>
+
+L: HTML5
+S: Elementos interativos em HTML5
+Q: Qual é o elemento usado para criar um campo de entrada numérica em HTML5, onde o usuário pode inserir apenas números?
+A: <number>
+A: <numeric>
+A: <input type="number">
+CA: <input type="number">
+
+L: HTML5
+S: Elementos interativos em HTML5
+Q: Qual é o elemento usado para criar uma caixa de seleção (checkbox) em HTML5?
+A: <check>
+A: <checkbox>
+A: <input type="checkbox">
+CA: <input type="checkbox">
+
+L: HTML5
+S: Elementos interativos em HTML5
+Q: Qual é o elemento usado para criar um campo de entrada de texto em HTML5 que permite ao usuário inserir múltiplas linhas de texto?
+A: <textarea>
+A: <textfield>
+A: <input type="textarea">
+CA: <textarea>
+
+L: HTML5
+S: Elementos interativos em HTML5
+Q: Qual é o elemento usado para criar uma área de imagem clicável em HTML5, onde o usuário pode clicar em diferentes partes da imagem para executar ações diferentes?
+A: <area>
+A: <clickable>
+A: <map>
+CA: <map>
+
+L: HTML5
+S: Estruturação de layout com HTML5
+Q: Qual é o elemento usado para criar um cabeçalho em HTML5, que geralmente contém o logotipo e o menu de navegação?
+A: <header>
+A: <nav>
+A: <h1>
+CA: <header>
+
+L: HTML5
+S: Estruturação de layout com HTML5
+Q: Qual é o elemento usado para criar uma barra lateral em HTML5, que geralmente contém informações adicionais ou widgets?
+A: <sidebar>
+A: <aside>
+A: <section>
+CA: <aside>
+
+L: HTML5
+S: Estruturação de layout com HTML5
+Q: Qual é o elemento usado para criar um rodapé em HTML5, que geralmente contém informações de contato ou links importantes?
+A: <footer>
+A: <bottom>
+A: <end>
+CA: <footer>
+
+L: HTML5
+S: Estruturação de layout com HTML5
+Q: Qual é o elemento usado para criar uma seção de conteúdo em HTML5, que representa um tema ou tópico distinto?
+A: <section>
+A: <content>
+A: <article>
+CA: <section>
+
+L: HTML5
+S: Estruturação de layout com HTML5
+Q: Qual é o elemento usado para criar uma área de navegação em HTML5, que contém links de navegação?
+A: <navigation>
+A: <nav>
+A: <menu>
+CA: <nav>
+
+L: HTML5
+S: Estruturação de layout com HTML5
+Q: Qual é o elemento usado para criar um contêiner de layout em HTML5, que agrupa conteúdos relacionados ou áreas do site?
+A: <container>
+A: <wrap>
+A: <div>
+CA: <div>
+
+L: HTML5
+S: Metadados e otimização para buscadores
+Q: Qual é o elemento usado para especificar o título da página em HTML5, que é exibido na barra de título do navegador?
+A: <header>
+A: <title>
+A: <h1>
+CA: <title>
+
+L: HTML5
+S: Metadados e otimização para buscadores
+Q: Qual é o elemento usado para adicionar um autor à página em HTML5, fornecendo informações sobre o criador do conteúdo?
+A: <author>
+A: <meta author="">
+A: <meta name="author" content="">
+CA: <meta name="author" content="">
+
+L: HTML5
+S: Metadados e otimização para buscadores
+Q: Qual é o elemento usado para adicionar uma descrição do conteúdo da página em HTML5, que é exibida nos resultados de busca?
+A: <description>
+A: <meta description="">
+A: <meta name="description" content="">
+CA: <meta name="description" content="">
+
+L: HTML5
+S: Metadados e otimização para buscadores
+Q: Qual é o elemento usado para definir as palavras-chave relacionadas ao conteúdo da página em HTML5, que ajudam nos mecanismos de busca?
+A: <meta keywords="">
+A: <meta name="keywords" content="">
+A: <keywords>
+CA: <meta name="keywords" content="">
+
+L: HTML5
+S: Metadados e otimização para buscadores
+Q: Qual é o elemento usado para especificar o idioma da página em HTML5?
+A: <meta name="language" content="">
+A: <meta language="">
+A: <lang>
+CA: <meta name="language" content="">
+
+L: HTML5
+S: Metadados e otimização para buscadores
+Q: Qual é o elemento usado para redirecionar o navegador para outra página em HTML5?
+A: <redirect>
+A: <location>
+A: <meta http-equiv="refresh" content="0; URL=">
+CA: <meta http-equiv="refresh" content="0; URL=">
+
+L: HTML5
+S: Metadados e otimização para buscadores
+Q: Qual é o elemento usado para especificar uma imagem que será exibida quando a página não pode ser carregada?
+A: <fallback>
+A: <notfound>
+A: <meta name="fallback" content="">
+CA: <meta name="fallback" content="">
+
+L: HTML5
+S: Metadados e otimização para buscadores
+Q: Qual é o elemento usado para especificar a URL de uma imagem que representa a página em HTML5, quando compartilhada em redes sociais?
+A: <image>
+A: <meta image="">
+A: <meta property="og:image" content="">
+CA: <meta property="og:image" content="">
+
+L: HTML5
+S: Metadados e otimização para buscadores
+Q: Qual é o elemento usado para especificar o título que será exibido quando a página é compartilhada em redes sociais em HTML5?
+A: <meta title="">
+A: <meta property="og:title" content="">
+A: <share>
+CA: <meta property="og:title" content="">
+
+L: HTML5
+S: Metadados e otimização para buscadores
+Q: Qual é o elemento usado para especificar o tipo de conteúdo da página em HTML5?
+A: <meta content-type="">
+A: <content-type>
+A: <meta http-equiv="content-type" content="">
+CA: <meta http-equiv="content-type" content="">
+
+L: HTML5
+S: Metadados e otimização para buscadores
+Q: Qual é o elemento usado para especificar o autor da página em HTML5, fornecendo informações sobre o proprietário do site?
+A: <meta name="owner" content="">
+A: <meta owner="">
+A: <author>
+CA: <meta name="owner" content="">
+
+L: HTML5
+S: Metadados e otimização para buscadores
+Q: Qual é o elemento usado para definir o comportamento de indexação do mecanismo de busca em HTML5, instruindo-os a não indexar a página?
+A: <meta name="index" content="no">
+A: <meta index="no">
+A: <noindex>
+CA: <meta name="index" content="no">
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é o elemento usado para incluir um arquivo CSS externo em uma página HTML5?
+A: <style>
+A: <link>
+A: <css>
+CA: <link>
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é o atributo usado no elemento <link> para especificar o arquivo CSS a ser incluído em HTML5?
+A: url
+A: href
+A: source
+CA: href
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é o elemento usado para incluir código CSS diretamente na página HTML5?
+A: <style>
+A: <link>
+A: <css>
+CA: <style>
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é o elemento usado para incluir um arquivo JavaScript externo em uma página HTML5?
+A: <js>
+A: <script>
+A: <javascript>
+CA: <script>
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é o atributo usado no elemento <script> para especificar o arquivo JavaScript a ser incluído em HTML5?
+A: file
+A: source
+A: src
+CA: src
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é a tag usada para incluir código JavaScript diretamente na página HTML5?
+A: <js>
+A: <javascript>
+A: <script>
+CA: <script>
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é a tag usada para definir uma área reservada para renderização de gráficos gerados por JavaScript em HTML5?
+A: <drawing>
+A: <canvas>
+A: <graphic>
+CA: <canvas>
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é o método usado para chamar uma função JavaScript quando um botão é clicado em HTML5?
+A: onclick
+A: onaction
+A: ontrigger
+CA: onclick
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é o método usado para chamar uma função JavaScript quando um formulário é enviado em HTML5?
+A: onsubmit
+A: onaction
+A: ontrigger
+CA: onsubmit
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é o método usado para chamar uma função JavaScript quando o conteúdo de um campo de formulário é alterado em HTML5?
+A: onchange
+A: oninput
+A: onupdate
+CA: onchange
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é o método usado para chamar uma função JavaScript quando o usuário passa o mouse sobre um elemento em HTML5?
+A: onhover
+A: onmouse
+A: onmouseover
+CA: onmouseover
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é o método usado para chamar uma função JavaScript repetidamente em intervalos regulares em HTML5?
+A: setInterval()
+A: setTimer()
+A: repeat()
+CA: setInterval()
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é o método usado para chamar uma função JavaScript após um determinado atraso em HTML5?
+A: setTimeout()
+A: setDelay()
+A: delay()
+CA: setTimeout()
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é o método usado para alterar o conteúdo HTML de um elemento usando JavaScript em HTML5?
+A: setHTML()
+A: changeHTML()
+A: innerHTML()
+CA: innerHTML()
+
+L: HTML5
+S: Integração com CSS e JavaScript em HTML5
+Q: Qual é o método usado para alterar o estilo CSS de um elemento usando JavaScript em HTML5?
+A: style()
+A: setStyle()
+A: changeStyle()
+CA: style()
+
+L: JavaScript
+S: Introdução ao JavaScript
+Q: Qual é a forma correta de declarar uma variável em JavaScript?
+A: variable nomeVariavel;
+A: var nomeVariavel;
+A: v nomeVariavel;
+CA: var nomeVariavel;
+
+L: JavaScript
+S: Introdução ao JavaScript
+Q: Como exibir uma mensagem "Olá, mundo!" no console usando JavaScript?
+A: print("Olá, mundo!");
+A: console.log("Olá, mundo!");
+A: alert("Olá, mundo!");
+CA: console.log("Olá, mundo!");
+
+L: JavaScript
+S: Introdução ao JavaScript
+Q: Como adicionar um comentário de linha em JavaScript?
+A: // Este é um comentário de linha.
+A: /* Este é um comentário de linha. */
+A: # Este é um comentário de linha.
+CA: // Este é um comentário de linha.
+
+L: JavaScript
+S: Introdução ao JavaScript
+Q: Qual é a forma correta de declarar uma função em JavaScript?
+A: function minhaFuncao() {}
+A: fun minhaFuncao() {}
+A: def minhaFuncao() {}
+CA: function minhaFuncao() {}
+
+L: JavaScript
+S: Introdução ao JavaScript
+Q: Como acessar o elemento de um array em JavaScript?
+A: array.elemento;
+A: array[elemento];
+A: array.elemento();
+CA: array[elemento];
+
+L: JavaScript
+S: Condicionais em JavaScript
+Q: Qual é a estrutura correta de uma instrução "if" em JavaScript?
+A: se (condicao) { // código aqui }
+A: if (condicao) { // código aqui }
+A: caso (condicao) { // código aqui }
+CA: if (condicao) { // código aqui }
+
+L: JavaScript
+S: Condicionais em JavaScript
+Q: Como escrever uma instrução "if" com uma condição e uma alternativa "else" em JavaScript?
+A: se (condicao) { // código se verdadeiro } casoContrario { // código se falso }
+A: if (condicao) { // código se verdadeiro } else { // código se falso }
+A: if (condicao) { // código se verdadeiro } ou { // código se falso }
+CA: if (condicao) { // código se verdadeiro } else { // código se falso }
+
+L: JavaScript
+S: Condicionais em JavaScript
+Q: Qual é a estrutura correta de uma instrução "switch" em JavaScript?
+A: selecionar (opcao) { caso valor: // código aqui break; }
+A: switch (opcao) { caso valor: // código aqui break; }
+A: escolher (opcao) { caso valor: // código aqui break; }
+CA: switch (opcao) { caso valor: // código aqui break; }
+
+L: JavaScript
+S: Condicionais em JavaScript
+Q: Como escrever uma estrutura "if-else" com várias condições em JavaScript?
+A: se (condicao1) { // código se verdadeiro } casoContrario se (condicao2) { // código se verdadeiro } casoContrario { // código se falso }
+A: if (condicao1) { // código se verdadeiro } elseif (condicao2) { // código se verdadeiro } else { // código se falso }
+A: if (condicao1) { // código se verdadeiro } else if (condicao2) { // código se verdadeiro } else { // código se falso }
+CA: if (condicao1) { // código se verdadeiro } else if (condicao2) { // código se verdadeiro } else { // código se falso }
+
+L: JavaScript
+S: Loops em JavaScript
+Q: Qual é a estrutura correta de um loop "for" em JavaScript?
+A: para (inicializacao; condicao; incremento) { // código aqui }
+A: loop (inicializacao; condicao; incremento) { // código aqui }
+A: enquanto (inicializacao; condicao; incremento) { // código aqui }
+CA: for (inicializacao; condicao; incremento) { // código aqui }
+
+L: JavaScript
+S: Loops em JavaScript
+Q: Como escrever um loop "while" em JavaScript?
+A: enquanto (condicao) { // código aqui }
+A: enquanto (condicao) // código aqui
+A: loop (condicao) { // código aqui }
+CA: enquanto (condicao) { // código aqui }
+
+L: JavaScript
+S: Loops em JavaScript
+Q: Como escrever um loop "do-while" em JavaScript?
+A: faca { // código aqui } enquanto (condicao);
+A: enquanto (condicao) { // código aqui } faca;
+A: enquanto (condicao) faca { // código aqui }
+CA: faca { // código aqui } enquanto (condicao);
+
+L: JavaScript
+S: Loops em JavaScript
+Q: Como usar a instrução "break" em um loop em JavaScript?
+A: parar;
+A: sair;
+A: quebrar;
+CA: break;
+
+L: JavaScript
+S: Loops em JavaScript
+Q: Como usar a instrução "continue" em um loop em JavaScript?
+A: continuar;
+A: proximo;
+A: continuarProximaIteracao;
+CA: continue;
+
+L: JavaScript
+S: Funções em JavaScript
+Q: Qual é a forma correta de declarar uma função anônima em JavaScript?
+A: funcao() { // código aqui }
+A: function anonima() { // código aqui }
+A: function() { // código aqui }
+CA: function() { // código aqui }
+
+L: JavaScript
+S: Funções em JavaScript
+Q: Como chamar uma função em JavaScript?
+A: chamar minhaFuncao();
+A: minhaFuncao();
+A: executar minhaFuncao();
+CA: minhaFuncao();
+
+L: JavaScript
+S: Funções em JavaScript
+Q: Como passar argumentos para uma função em JavaScript?
+A: minhaFuncao(argumento1, argumento2);
+A: minhaFuncao[argumento1, argumento2];
+A: minhaFuncao{argumento1, argumento2};
+CA: minhaFuncao(argumento1, argumento2);
+
+L: JavaScript
+S: Funções em JavaScript
+Q: Como retornar um valor de uma função em JavaScript?
+A: retornar valor;
+A: valor;
+A: retornar(valor);
+CA: return valor;
+
+L: JavaScript
+S: Ambiente de execução JavaScript (navegadores, Node.js)
+Q: Qual é o principal ambiente de execução para JavaScript no lado do cliente, comumente usado para interatividade em páginas da web?
+A: Node.js
+A: Navegadores web
+A: Servidores web
+CA: Navegadores web
+
+L: JavaScript
+S: Ambiente de execução JavaScript (navegadores, Node.js)
+Q: Qual ambiente de execução JavaScript é baseado no mecanismo V8 do Google e permite que o código JavaScript seja executado fora de um navegador?
+A: Navegadores web
+A: Node.js
+A: Servidores web
+CA: Node.js
+
+L: JavaScript
+S: Ambiente de execução JavaScript (navegadores, Node.js)
+Q: Qual ambiente de execução JavaScript permite o uso de módulos, que permite dividir o código em arquivos diferentes para melhor organização?
+A: Node.js
+A: Navegadores web
+A: Servidores web
+CA: Node.js
+
+L: JavaScript
+S: Ambiente de execução JavaScript (navegadores, Node.js)
+Q: No ambiente de execução do Node.js, como é possível ler e escrever arquivos no sistema de arquivos local?
+A: Usando a API window.filesystem do Node.js.
+A: Não é possível ler e escrever arquivos no ambiente do Node.js.
+A: Usando a API fs (File System) do Node.js.
+CA: Usando a API fs (File System) do Node.js.
+
+L: JavaScript
+S: Ambiente de execução JavaScript (navegadores, Node.js)
+Q: Quais são algumas das principais funcionalidades adicionadas pelo ambiente de execução do Node.js em comparação com o ambiente de execução em navegadores web?
+A: Manipulação de DOM (Document Object Model) e execução de JavaScript no cliente.
+A: Suporte a módulos, acesso ao sistema de arquivos local, e capacidade de criar servidores web.
+A: Suporte a animações e transições CSS3 no cliente.
+CA: Suporte a módulos, acesso ao sistema de arquivos local, e capacidade de criar servidores web.
+
+L: JavaScript
+S: Ambiente de execução JavaScript (navegadores, Node.js)
+Q: Qual ambiente de execução JavaScript é mais adequado para lidar com operações de entrada/saída (I/O) assíncronas, como chamadas de API e leitura/gravação de arquivos?
+A: Navegadores web
+A: Node.js
+A: Ambos (Navegadores web e Node.js)
+CA: Node.js
+
+L: JavaScript
+S: Ambiente de execução JavaScript (navegadores, Node.js)
+Q: Qual é a forma correta de exibir uma mensagem no console no ambiente de execução do Node.js?
+A: print("Mensagem");
+A: console.log("Mensagem");
+A: alert("Mensagem");
+CA: console.log("Mensagem");
+
+L: JavaScript
+S: Ambiente de execução JavaScript (navegadores, Node.js)
+Q: Como é possível acessar e manipular o DOM (Document Object Model) em navegadores web?
+A: Usando a API window.document.
+A: Não é possível acessar o DOM em navegadores web.
+A: Usando a API dom.access do navegador.
+CA: Usando a API window.document.
+
+L: JavaScript
+S: Ambiente de execução JavaScript (navegadores, Node.js)
+Q: Qual ambiente de execução permite o uso de módulos externos que podem ser instalados via gerenciador de pacotes, como o npm (Node Package Manager)?
+A: Navegadores web
+A: Node.js
+A: Ambos (Navegadores web e Node.js)
+CA: Node.js
+
+L: JavaScript
+S: Ambiente de execução JavaScript (navegadores, Node.js)
+Q: Qual ambiente de execução é mais adequado para executar scripts do lado do servidor, como a construção de APIs RESTful e manipulação de banco de dados?
+A: Node.js
+A: Navegadores web
+A: Ambos (Navegadores web e Node.js)
+CA: Node.js
+
+L: JavaScript
+S: Ambiente de execução JavaScript (navegadores, Node.js)
+Q: O que significa a sigla "V8" em referência ao ambiente de execução do Node.js?
+A: É uma versão do JavaScript usada apenas em Node.js.
+A: É o nome do criador original do Node.js.
+A: É o mecanismo de JavaScript de código aberto desenvolvido pelo Google que é usado no Node.js.
+CA: É o mecanismo de JavaScript de código aberto desenvolvido pelo Google que é usado no Node.js.
+
+L: JavaScript
+S: Ambiente de execução JavaScript (navegadores, Node.js)
+Q: Qual ambiente de execução é mais adequado para desenvolver aplicações de página única (SPA - Single Page Application)?
+A: Navegadores web
+A: Node.js
+A: Ambos (Navegadores web e Node.js)
+CA: Navegadores web
+
+L: JavaScript
+S: Ambiente de execução JavaScript (navegadores, Node.js)
+Q: Como é possível gerenciar dependências externas em um projeto Node.js?
+A: Usando a API import do Node.js.
+A: Não é possível gerenciar dependências externas em Node.js.
+A: Usando um gerenciador de pacotes, como o npm (Node Package Manager).
+CA: Usando um gerenciador de pacotes, como o npm (Node Package Manager).
+
+L: JavaScript
+S: Variáveis e tipos de dados em JavaScript
+Q: Qual é a forma correta de declarar uma variável em JavaScript usando a palavra-chave "let"?
+A: variavel nomeVariavel;
+A: let nomeVariavel;
+A: const nomeVariavel;
+CA: let nomeVariavel;
+
+L: JavaScript
+S: Variáveis e tipos de dados em JavaScript
+Q: Como declarar uma variável em JavaScript e atribuir o valor "10" a ela?
+A: variable valor = 10;
+A: let valor = 10;
+A: const valor = 10;
+CA: let valor = 10;
+
+L: JavaScript
+S: Variáveis e tipos de dados em JavaScript
+Q: Qual é o tipo de dado retornado pelo operador "typeof" em JavaScript quando aplicado a uma variável que contém um número?
+A: number
+A: int
+A: numeric
+CA: number
+
+L: JavaScript
+S: Variáveis e tipos de dados em JavaScript
+Q: Como verificar se o valor de uma variável é do tipo "string" em JavaScript?
+A: verificar tipo(nomeVariavel, "string");
+A: if (tipo(nomeVariavel) === "string") { // código aqui }
+A: if (tipo(nomeVariavel) == "string") { // código aqui }
+CA: if (typeof nomeVariavel === "string") { // código aqui }
+
+L: JavaScript
+S: Variáveis e tipos de dados em JavaScript
+Q: Qual é o tipo de dado retornado pelo operador "typeof" em JavaScript quando aplicado a uma variável que contém um valor booleano (verdadeiro ou falso)?
+A: boolean
+A: bool
+A: logical
+CA: boolean
+
+L: JavaScript
+S: Variáveis e tipos de dados em JavaScript
+Q: Como declarar uma constante em JavaScript usando a palavra-chave "const"?
+A: let nomeConstante = valor;
+A: constant nomeConstante = valor;
+A: const nomeConstante = valor;
+CA: const nomeConstante = valor;
+
+L: JavaScript
+S: Operadores e expressões em JavaScript
+Q: Qual é o resultado da expressão: 10 + 5 * 2 ?
+A: 30
+A: 20
+A: 25
+CA: 20
+
+L: JavaScript
+S: Operadores e expressões em JavaScript
+Q: Como verificar se duas variáveis são iguais em valor e tipo em JavaScript?
+A: x == y
+A: x === y
+A: x = y
+CA: x === y
+
+L: JavaScript
+S: Operadores e expressões em JavaScript
+Q: Qual é o operador usado para verificar se duas variáveis são diferentes em valor ou tipo em JavaScript?
+A: !=
+A: ==
+A: !==
+CA: !==
+
+L: JavaScript
+S: Operadores e expressões em JavaScript
+Q: Como incrementar o valor de uma variável "contador" em 1 em JavaScript?
+A: contador += 1;
+A: contador = contador + 1;
+A: contador++;
+CA: contador++;
+
+L: JavaScript
+S: Operadores e expressões em JavaScript
+Q: Qual é o resultado da expressão: 15 / 2 ?
+A: 7
+A: 7.5
+A: 8
+CA: 7.5
+
+L: JavaScript
+S: Operadores e expressões em JavaScript
+Q: Como calcular o resto da divisão de 15 por 2 em JavaScript?
+A: 15 % 2
+A: 15 / 2
+A: resto(15, 2)
+CA: 15 % 2
+
+L: JavaScript
+S: Operadores e expressões em JavaScript
+Q: Qual é o resultado da expressão: "5" + 2 ?
+A: "5"
+A: "52"
+A: 7
+CA: "52"
+
+L: JavaScript
+S: Operadores e expressões em JavaScript
+Q: Como atribuir o valor de uma variável "x" para outra variável "y" em JavaScript?
+A: y = x;
+A: y := x;
+A: y == x;
+CA: y = x;
+
+L: JavaScript
+S: Operadores e expressões em JavaScript
+Q: Qual é o operador usado para retornar o valor verdadeiro se pelo menos uma das duas condições for verdadeira em JavaScript?
+A: ||
+A: &&
+A: !
+CA: ||
+
+L: JavaScript
+S: Estruturas condicionais (if, else if, else, switch) em JavaScript
+Q: Qual é a forma correta de escrever uma estrutura "if" em JavaScript?
+A: se { // código aqui }
+A: caso { // código aqui }
+A: if { // código aqui }
+CA: if (condicao) { // código aqui }
+
+L: JavaScript
+S: Estruturas condicionais (if, else if, else, switch) em JavaScript
+Q: Como escrever uma estrutura "if-else" com várias condições em JavaScript?
+A: se (condicao1) { // código se verdadeiro } senao (condicao2) { // código se verdadeiro } senao { // código se falso }
+A: se (condicao1) { // código se verdadeiro } casoContrario se (condicao2) { // código se verdadeiro } senao { // código se falso }
+A: se (condicao1) { // código se verdadeiro } casoContrario se (condicao2) { // código se verdadeiro } casoContrario { // código se falso }
+CA: if (condicao1) { // código se verdadeiro } else if (condicao2) { // código se verdadeiro } else { // código se falso }
+
+L: JavaScript
+S: Estruturas condicionais (if, else if, else, switch) em JavaScript
+Q: Qual é a forma correta de escrever uma estrutura "else if" em JavaScript?
+A: senaoSe { // código aqui }
+A: else if { // código aqui }
+A: casoContrarioSe { // código aqui }
+CA: else if (condicao) { // código aqui }
+
+L: JavaScript
+S: Estruturas condicionais (if, else if, else, switch) em JavaScript
+Q: Como escrever uma estrutura "switch" em JavaScript?
+A: escolher { caso valor: // código aqui break; }
+A: selecionar { caso valor: // código aqui break; }
+A: caso { valor: // código aqui }
+CA: switch (variavel) { case valor: // código aqui break; }
+
+L: JavaScript
+S: Estruturas condicionais (if, else if, else, switch) em JavaScript
+Q: Como usar a instrução "break" em um bloco "switch" em JavaScript?
+A: encerrar;
+A: parar;
+A: break;
+CA: break;
+
+L: JavaScript
+S: Estruturas condicionais (if, else if, else, switch) em JavaScript
+Q: Qual é a forma correta de escrever uma estrutura "else" em JavaScript?
+A: casoContrario { // código aqui }
+A: senao { // código aqui }
+A: seNao { // código aqui }
+CA: else { // código aqui }
+
+L: JavaScript
+S: Estruturas condicionais (if, else if, else, switch) em JavaScript
+Q: Como escrever uma estrutura "if-else" com várias condições em JavaScript?
+A: se (condicao1) { // código se verdadeiro } senao (condicao2) { // código se verdadeiro } senao { // código se falso }
+A: se (condicao1) { // código se verdadeiro } casoContrario se (condicao2) { // código se verdadeiro } senao { // código se falso }
+A: se (condicao1) { // código se verdadeiro } casoContrario se (condicao2) { // código se verdadeiro } casoContrario { // código se falso }
+CA: if (condicao1) { // código se verdadeiro } else if (condicao2) { // código se verdadeiro } else { // código se falso }
+
+L: JavaScript
+S: Estruturas condicionais (if, else if, else, switch) em JavaScript
+Q: Qual é a estrutura condicional que permite selecionar um dos muitos blocos de código para ser executado em JavaScript?
+A: if-else
+A: switch
+A: if-else if
+CA: switch
+
+L: JavaScript
+S: Estruturas de repetição (for, while, do-while) em JavaScript
+Q: Qual é a forma correta de escrever um loop "for" em JavaScript?
+A: para (inicializacao; condicao; incremento) { // código aqui }
+A: loop (inicializacao; condicao; incremento) { // código aqui }
+A: enquanto (inicializacao; condicao; incremento) { // código aqui }
+CA: for (inicializacao; condicao; incremento) { // código aqui }
+
+L: JavaScript
+S: Estruturas de repetição (for, while, do-while) em JavaScript
+Q: Como escrever um loop "while" em JavaScript?
+A: enquanto (condicao) { // código aqui }
+A: enquanto (condicao) // código aqui
+A: loop (condicao) { // código aqui }
+CA: while (condicao) { // código aqui }
+
+L: JavaScript
+S: Estruturas de repetição (for, while, do-while) em JavaScript
+Q: Qual é a forma correta de escrever um loop "do-while" em JavaScript?
+A: faca { // código aqui } enquanto (condicao);
+A: enquanto (condicao) { // código aqui } faca;
+A: loop { // código aqui } enquanto (condicao);
+CA: do { // código aqui } while (condicao);
+
+L: JavaScript
+S: Estruturas de repetição (for, while, do-while) em JavaScript
+Q: Qual é a estrutura de repetição mais adequada quando queremos executar o código pelo menos uma vez antes de verificar a condição de parada?
+A: for
+A: while
+A: do-while
+CA: do-while
+
+L: JavaScript
+S: Estruturas de repetição (for, while, do-while) em JavaScript
+Q: Como usar a instrução "break" para interromper a execução de um loop em JavaScript?
+A: encerrar;
+A: parar;
+A: break;
+CA: break;
+
+L: JavaScript
+S: Estruturas de repetição (for, while, do-while) em JavaScript
+Q: Como usar a instrução "continue" para pular uma iteração em um loop em JavaScript?
+A: continuar;
+A: proximo;
+A: continue;
+CA: continue;
+
+L: JavaScript
+S: Estruturas de repetição (for, while, do-while) em JavaScript
+Q: Qual é a estrutura de repetição mais adequada quando o número de iterações é conhecido ou definido?
+A: for
+A: while
+A: do-while
+CA: for
+
+L: JavaScript
+S: Estruturas de repetição (for, while, do-while) em JavaScript
+Q: Qual é a estrutura de repetição mais adequada quando o número de iterações depende de uma condição que pode ser verdadeira ou falsa?
+A: while
+A: for
+A: do-while
+CA: while
+
+L: JavaScript
+S: Arrays e manipulação de arrays em JavaScript
+Q: Qual é a forma correta de declarar um array vazio em JavaScript?
+A: const meuArray = [];
+A: const meuArray = {};
+A: const meuArray = ();
+CA: const meuArray = [];
+
+L: JavaScript
+S: Arrays e manipulação de arrays em JavaScript
+Q: Como adicionar um elemento no final de um array existente em JavaScript?
+A: array.push(elemento);
+A: array.unshift(elemento);
+A: array.add(elemento);
+CA: array.push(elemento);
+
+L: JavaScript
+S: Arrays e manipulação de arrays em JavaScript
+Q: Como acessar o primeiro elemento de um array em JavaScript?
+A: array[0];
+A: array.first;
+A: array.getFirst();
+CA: array[0];
+
+L: JavaScript
+S: Arrays e manipulação de arrays em JavaScript
+Q: Qual método é usado para remover o último elemento de um array em JavaScript?
+A: array.removeLast();
+A: array.pop();
+A: array.deleteLast();
+CA: array.pop();
+
+L: JavaScript
+S: Arrays e manipulação de arrays em JavaScript
+Q: Como encontrar o número de elementos em um array em JavaScript?
+A: array.count;
+A: array.length;
+A: array.size();
+CA: array.length;
+
+L: JavaScript
+S: Arrays e manipulação de arrays em JavaScript
+Q: Qual é o método usado para concatenar dois arrays em JavaScript?
+A: array.concat(outroArray);
+A: array.combine(outroArray);
+A: array.join(outroArray);
+CA: array.concat(outroArray);
+
+L: JavaScript
+S: Objetos em JavaScript (criação, propriedades, métodos)
+Q: Como criar um objeto vazio em JavaScript?
+A: const meuObjeto = {};
+A: const meuObjeto = ();
+A: const meuObjeto = new Object();
+CA: const meuObjeto = {};
+
+L: JavaScript
+S: Objetos em JavaScript (criação, propriedades, métodos)
+Q: Qual é a forma correta de adicionar uma propriedade "nome" com valor "João" a um objeto em JavaScript?
+A: objeto.nome: "João";
+A: objeto["nome"] = "João";
+A: objeto.add("nome", "João");
+CA: objeto["nome"] = "João";
+
+L: JavaScript
+S: Objetos em JavaScript (criação, propriedades, métodos)
+Q: Como acessar o valor da propriedade "idade" de um objeto chamado "pessoa" em JavaScript?
+A: pessoa(idade);
+A: pessoa.idade;
+A: pessoa[idade];
+CA: pessoa.idade;
+
+L: JavaScript
+S: Objetos em JavaScript (criação, propriedades, métodos)
+Q: Qual é a forma correta de adicionar um método chamado "dizerOla" a um objeto em JavaScript?
+A: objeto.dizerOla = function() { // código aqui };
+A: objeto("dizerOla", function() { // código aqui });
+A: objeto.add("dizerOla", function() { // código aqui });
+CA: objeto.dizerOla = function() { // código aqui };
+
+L: JavaScript
+S: Objetos em JavaScript (criação, propriedades, métodos)
+Q: Como remover a propriedade "email" de um objeto chamado "contato" em JavaScript?
+A: contato.remove("email");
+A: contato.delete(email);
+A: delete contato.email;
+CA: delete contato.email;
+
+L: JavaScript
+S: Funções em JavaScript (declaração, expressão, arrow functions)
+Q: Qual é a forma correta de declarar uma função chamada "saudacao" em JavaScript?
+A: funcao saudacao() { // código aqui }
+A: funcao: saudacao() { // código aqui }
+A: function saudacao() { // código aqui }
+CA: function saudacao() { // código aqui }
+
+L: JavaScript
+S: Funções em JavaScript (declaração, expressão, arrow functions)
+Q: Como chamar a função "dobro" com um argumento "x" em JavaScript?
+A: chamar dobro(x);
+A: executar dobro(x);
+A: dobro(x);
+CA: dobro(x);
+
+L: JavaScript
+S: Funções em JavaScript (declaração, expressão, arrow functions)
+Q: Qual é a diferença entre uma função declarada e uma função expressada em JavaScript?
+A: Não há diferença entre elas.
+A: Uma função declarada é criada usando a palavra-chave "function" seguida do nome da função, enquanto uma função expressada é atribuída a uma variável.
+A: Uma função declarada é atribuída a uma variável, enquanto uma função expressada é criada usando a palavra-chave "function" seguida do nome da função.
+CA: Uma função declarada é criada usando a palavra-chave "function" seguida do nome da função, enquanto uma função expressada é atribuída a uma variável.
+
+L: JavaScript
+S: Funções em JavaScript (declaração, expressão, arrow functions)
+Q: Qual é a forma correta de criar uma função expressão anônima em JavaScript?
+A: function() { // código aqui }
+A: funcao() { // código aqui }
+A: funcao anonima() { // código aqui }
+CA: function() { // código aqui }
+
+L: JavaScript
+S: Funções em JavaScript (declaração, expressão, arrow functions)
+Q: Qual é a forma correta de escrever uma arrow function que retorna o dobro de um número "x" em JavaScript?
+A: const dobro = (x) => { return x * 2; };
+A: const dobro = function(x) { return x * 2; };
+A: function dobro(x) => { return x * 2; };
+CA: const dobro = (x) => { return x * 2; };
+
+L: JavaScript
+S: Funções em JavaScript (declaração, expressão, arrow functions)
+Q: Como definir um valor padrão de 0 para o parâmetro "y" em uma função em JavaScript?
+A: funcao minhaFuncao(x, y = 0) { // código aqui }
+A: funcao minhaFuncao(x, y) { y = y || 0; // código aqui }
+A: funcao minhaFuncao(x, y = 0) => { // código aqui }
+CA: function minhaFuncao(x, y = 0) { // código aqui }
+
+L: JavaScript
+S: Funções em JavaScript (declaração, expressão, arrow functions)
+Q: Qual é a diferença entre uma arrow function e uma função tradicional em JavaScript?
+A: As arrow functions não podem ter parâmetros.
+A: As arrow functions são sempre funções expressadas, enquanto as funções tradicionais podem ser declaradas ou expressadas.
+CA: As arrow functions não possuem escopo próprio ("this" é herdado do contexto externo), enquanto as funções tradicionais possuem seu próprio escopo ("this" pode variar dependendo de como a função é chamada).
+
+L: JavaScript
+S: Manipulação do DOM (Document Object Model) com JavaScript
+Q: Como selecionar um elemento HTML pelo seu ID em JavaScript?
+A: selecionarElemento("#meuId");
+A: document.getElement("#meuId");
+A: document.getElementById("meuId");
+CA: document.getElementById("meuId");
+
+L: JavaScript
+S: Manipulação do DOM (Document Object Model) com JavaScript
+Q: Como selecionar todos os elementos de parágrafo (p) em JavaScript?
+A: document.getElements("p");
+A: document.getElementsById("p");
+A: document.getElementsByTagName("p");
+CA: document.getElementsByTagName("p");
+
+L: JavaScript
+S: Manipulação do DOM (Document Object Model) com JavaScript
+Q: Como alterar o conteúdo de um elemento HTML selecionado em JavaScript?
+A: elemento.innerHTML = "Novo conteúdo";
+A: elemento.textContent = "Novo conteúdo";
+A: elemento.value = "Novo conteúdo";
+CA: elemento.innerHTML = "Novo conteúdo";
+
+L: JavaScript
+S: Manipulação do DOM (Document Object Model) com JavaScript
+Q: Como adicionar uma classe CSS "ativo" a um elemento HTML selecionado em JavaScript?
+A: elemento.classList.add("ativo");
+A: elemento.className = "ativo";
+A: elemento.addClass("ativo");
+CA: elemento.classList.add("ativo");
+
+L: JavaScript
+S: Manipulação do DOM (Document Object Model) com JavaScript
+Q: Como criar um novo elemento de parágrafo (p) em JavaScript?
+A: document.createElement("p");
+A: document.create("p");
+A: createElement("p");
+CA: document.createElement("p");
+
+L: JavaScript
+S: Manipulação do DOM (Document Object Model) com JavaScript
+Q: Como inserir um novo elemento de parágrafo (p) dentro de um elemento com ID "container" em JavaScript?
+A: document.insert("p", "container");
+A: document.appendChild("p", "container");
+A: document.getElementById("container").appendChild(document.createElement("p"));
+CA: document.getElementById("container").appendChild(document.createElement("p"));
+
+L: JavaScript
+S: Manipulação do DOM (Document Object Model) com JavaScript
+Q: Como remover um elemento HTML selecionado em JavaScript?
+A: elemento.remove();
+A: elemento.delete();
+A: document.remove(elemento);
+CA: elemento.remove();
+
+L: JavaScript
+S: Manipulação do DOM (Document Object Model) com JavaScript
+Q: Como verificar se um elemento HTML possui uma determinada classe CSS chamada "destaque" em JavaScript?
+A: elemento.hasClass("destaque");
+A: elemento.classList.contains("destaque");
+A: elemento.hasClass("destaque");
+CA: elemento.classList.contains("destaque");
+
+L: JavaScript
+S: Manipulação do DOM (Document Object Model) com JavaScript
+Q: Como adicionar um novo atributo "src" a uma imagem (elemento img) em JavaScript?
+A: imagem.src = "caminho-da-imagem.jpg";
+A: imagem.setAtributo("src", "caminho-da-imagem.jpg");
+A: imagem.setAttribute("src", "caminho-da-imagem.jpg");
+CA: imagem.setAttribute("src", "caminho-da-imagem.jpg");
+
+L: CSS
+S: Introdução ao CSS e sua função no desenvolvimento web
+Q: O que significa CSS?
+A: Creative Style Sheets
+A: Cascading Style Sheets
+A: Computer Style Sheets
+CA: Cascading Style Sheets
+
+L: CSS
+S: Introdução ao CSS e sua função no desenvolvimento web
+Q: Qual é a função do CSS no desenvolvimento web?
+A: Gerar interatividade em páginas web.
+A: Definir a estrutura e organização do conteúdo em páginas web.
+A: Controlar o comportamento e a lógica das aplicações web.
+CA: Estilizar e formatar o layout das páginas web, tornando-as visualmente atraentes e consistentes.
+
+L: CSS
+S: Introdução ao CSS e sua função no desenvolvimento web
+Q: O que significa "cascading" (cascata) em Cascading Style Sheets (CSS)?
+A: Significa que o CSS é usado apenas para estilizar elementos de cabeçalhos em páginas web.
+A: Significa que o CSS é usado para definir a estrutura hierárquica dos elementos em páginas web.
+A: Significa que o CSS segue uma ordem de prioridade em relação a estilos definidos, onde estilos mais específicos têm maior peso.
+CA: Significa que o CSS segue uma ordem de prioridade em relação a estilos definidos, onde estilos mais específicos têm maior peso.
+
+L: CSS
+S: Introdução ao CSS e sua função no desenvolvimento web
+Q: Qual é a sintaxe básica para selecionar um elemento HTML usando CSS?
+A: selecionarElemento { // estilos aqui }
+A: selecionarElemento = { // estilos aqui }
+A: selecionarElemento: { // estilos aqui }
+CA: selecionarElemento { /* estilos aqui */ }
+
+L: CSS
+S: Introdução ao CSS e sua função no desenvolvimento web
+Q: Onde é recomendado inserir as regras de estilo CSS em um documento HTML?
+A: Dentro de um elemento <style> na seção <head> do documento HTML.
+A: Dentro de um elemento <style> na seção <body> do documento HTML.
+A: Dentro de um elemento <script> na seção <head> do documento HTML.
+CA: Dentro de um elemento <style> na seção <head> do documento HTML.
+
+L: CSS
+S: Introdução ao CSS e sua função no desenvolvimento web
+Q: Como aplicar o estilo CSS a um elemento com a classe "destaque" em um arquivo externo de CSS?
+A: .destaque { /* estilos aqui */ }
+A: destaque { /* estilos aqui */ }
+A: #destaque { /* estilos aqui */ }
+CA: .destaque { /* estilos aqui */ }
+
+L: CSS
+S: Introdução ao CSS e sua função no desenvolvimento web
+Q: Qual é a principal vantagem de usar CSS em relação à estilização diretamente no HTML?
+A: Não há vantagem em usar CSS, é apenas uma questão de preferência pessoal.
+A: CSS permite estilos mais avançados e complexos do que o HTML.
+A: CSS separa a apresentação do conteúdo, o que torna o código mais organizado, facilitando a manutenção e a reutilização dos estilos.
+CA: CSS separa a apresentação do conteúdo, o que torna o código mais organizado, facilitando a manutenção e a reutilização dos estilos.
+
+L: CSS
+S: Seletores CSS (elementos, classes, IDs, combinações)
+Q: Qual é o seletor CSS correto para selecionar todos os elementos <p> em um documento HTML?
+A: p { /* estilos aqui */ }
+A: .p { /* estilos aqui */ }
+A: #p { /* estilos aqui */ }
+CA: p { /* estilos aqui */ }
+
+L: CSS
+S: Seletores CSS (elementos, classes, IDs, combinações)
+Q: Qual é o seletor CSS correto para selecionar um elemento com a classe "destaque" em um documento HTML?
+A: .destaque { /* estilos aqui */ }
+A: destaque { /* estilos aqui */ }
+A: #destaque { /* estilos aqui */ }
+CA: .destaque { /* estilos aqui */ }
+
+L: CSS
+S: Seletores CSS (elementos, classes, IDs, combinações)
+Q: Como selecionar um elemento com o ID "logo" em um documento HTML usando CSS?
+A: #logo { /* estilos aqui */ }
+A: .logo { /* estilos aqui */ }
+A: logo { /* estilos aqui */ }
+CA: #logo { /* estilos aqui */ }
+
+L: CSS
+S: Seletores CSS (elementos, classes, IDs, combinações)
+Q: Qual é o seletor CSS correto para selecionar todos os elementos <li> dentro de uma lista não ordenada (ul) com a classe "menu"?
+A: ul { /* estilos aqui */ }
+A: .menu li { /* estilos aqui */ }
+A: li.menu { /* estilos aqui */ }
+CA: .menu li { /* estilos aqui */ }
+
+L: CSS
+S: Estilos inline, incorporados e externos
+Q: Onde são definidos os estilos inline em um documento HTML?
+A: Dentro de um elemento <style> na seção <head> do documento HTML.
+A: Dentro de um atributo "style" em um elemento HTML.
+A: Dentro de um arquivo CSS externo.
+CA: Dentro de um atributo "style" em um elemento HTML.
+
+L: CSS
+S: Estilos inline, incorporados e externos
+Q: Qual é a principal diferença entre estilos inline e estilos incorporados em um documento HTML?
+A: Estilos inline são definidos diretamente nos elementos HTML, enquanto estilos incorporados são definidos em um arquivo CSS externo.
+A: Estilos inline são definidos em um arquivo CSS externo, enquanto estilos incorporados são definidos diretamente nos elementos HTML.
+A: Estilos inline são aplicados a todos os elementos HTML, enquanto estilos incorporados são aplicados apenas a elementos específicos.
+CA: Estilos inline são definidos diretamente nos elementos HTML, enquanto estilos incorporados são definidos em um elemento <style> na seção <head> do documento HTML.
+
+L: CSS
+S: Estilos inline, incorporados e externos
+Q: Onde são definidos os estilos incorporados em um documento HTML?
+A: Dentro de um atributo "style" em um elemento HTML.
+A: Dentro de um elemento <style> na seção <head> do documento HTML.
+A: Dentro de um arquivo CSS externo.
+CA: Dentro de um elemento <style> na seção <head> do documento HTML.
+
+L: CSS
+S: Estilos inline, incorporados e externos
+Q: Qual é a principal vantagem de usar estilos externos (arquivos CSS separados) em vez de estilos incorporados ou inline em um documento HTML?
+A: Estilos externos são mais fáceis de implementar e exigem menos código do que estilos incorporados ou inline.
+A: Estilos externos permitem maior controle sobre a apresentação do documento, tornando o código mais organizado e facilitando a reutilização em várias páginas.
+A: Estilos externos são suportados apenas em navegadores modernos, o que torna o site mais compatível com diferentes dispositivos.
+CA: Estilos externos permitem maior controle sobre a apresentação do documento, tornando o código mais organizado e facilitando a reutilização em várias páginas.
+
+L: CSS
+S: Estilos inline, incorporados e externos
+Q: Como vincular um arquivo CSS externo a um documento HTML?
+A: <link href="styles.css" rel="stylesheet">
+A: <style src="styles.css">
+A: <css link="styles.css">
+CA: <link href="styles.css" rel="stylesheet">
+
+L: CSS
+S: Layouts em CSS (float, flexbox, grid)
+Q: Qual propriedade CSS é usada para criar um layout de colunas e linhas em um contêiner?
+A: grid-template
+A: flexbox
+A: grid-columns
+CA: display: grid
+
+L: CSS
+S: Layouts em CSS (float, flexbox, grid)
+Q: Qual é a principal diferença entre float e flexbox em CSS?
+A: Flexbox é usado para criar layouts bidimensionais, enquanto float é usado apenas para imagens flutuantes.
+A: Float é usado para criar layouts bidimensionais, enquanto flexbox é usado apenas para imagens flutuantes.
+A: Flexbox é usado para criar layouts bidimensionais, enquanto float é usado apenas para posicionamento de elementos à esquerda ou à direita.
+CA: Flexbox é usado para criar layouts bidimensionais, enquanto float é usado apenas para posicionamento de elementos à esquerda ou à direita.
+
+L: CSS
+S: Layouts em CSS (float, flexbox, grid)
+Q: Qual propriedade CSS é usada para definir a ordem dos itens flexíveis em um contêiner flexbox?
+A: flex-order
+A: flex-direction
+A: order
+CA: order
+
+L: CSS
+S: Layouts em CSS (float, flexbox, grid)
+Q: Como fazer com que os elementos dentro de um contêiner flexbox sejam alinhados horizontalmente ao centro?
+A: align-items: center
+A: justify-content: center
+A: align-content: center
+CA: justify-content: center
+
+L: CSS
+S: Layouts em CSS (float, flexbox, grid)
+Q: Qual propriedade CSS é usada para criar um layout de colunas em um contêiner?
+A: grid-columns
+A: flex-direction
+A: grid-template-columns
+CA: grid-template-columns
+
+L: CSS
+S: Layouts em CSS (float, flexbox, grid)
+Q: Qual é a principal diferença entre flexbox e grid em CSS?
+A: Flexbox é usado para criar layouts bidimensionais, enquanto grid é usado apenas para alinhar elementos horizontalmente.
+A: Grid é usado para criar layouts bidimensionais, enquanto flexbox é usado apenas para alinhar elementos horizontalmente.
+A: Flexbox é usado para criar layouts unidimensionais, enquanto grid é usado para criar layouts bidimensionais.
+CA: Grid é usado para criar layouts bidimensionais, enquanto flexbox é usado para criar layouts unidimensionais.
+
+L: CSS
+S: Layouts em CSS (float, flexbox, grid)
+Q: Como fazer com que os elementos dentro de um contêiner flexbox sejam alinhados verticalmente ao centro?
+A: align-items: center
+A: justify-content: center
+A: align-content: center
+CA: align-items: center
+
+L: CSS
+S: Layouts em CSS (float, flexbox, grid)
+Q: Qual propriedade CSS é usada para criar um layout de colunas e linhas em um contêiner?
+A: grid-template
+A: flexbox
+A: grid-columns
+CA: display: grid
+
+L: CSS
+S: Layouts em CSS (float, flexbox, grid)
+Q: Como fazer com que os elementos dentro de um contêiner flexbox sejam distribuídos igualmente ao longo do eixo principal?
+A: align-items: center
+A: justify-content: center
+A: justify-content: space-between
+CA: justify-content: space-between
+
+L: CSS
+S: Estilização de formulários em CSS
+Q: Qual propriedade CSS é usada para alterar a cor do texto nos campos de entrada (input) de um formulário?
+A: input-color
+A: text-color
+A: color
+CA: color
+
+L: CSS
+S: Estilização de formulários em CSS
+Q: Como alterar a cor de fundo dos campos de entrada (input) quando estão em foco (quando o usuário está interagindo com eles)?
+A: input:focus { background-color: yellow; }
+A: input.active { background-color: yellow; }
+A: input:hover { background-color: yellow; }
+CA: input:focus { background-color: yellow; }
+
+L: CSS
+S: Estilização de formulários em CSS
+Q: Qual propriedade CSS é usada para definir a cor da borda dos campos de entrada (input) de um formulário?
+A: input-border
+A: border
+A: border-color
+CA: border-color
+
+L: CSS
+S: Estilização de formulários em CSS
+Q: Como definir a margem interna (espaço interno) dos campos de entrada (input) em um formulário?
+A: input { padding: 10px; }
+A: input { margin: 10px; }
+A: input { spacing: 10px; }
+CA: input { padding: 10px; }
+
+L: CSS
+S: Estilização de formulários em CSS
+Q: Qual propriedade CSS é usada para alterar o estilo da borda dos campos de entrada (input) quando estão em foco?
+A: input:hover { /* estilos aqui */ }
+A: input:active { /* estilos aqui */ }
+A: input:focus { /* estilos aqui */ }
+CA: input:focus { /* estilos aqui */ }
+
+L: CSS
+S: Estilização de formulários em CSS
+Q: Como alterar a cor do texto do rótulo (label) associado a um campo de entrada (input) em um formulário?
+A: label { color: blue; }
+A: input + label { color: blue; }
+A: input ~ label { color: blue; }
+CA: label { color: blue; }
+
+L: CSS
+S: Estilização de formulários em CSS
+Q: Como alterar o estilo da caixa de seleção (checkbox) em um formulário?
+A: input[type=checkbox] { /* estilos aqui */ }
+A: input[type=checkbox]:checked { /* estilos aqui */ }
+A: input[type=checkbox]:active { /* estilos aqui */ }
+CA: input[type=checkbox] { /* estilos aqui */ }
+
+L: CSS
+S: Estilização de formulários em CSS
+Q: Como alterar o estilo de um campo de entrada (input) de tipo "submit" quando o usuário coloca o mouse sobre ele?
+A: input[type=submit]:hover { /* estilos aqui */ }
+A: input[type=submit]:active { /* estilos aqui */ }
+A: input[type=submit]:focus { /* estilos aqui */ }
+CA: input[type=submit]:hover { /* estilos aqui */ }
+
+L: CSS
+S: Estilização de formulários em CSS
+Q: Como alterar o estilo de um campo de entrada (input) de tipo "text" quando o usuário coloca o mouse sobre ele?
+A: input[type=text]:hover { /* estilos aqui */ }
+A: input[type=text]:active { /* estilos aqui */ }
+A: input[type=text]:focus { /* estilos aqui */ }
+CA: input[type=text]:hover { /* estilos aqui */ }
+
+L: CSS
+S: Estilização de formulários em CSS
+Q: Qual é a propriedade CSS usada para alterar o estilo da caixa de seleção (checkbox) quando está marcada?
+A: input:checked { /* estilos aqui */ }
+A: input:marked { /* estilos aqui */ }
+A: input:selected { /* estilos aqui */ }
+CA: input:checked { /* estilos aqui */ }
+
+L: CSS
+S: Estilização de formulários em CSS
+Q: Como alterar a cor de fundo de um campo de entrada (input) quando o usuário coloca o cursor sobre ele?
+A: input:hover { background-color: yellow; }
+A: input:active { background-color: yellow; }
+A: input:focus { background-color: yellow; }
+CA: input:hover { background-color: yellow; }
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: O que é o Bootstrap?
+A: Um pré-processador CSS.
+A: Um framework CSS desenvolvido pela Google.
+A: Um framework CSS de código aberto que facilita o desenvolvimento de sites e aplicações responsivas.
+CA: Um framework CSS de código aberto que facilita o desenvolvimento de sites e aplicações responsivas.
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: O que o Bootstrap oferece aos desenvolvedores?
+A: Uma linguagem de programação para criação de sites e aplicações.
+A: Uma biblioteca de estilos e componentes reutilizáveis para agilizar o desenvolvimento.
+A: Uma plataforma para criação de jogos em HTML5.
+CA: Uma biblioteca de estilos e componentes reutilizáveis para agilizar o desenvolvimento.
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: Qual é a principal vantagem de usar um framework CSS como o Bootstrap?
+A: A possibilidade de criar animações avançadas em CSS.
+A: A compatibilidade com todos os navegadores modernos.
+A: A aceleração do desenvolvimento, pois oferece uma série de componentes e estilos pré-definidos.
+CA: A aceleração do desenvolvimento, pois oferece uma série de componentes e estilos pré-definidos.
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: O que é um pré-processador CSS?
+A: Um tipo de software que verifica a compatibilidade do código CSS com os navegadores.
+A: Uma ferramenta que permite aos desenvolvedores escrever CSS de forma mais eficiente, utilizando recursos como variáveis, funções e aninhamento.
+A: Um módulo do navegador responsável por renderizar o CSS em uma página web.
+CA: Uma ferramenta que permite aos desenvolvedores escrever CSS de forma mais eficiente, utilizando recursos como variáveis, funções e aninhamento.
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: Quais pré-processadores CSS são populares no desenvolvimento web?
+A: Bootstrap e Materialize.
+A: Sass e Less.
+A: Foundation e Semantic UI.
+CA: Sass e Less.
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: O que é o Sass?
+A: Um framework CSS para criação de layouts complexos.
+A: Um pré-processador CSS que estende a sintaxe do CSS e adiciona funcionalidades poderosas, como variáveis, mixins e funções.
+A: Uma biblioteca de estilos de design prontos para uso.
+CA: Um pré-processador CSS que estende a sintaxe do CSS e adiciona funcionalidades poderosas, como variáveis, mixins e funções.
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: Como os pré-processadores CSS ajudam a organizar e reutilizar estilos?
+A: Através da inclusão de arquivos CSS externos em páginas web.
+A: Através da criação de funções e mixins que podem ser reutilizados em diferentes partes do código.
+A: Através da utilização de frameworks CSS como o Bootstrap.
+CA: Através da criação de funções e mixins que podem ser reutilizados em diferentes partes do código.
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: Como os pré-processadores CSS tratam as variáveis?
+A: As variáveis não são suportadas pelos pré-processadores CSS.
+A: As variáveis são definidas usando a sintaxe $nomeDaVariavel no caso do Sass, ou @nomeDaVariavel no caso do Less.
+A: As variáveis são definidas usando a sintaxe var(nomeDaVariavel) no caso do Sass, ou var(--nomeDaVariavel) no caso do Less.
+CA: As variáveis são definidas usando a sintaxe $nomeDaVariavel no caso do Sass, ou @nomeDaVariavel no caso do Less.
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: O que é o Less?
+A: Um framework CSS para criação de layouts responsivos.
+A: Um pré-processador CSS que estende a sintaxe do CSS e adiciona funcionalidades como variáveis, mixins e funções.
+A: Uma biblioteca de estilos de design prontos para uso.
+CA: Um pré-processador CSS que estende a sintaxe do CSS e adiciona funcionalidades como variáveis, mixins e funções.
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: Como os pré-processadores CSS permitem o uso de mixins?
+A: Através da criação de funções que podem ser reutilizadas em diferentes partes do código CSS.
+A: Através da declaração de estilos de design prontos para uso.
+A: Através da utilização de frameworks CSS como o Bootstrap.
+CA: Através da criação de funções que podem ser reutilizadas em diferentes partes do código CSS.
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: Qual é a diferença entre um framework CSS e um pré-processador CSS?
+A: Frameworks CSS são bibliotecas de estilos prontos para uso, enquanto pré-processadores CSS são ferramentas que estendem a sintaxe do CSS.
+A: Frameworks CSS são utilizados para definir layouts complexos, enquanto pré-processadores CSS são utilizados para criar animações em CSS.
+A: Frameworks CSS são uma forma avançada de codificar em CSS, enquanto pré-processadores CSS são projetos colaborativos para desenvolvimento web.
+CA: Frameworks CSS são bibliotecas de estilos prontos para uso, enquanto pré-processadores CSS são ferramentas que estendem a sintaxe do CSS.
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: Como os pré-processadores CSS permitem a aninhamento de estilos?
+A: Através da criação de seletores complexos em CSS.
+A: Através da inclusão de arquivos CSS externos em páginas web.
+A: Através da escrita de estilos aninhados, o que ajuda a organizar e modularizar o código.
+CA: Através da escrita de estilos aninhados, o que ajuda a organizar e modularizar o código.
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: O que o Bootstrap oferece aos desenvolvedores?
+A: Uma plataforma para criação de jogos em HTML5.
+A: Uma biblioteca de estilos e componentes reutilizáveis para agilizar o desenvolvimento.
+A: Uma linguagem de programação para criação de sites e aplicações.
+CA: Uma biblioteca de estilos e componentes reutilizáveis para agilizar o desenvolvimento.
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: Como os pré-processadores CSS tratam as variáveis?
+A: As variáveis não são suportadas pelos pré-processadores CSS.
+A: As variáveis são definidas usando a sintaxe var(nomeDaVariavel) no caso do Sass, ou var(--nomeDaVariavel) no caso do Less.
+A: As variáveis são definidas usando a sintaxe $nomeDaVariavel no caso do Sass, ou @nomeDaVariavel no caso do Less.
+CA: As variáveis são definidas usando a sintaxe $nomeDaVariavel no caso do Sass, ou @nomeDaVariavel no caso do Less.
+
+L: CSS
+S: Frameworks CSS (por exemplo, Bootstrap) e pré-processadores (Sass, Less)
+Q: Qual é a principal vantagem de usar um framework CSS como o Bootstrap?
+A: A possibilidade de criar animações avançadas em CSS.
+A: A aceleração do desenvolvimento, pois oferece uma série de componentes e estilos pré-definidos.
+A: A compatibilidade com todos os navegadores modernos.
+CA: A aceleração do desenvolvimento, pois oferece uma série de componentes e estilos pré-definidos.

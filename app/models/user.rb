@@ -4,8 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_one :user_profile
-  has_one :user_statistic
+  has_many :answer_attempts, dependent: :destroy
+  has_one :user_profile, dependent: :destroy
+  has_one :user_statistic, dependent: :destroy
   accepts_nested_attributes_for :user_profile, reject_if: :all_blank
 
   # Callback

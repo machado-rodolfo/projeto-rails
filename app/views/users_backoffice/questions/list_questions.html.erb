@@ -7,70 +7,92 @@
             font-size: 32px;
             color: black;
             margin-bottom: 40px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra com deslocamento e desfoque */
-            border: 2px solid orange; /* Adiciona uma borda sólida de 2 pixels na cor marrom */
-            padding: 5px 10px; /* Opcional: Adiciona preenchimento para tornar a borda visível */
-            display: inline-block; /* Faz com que a borda circule apenas o espaço da palavra */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            border: 2px solid orange;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+
+        /* Estilos para os links */
+        .language-link {
+            font-size: 26px;
+            color: solid-brown;
+            text-decoration: none;
+        }
+
+        .subject-link {
+            font-size: 18px;
+            color: blue;
+            text-decoration: none;
+        }
+
+        /* Estilos para o separador */
+        .separator {
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <h1>Listagem de Perguntas por tópico !</h1>
+    <h1>Listagem de Perguntas por tópico</h1>
 
+    <!-- Loop para exibir as línguas -->
+    <% @languages.each do |language| %>
+        <div class="language">
+            <h2>
+                <%= link_to language.language_name, users_backoffice_language_path(language), class: 'language-link' %>
+            </h2>
+
+            <div class="subjects" style="display: none;">
+                <% language.subjects.each do |subject| %>
+                    <h3>
+                        <%= link_to "#{subject.description} (#{subject.questions_count} questões)", '#', class: 'subject-link' %>
+                    </h3>
+
+                    <ul style="display: none;">
+                        <% subject.questions.each do |question| %>
+                            <li>
+                                <%= link_to question.description, users_backoffice_question_path(question) %>
+                            </li>
+                        <% end %>
+                    </ul>
+                <% end %>
+            </div>
+        </div>
+
+        <!-- Adiciona o separador após cada bloco de língua -->
+        <div class="separator"></div>
+    <% end %>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageLinks = document.querySelectorAll('.language-link');
+            const subjectLinks = document.querySelectorAll('.subject-link');
+
+            languageLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const subjectsDiv = this.parentNode.nextElementSibling;
+                    toggleDisplay(subjectsDiv);
+                });
+            });
+
+            subjectLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const questionsList = this.parentNode.nextElementSibling;
+                    toggleDisplay(questionsList);
+                });
+            });
+
+            function toggleDisplay(element) {
+                if (element.style.display === 'none') {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            }
+        });
+    </script>
 </body>
 </html>
-
-<% @languages.each do |language| %>
-  <div class="language">
-    <h2>
-      <%= link_to language.language_name, users_backoffice_language_path(language), class: 'language-link', style:"font-size: 26px; color: solid-brown;" %>
-    </h2>
-
-    <div class="subjects" style="display: none;">
-      <% language.subjects.each do |subject| %>
-        <h3>
-          <%= link_to "#{subject.description} (#{subject.questions_count} questões)", '#', class: 'subject-link', style:"font-size: 18px; color: blue;" %>
-        </h3>
-
-        <ul style="display: none;">
-          <% subject.questions.each do |question| %>
-            <li style="color: red;">
-              <%= link_to question.description, users_backoffice_question_path(question), style:"font-size: 16px; color: black;" %>
-            </li>
-          <% end %>
-        </ul>
-      <% end %>
-    </div>
-  </div>
-<% end %>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const languageLinks = document.querySelectorAll('.language-link');
-    const subjectLinks = document.querySelectorAll('.subject-link');
-
-    languageLinks.forEach(link => {
-      link.addEventListener('click', function(event) {
-        event.preventDefault();
-        const subjectsDiv = this.parentNode.nextElementSibling;
-        toggleDisplay(subjectsDiv);
-      });
-    });
-
-    subjectLinks.forEach(link => {
-      link.addEventListener('click', function(event) {
-        event.preventDefault();
-        const questionsList = this.parentNode.nextElementSibling;
-        toggleDisplay(questionsList);
-      });
-    });
-
-    function toggleDisplay(element) {
-      if (element.style.display === 'none') {
-        element.style.display = 'block';
-      } else {
-        element.style.display = 'none';
-      }
-    }
-  });
-</script>

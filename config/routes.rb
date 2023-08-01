@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get 'begin', to: 'pages#begin'
   get 'news', to: 'pages#news'
-  get 'ranking', to: 'pages#ranking'
+  get 'material', to: 'pages#material'
 
   namespace :site do
     get  'welcome/index'

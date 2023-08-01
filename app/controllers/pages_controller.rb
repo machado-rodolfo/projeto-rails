@@ -6,6 +6,6 @@ class PagesController < ApplicationController
     def news
     end
 
-    def ranking
+    def material
     end
   end
