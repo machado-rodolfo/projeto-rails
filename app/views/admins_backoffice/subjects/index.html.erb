@@ -10,6 +10,7 @@
         <thead>
             <tr>
                 <th>#</th>
+                <th>Linguagem</th> <!-- Nova coluna -->
                 <th><%= translate_attribute(@subjects, :description) %></th>
                 <th>
                   <%= link_to new_admins_backoffice_subject_path, class:"btn btn-success btn-circle" do %>
@@ -19,13 +20,15 @@
                     <i class="fa fa-file-pdf-o"></i>
                   <% end %>
                 </th>
+
             </tr>
         </thead>
         <tbody>
             <% @subjects.each do |subject| %>
             <tr>
-                <td> <%= subject.id %> </td>
-                <td> <%= link_to "#{subject.description} (#{subject.questions_count})", site_search_subject_path(subject.id, subject.description) %> </td>
+                <td><%= subject.id %></td>
+                <td><%= link_to "#{subject.language.language_name}", '#' %></td>
+                <td><%= link_to "#{subject.description}  (#{subject.questions_count})", site_search_subject_path(subject.id, subject.description) %></td>
                 <td style="width: 85px">
 
                   <%= link_to edit_admins_backoffice_subject_path(subject), class:"btn btn-primary btn-circle" do %>

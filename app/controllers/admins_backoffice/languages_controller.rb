@@ -1,5 +1,3 @@
-# app/controllers/admins_backoffice/languages_controller.rb
-
 class AdminsBackoffice::LanguagesController < ApplicationController
     def index
       @languages = Language.all

@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_one :user_profile
+  has_one :user_statistic
   accepts_nested_attributes_for :user_profile, reject_if: :all_blank
 
   # Callback

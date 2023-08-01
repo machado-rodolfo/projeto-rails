@@ -1,1 +1,19 @@
 <%= "#{@question.description}" %>
+<%= "#{@question.subject.description}" %>
+
+  <%= form_with url: site_answer_path do |form| %>
+    <% @question.answers.each do |answer| %>
+    <li style="list-style:none;">
+        <div class="radio">
+        <label>
+            <%= radio_button_tag 'answer_id', answer.id %>
+            <%= answer.description %>
+        </label>
+        </div>
+    </li>
+    <% end %>
+    <li style="list-style:none;">
+    <% if user_signed_in? %>
+        <%= form.submit "Responder", class: "btn btn-default", id: "submit_#{@question.id}" %>
+    <% end %>
+<% end %>

@@ -1,21 +1,45 @@
-<h1 style="font-size: 32px; color: blue; margin-bottom: 40px">Listagem de Perguntas por tópico</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listagem de Perguntas por tópico</title>
+    <style>
+        h1 {
+            font-size: 32px;
+            color: black;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra com deslocamento e desfoque */
+            border: 2px solid orange; /* Adiciona uma borda sólida de 2 pixels na cor marrom */
+            padding: 5px 10px; /* Opcional: Adiciona preenchimento para tornar a borda visível */
+            display: inline-block; /* Faz com que a borda circule apenas o espaço da palavra */
+        }
+    </style>
+</head>
+<body>
+    <h1>Listagem de Perguntas por tópico</h1>
+    <!-- Seu conteúdo vai aqui -->
+</body>
+</html>
+
+
+</body>
+</html>
 
 <% @languages.each do |language| %>
   <div class="language">
-    <h2 style="font-size: 26px">
-      <%= link_to language.language_name, users_backoffice_language_path(language), class: 'language-link' %>
+    <h2>
+      <%= link_to language.language_name, users_backoffice_language_path(language), class: 'language-link', style:"font-size: 26px; color: solid-brown;" %>
     </h2>
 
     <div class="subjects" style="display: none;">
       <% language.subjects.each do |subject| %>
-        <h3 style="font-size: 18px; color: red;">
-          <%= link_to "#{subject.description} (#{subject.questions_count} questões)", '#', class: 'subject-link' %>
+        <h3>
+          <%= link_to "#{subject.description} (#{subject.questions_count} questões)", '#', class: 'subject-link', style:"font-size: 18px; color: blue;" %>
         </h3>
 
         <ul style="display: none;">
           <% subject.questions.each do |question| %>
-            <li style="font-size: 16px; color: red;">
-              <%= link_to question.description, users_backoffice_question_path(question) %>
+            <li style="color: red;">
+              <%= link_to question.description, users_backoffice_question_path(question), style:"font-size: 16px; color: black;" %>
             </li>
           <% end %>
         </ul>

@@ -7,5 +7,10 @@ module UsersBackoffice
     def show
       @question = Question.find(params[:id])
     end
+
+    def show
+      @question = Question.find(params[:id])
+    end
+
   end
 end
