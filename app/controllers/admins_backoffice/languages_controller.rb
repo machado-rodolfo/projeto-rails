@@ -4,7 +4,11 @@ class AdminsBackoffice::LanguagesController < ApplicationController
     end
 
     def show
-      @language = Language.find(params[:id])
+      if params[:term]
+        @language = Language.find_by_name(language_name: params[:term])
+      else
+        @language = Language.find(params[:id])
+      end
     end
 
     def new

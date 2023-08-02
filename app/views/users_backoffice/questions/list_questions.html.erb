@@ -4,8 +4,9 @@
     <title>Listagem de Perguntas por tópico</title>
     <style>
         h1 {
-            font-size: 32px;
+            font-size: 38px;
             color: black;
+            font-weight: bold; /* Negrito */
             margin-bottom: 40px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             border: 2px solid orange;
@@ -15,9 +16,10 @@
 
         /* Estilos para os links */
         .language-link {
-            font-size: 26px;
-            color: solid-brown;
+            font-size: 24px;
+            color: black;
             text-decoration: none;
+            font-weight: bold; /* Negrito */
         }
 
         .subject-link {
@@ -26,21 +28,24 @@
             text-decoration: none;
         }
 
-        /* Estilos para o separador */
         .separator {
             border-top: 1px solid #ccc;
             margin: 20px 0;
         }
+
+        .subjects ul li a {
+            color: black; /* Cor padrão para as perguntas */
+        }
     </style>
 </head>
 <body>
+
     <h1>Listagem de Perguntas por tópico</h1>
 
-    <!-- Loop para exibir as línguas -->
     <% @languages.each do |language| %>
         <div class="language">
             <h2>
-                <%= link_to language.language_name, users_backoffice_language_path(language), class: 'language-link' %>
+                <%= link_to "#{language.language_name} (#{language.subjects.count} assuntos)", users_backoffice_language_path(language), class: 'language-link' %>
             </h2>
 
             <div class="subjects" style="display: none;">
@@ -60,7 +65,6 @@
             </div>
         </div>
 
-        <!-- Adiciona o separador após cada bloco de língua -->
         <div class="separator"></div>
     <% end %>
 
