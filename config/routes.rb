@@ -22,12 +22,12 @@ Rails.application.routes.draw do
 
   namespace :admins_backoffice do
     get 'welcome/index'  # Dashboard
-    get 'ranking/index'
     resources :admins    # Administradores
     resources :users     # Usuários
     resources :subjects  # Assuntos/Áreas
     resources :questions # Perguntas
     resources :languages # Linguagens
+    resources :ranking, only: [:index]
   end
 
   devise_for :users
