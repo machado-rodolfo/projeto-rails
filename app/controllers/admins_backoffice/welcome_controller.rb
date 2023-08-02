@@ -5,6 +5,11 @@ class AdminsBackoffice::WelcomeController < AdminsBackofficeController
     @admins_count = Admin.count
     @languages_count = Language.count
     @subjects_count = Subject.count
+    @admins = Admin.all
+    @users = User.all
+    @languages = Language.all
+    @subjects = Subject.all
+    @questions = Question.all
 
     @user_most_right_questions = User.joins(:user_statistic)
                                      .select("users.first_name, users.email, user_statistics.right_questions, users.id")

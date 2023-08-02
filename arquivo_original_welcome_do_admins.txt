@@ -1,0 +1,166 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header"><%= "Bem-vindo administrador (#{current_admin.email})" %></h1>
+  </div>
+  <!-- /.col-lg-12 -->
+</div>
+
+<div class="row">
+
+  <div class="col-lg-6 col-md-6">
+    <a href="<%= '/admins_backoffice/admins' %>">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-3">
+              <i class="fa fa-user fa-5x"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <div class="huge"><%= @admins_count %></div>
+              <div>Total de administradores</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-lg-6 col-md-6">
+    <a href="<%= '/admins_backoffice/users' %>">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-3">
+              <i class="fa fa-users fa-5x"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <div class="huge"><%= @total_users %></div>
+              <div>Total de usuários</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-lg-6 col-md-6">
+    <a href="<%= '/admins_backoffice/subjects' %>">
+      <div class="panel panel-black">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-3">
+              <i class="fa fa-folder-o fa-5x"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <div class="huge"><%= @languages_count %></div>
+              <div>Total de Linguagens</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-lg-6 col-md-6">
+    <a href="<%= '/admins_backoffice/subjects' %>">
+      <div class="panel panel-black">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-3">
+              <i class="fa fa-folder-open-o fa-5x"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <div class="huge"><%= @subjects_count %></div>
+              <div>Total de Assuntos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-lg-6 col-md-6">
+    <a href="<%= '/admins_backoffice/questions' %>">
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-3">
+              <i class="fa fa-file-o fa-5x"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <div class="huge"><%= @total_questions %></div>
+              <div>Total de questões</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-lg-6 col-md-6">
+    <a href="<%= edit_admins_backoffice_user_path(@user_most_total_questions) %>">
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-3">
+              <i class="fa fa-th-list fa-5x"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <% if @user_most_total_questions %>
+                <div class="huge"><%= user_display_name(@user_most_total_questions) %></div>
+              <% else %>
+                <div class="huge">N/A</div>
+              <% end %>
+              <div>Usuário com maior número de questões respondidas </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-lg-6 col-md-6">
+    <a href="<%= edit_admins_backoffice_user_path(@user_most_right_questions) %>">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-3">
+              <i class="fa fa-check fa-5x"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <% if @user_most_right_questions %>
+                <div class="huge"><%= user_display_name(@user_most_right_questions) %></div>
+              <% else %>
+                <div class="huge">N/A</div>
+              <% end %>
+              <div>Usuário com mais acertos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-lg-6 col-md-6">
+    <a href="<%= edit_admins_backoffice_user_path(@user_most_wrong_questions) %>">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-3">
+              <i class="fa fa-times fa-5x"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <% if @user_most_wrong_questions %>
+                <div class="huge"><%= user_display_name(@user_most_wrong_questions) %></div>
+              <% else %>
+                <div class="huge">N/A</div>
+              <% end %>
+              <div>Usuário com mais erros</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+</div>

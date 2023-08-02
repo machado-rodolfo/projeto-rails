@@ -10,7 +10,7 @@
         <h3 class="panel-title">
           <span class="label label-info" style="margin-right: 10px">
             <% if user_signed_in? %>
-              <%= link_to "|#{question.subject.language.language_name}|" %>
+              <%= link_to "|#{question.subject.language.language_name}|", url_for(controller: 'users_backoffice/questions', action: 'list_questions') %>
               <%= link_to  "#{question.subject.description}
                            (#{question.subject.questions_count})",
                                        site_search_subject_path(question.subject_id, question.subject.description), style: "color: white;" %>
