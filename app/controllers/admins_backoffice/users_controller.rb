@@ -20,6 +20,8 @@ class AdminsBackoffice::UsersController < AdminsBackofficeController
   end
 
   def edit
+    @user = User.find(params[:id])
+    @user_statistic = @user.user_statistic if @user.user_statistic
   end
 
   def update
