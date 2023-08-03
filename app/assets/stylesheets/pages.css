@@ -8,44 +8,40 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Mantém o body com pelo menos a altura da viewport */
-  margin: 0; /* Remove as margens padrão do body */
+  min-height: 100vh;
+  margin: 0;
   background-color: #2e76a7;
   color: #fff;
   padding: 0;
 }
 
-/* Adicione um wrapper para o conteúdo principal, exceto header e footer */
 .main-content {
-  flex: 1; /* Ocupa o espaço disponível restante, empurrando o footer para a parte inferior */
+  flex: 1;
 }
 
-/* Estilo para o header */
 header {
   background-color: #102069;
   color: #fff;
   padding: 10px;
-  position: relative; /* Adicionamos position relative para posicionar os elementos filhos */
+  position: relative;
   margin: 0;
 }
 
-/* Estilo para centralizar o texto do header */
 .header-title {
   text-align: center;
-  font-size: 45px; /* Ajustar o tamanho da fonte do título */
-  text-shadow: 20px 20px 20px rgb(0, 0, 0); /* Adicionar sombra preta à linha do título */
+  font-size: 45px;
+  text-shadow: 20px 20px 20px rgb(0, 0, 0);
 }
 
-/* Estilo para o horário e os botões no header */
 #header-content {
   display: flex;
-  flex-direction: row; /* Modificado para exibir os botões em linha */
-  align-items: center; /* Centraliza verticalmente os elementos no header */
-  justify-content: space-between; /* Distribui os elementos para que fiquem nas extremidades */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   position: absolute;
-  top: 10px; /* Posiciona o header-content no canto superior esquerdo */
+  top: 10px;
   left: 10px;
-  right: 10px; /* Aumenta a área ocupada pelo header-content */
+  right: 10px;
 }
 
 #header-time {
@@ -59,42 +55,42 @@ header {
   gap: 10px;
 }
 
-/* Estilo para os links em cor branca e maior tamanho de fonte */
 .header-button {
   color: #fff;
-  font-size: 12px; /* Aumentar o valor para aumentar o tamanho da fonte */
-  padding: 6px 12px; /* Adiciona um espaçamento interno para os botões */
-  background-color: transparent; /* Remove o fundo padrão dos links */
-  border: 2px solid white; /* Adiciona uma borda branca de 2px */
-  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  font-size: 12px;
+  padding: 6px 12px;
+  background-color: transparent;
+  border: 2px solid white;
+  text-decoration: none;
 }
 
-/* Estilo para os links de botão quando estiverem em foco ou ativos (após clicados) */
 .header-button:hover,
 .header-button:focus,
 .header-button:active {
-  background-color: #fff; /* Muda o fundo do botão para branco quando estiver em foco, hover ou ativo */
-  color: #102069; /* Muda a cor do texto para azul escuro quando o botão estiver em foco, hover ou ativo */
-  border-color: #ccc; /* Muda a cor da borda para cinza quando o botão estiver em foco, hover ou ativo */
+  background-color: #fff;
+  color: #102069;
+  border-color: #ccc;
 }
 
-/* Estilo para o footer */
 footer {
-  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
   font-size: 14px;
   background-color: #102069;
   color: #fff;
   padding: 10px;
 }
 
-/* Estilo para a imagem de fundo */
 body::after {
   content: "";
   background-image: url('cilia1.jpeg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  opacity: 0.9; /* Defina a opacidade desejada para a imagem de fundo, valores entre 0 (totalmente transparente) e 1 (opaco) */
+  opacity: 0.9;
   position: absolute;
   top: 0;
   left: 0;

@@ -1,2 +1,45 @@
-    <h1>Bem-vindo à página de apresentação!</h1>
-    <p>Esta é a página de início do projeto.</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+  <style>
+
+    .content-container {
+      background-color: rgba(195, 155, 200, 0.9);
+      margin: 80px auto;
+      padding: 20px;
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 800px;
+      width: 70%;
+      border: 5px solid #8A2BE2;
+      box-shadow: 0 0 10px 5px #8A2BE2;
+    }
+
+.content-container h1 {
+      color: purple;
+      font-size: 30px;
+    }
+
+    .content-container p {
+      color: blue;
+    }
+
+    a:link {
+      color: #8A2BE2;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content-container">
+    <h1>Bem-vindo ao programa de capacitação do Cilia</h1>
+    <p>Faça seu <%= link_to 'login', users_backoffice_welcome_index_path %> ou
+                <%= link_to 'cadastre-se', new_user_registration_path %> para participar </p>
+      <p>Tenha acesso ao material de sua preferência e responda as perguntas para fixar o aprendizado.</p>  </div>
+</body>
+</html>

@@ -5,11 +5,9 @@
 
     <%= stylesheet_link_tag    'pages' %>
 
-  <!-- Elemento para exibir o Local, Data e Hora no header -->
   <div id="header-content">
     <span id="header-info"></span>
 
-    <!-- Botões no header -->
     <div class="header-buttons">
       <% unless user_signed_in? %>
         <%= link_to "Home", "/begin", class: "header-button" %>
@@ -32,25 +30,22 @@
   <h1 class="header-title">Cilia Trainee</h1>
 </header>
 
-<!-- Restante do arquivo -->
 <script>
-  // Função para exibir o Local, Data e Hora no header
-  function displayCurrentDateTime() {
+
+function displayCurrentDateTime() {
     const now = new Date();
-    const day = String(now.getDate()).padStart(2, '0'); // Obtém o dia com dois dígitos (01 a 31)
-    const month = now.toLocaleString('default', { month: 'long' }); // Obtém o nome do mês (janeiro a dezembro)
-    const year = now.getFullYear(); // Obtém o ano com quatro dígitos
-    const time = now.toLocaleTimeString('pt-BR'); // Obtém o horário formatado no formato brasileiro (hh:mm:ss)
-    const location = "Goiânia"; // Substitua "Goiânia" pelo nome do local desejado
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = now.toLocaleString('default', { month: 'long' });
+    const year = now.getFullYear();
+    const time = now.toLocaleTimeString('pt-BR');
+    const location = "Goiânia";
 
     const headerInfoElement = document.getElementById('header-info');
     headerInfoElement.textContent = `${location}, ${day} de ${month} / ${time}`;
   }
 
-  // Atualiza o Local, Data e Hora a cada segundo
   setInterval(displayCurrentDateTime, 1000);
 
-  // Chama a função para exibir o Local, Data e Hora atual ao carregar a página
   window.onload = displayCurrentDateTime;
 </script>
 
