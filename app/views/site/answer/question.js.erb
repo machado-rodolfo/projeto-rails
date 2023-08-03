@@ -11,17 +11,17 @@ element.classList.remove('btn-danger');
   element.classList.add('<%= @answer.correct ? "btn-success" : "btn-danger" %>');
   if (<%= @answer.correct %>) {
     $.bootstrapGrowl('Você acertou!', {
-      type: 'success', // (null, 'info', 'danger', 'success')
-      align: 'center', // ('left', 'right', or 'center')
-      allow_dismiss: true, // If true then will display a cross to close the popup.
-      stackup_spacing: 10 // spacing between consecutively stacked growls.
+      type: 'success',
+      align: 'center',
+      allow_dismiss: true,
+      stackup_spacing: 10
     });
   } else {
     $.bootstrapGrowl('Você ERROU!', {
-      type: 'danger', // (null, 'info', 'danger', 'success')
-      align: 'center', // ('left', 'right', or 'center')
-      allow_dismiss: true, // If true then will display a cross to close the popup.
-      stackup_spacing: 10 // spacing between consecutively stacked growls.
+      type: 'danger',
+      align: 'center',
+      allow_dismiss: true,.
+      stackup_spacing: 10
     });
   }
 <% end %>
