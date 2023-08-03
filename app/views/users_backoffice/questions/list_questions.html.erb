@@ -42,31 +42,33 @@
 
     <h1>Listagem de Perguntas por tópico</h1>
 
-    <% @languages.each do |language| %>
-        <div class="language">
-            <h2>
-                <%= link_to "#{language.language_name} (#{language.subjects.count} assuntos)", users_backoffice_language_path(language), class: 'language-link' %>
-            </h2>
+<% @languages.each do |language| %>
+  <div class="language">
+    <h2>
+      <%= link_to "#{language.language_name} (#{language.subjects.count} assuntos)", '#', class: 'language-link' %>
+    </h2>
 
-            <div class="subjects" style="display: none;">
-                <% language.subjects.each do |subject| %>
-                    <h3>
-                        <%= link_to "#{subject.description} (#{subject.questions_count} questões)", '#', class: 'subject-link' %>
-                    </h3>
+    <div class="subjects" style="display: none;">
+      <% language.subjects.each do |subject| %>
+        <% next if subject.questions.any? { |q| session[:answered_questions].include?(q.id) } %>
+        <h3>
+          <%= link_to "#{subject.description} (#{subject.questions_count} questões)", '#', class: 'subject-link' %>
+        </h3>
 
-                    <ul style="display: none;">
-                        <% subject.questions.each do |question| %>
-                            <li>
-                                <%= link_to question.description, users_backoffice_question_path(question) %>
-                            </li>
-                        <% end %>
-                    </ul>
-                <% end %>
-            </div>
-        </div>
+        <ul style="display: none;">
+          <% subject.questions.each do |question| %>
+            <% next if session[:answered_questions].include?(question.id) %> <!-- Não exibe a pergunta se já foi respondida -->
+            <li>
+              <%= link_to question.description, users_backoffice_question_path(question) %>
+            </li>
+          <% end %>
+        </ul>
+      <% end %>
+    </div>
+  </div>
 
-        <div class="separator"></div>
-    <% end %>
+  <div class="separator"></div>
+<% end %>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {

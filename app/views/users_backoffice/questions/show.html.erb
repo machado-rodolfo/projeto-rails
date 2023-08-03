@@ -7,55 +7,81 @@
   </button>
 </div>
 
-<p style="color: black;"><strong><%= @question.subject.description %></strong></p>
-<h3 style="margin-top: 20px; color: blue;"><%= @question.description %></h3>
+<% if @question && !session[:answered_questions].include?(@question.id) %>
+  <p style="color: black;"><strong><%= @question.subject.description %></strong></p>
+  <h3 style="margin-top: 20px; color: blue;"><%= @question.description %></h3>
 
-<style>
-.colored-hr {
-    border-top: 2px solid blue; /* Substitua 'blue' pela cor desejada */
-}
+  <style>
+    .colored-hr {
+      border-top: 2px solid blue; /* Substitua 'blue' pela cor desejada */
+    }
 
-.fixed-buttons {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-  }
-</style>
+    .fixed-buttons {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
 
-<div class="colored-hr"></div>
-<div style="margin-top: 20px;">
-  <%= form_with url: site_answer_path do |form| %>
-    <% @question.answers.each do |answer| %>
-      <li style="list-style:none;">
-        <div class="radio">
-          <label>
-            <%= radio_button_tag 'answer_id', answer.id %>
-            <p style="color: black;"><%= answer.description %></p>
-          </label>
-        </div>
-      </li>
-    <% end %>
-</div>
-<li style="list-style:none;">
-<% if user_signed_in? %>
-  <%= form.submit "Responder", class: "btn btn-default", id: "submit_#{@question.id}", style:"margin-top: 20px;" %>
-<% end %>
-<% end %>
-
-  <div class="fixed-buttons">
-      <% if @previous_question.present? %>
-        <button type="button" class="btn btn-default btn-circle">
-          <i class="fa fa-caret-left"></i>
-          <%= link_to 'Questão Anterior', users_backoffice_question_path(@previous_question) %>
-        </button>
-      <% else %>
-      <% end %>
-
-      <% if @next_question.present? %>
-        <button type="button" class="btn btn-default btn-circle">
-          <%= link_to 'Próxima Questão', users_backoffice_question_path(@next_question) %>
-          <i class="fa fa-caret-right"></i>
-        </button>
-      <% else %>
+  <div class="colored-hr"></div>
+  <div style="margin-top: 20px;">
+    <%= form_with url: site_answer_path do |form| %>
+      <% @question.answers.each do |answer| %>
+        <li style="list-style:none;">
+          <div class="radio">
+            <label>
+              <%= radio_button_tag 'answer_id', answer.id %>
+              <p style="color: black;"><%= answer.description %></p>
+            </label>
+          </div>
+        </li>
       <% end %>
   </div>
+  <li style="list-style:none;">
+  <% if user_signed_in? %>
+    <%= form.submit "Responder", class: "btn btn-default", id: "submit_#{@question.id}", style:"margin-top: 20px;" %>
+  <% end %>
+  <% end %>
+
+  <div class="fixed-buttons">
+    <% if @next_question.present? %>
+      <button type="button" class="btn btn-default btn-circle" id="next-button">
+        <%= link_to 'Próxima Questão', users_backoffice_question_path(@next_question) %>
+        <i class="fa fa-caret-right"></i>
+      </button>
+    <% end %>
+  </div>
+
+<% else %>
+  <div class="alert alert-info" role="alert">
+    Todas as perguntas foram respondidas. Parabéns!
+  </div>
+<% end %>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const nextButton = document.getElementById('next-button');
+
+    nextButton.addEventListener('click', function(event) {
+      event.preventDefault();
+      const nextQuestion = <%= @next_question.to_json %>;
+      const answeredQuestions = <%= session[:answered_questions].to_json %>;
+
+      if (nextQuestion && !answeredQuestions.includes(nextQuestion.id)) {
+        window.location.href = nextButton.querySelector('a').href;
+      } else {
+        const nextUnansweredQuestion = findNextUnansweredQuestion(answeredQuestions);
+        if (nextUnansweredQuestion) {
+          window.location.href = nextUnansweredQuestion.url;
+        } else {
+          alert('Todas as perguntas foram respondidas. Parabéns!');
+        }
+      }
+    });
+
+    function findNextUnansweredQuestion(answeredQuestions) {
+      const allQuestions = <%= @question.subject.questions.to_json %>;
+      return allQuestions.find(question => !answeredQuestions.includes(question.id));
+    }
+  });
+</script>
