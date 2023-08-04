@@ -1,0 +1,16 @@
+class Subject < ApplicationRecord
+    has_many :questions, dependent: :destroy
+    belongs_to :language
+
+    attr_accessor :language_name
+
+    scope :not_completely_answered_by_user, -> (user) {
+        joins(:questions).
+          joins("LEFT JOIN answer_attempts ON (questions.id = answer_attempts.question_id AND answer_attempts.user_id = #{user.id})").
+          where('answer_attempts.id').
+          group('subjects.id')
+    }
+
+    # Kaminari
+    paginates_per 5
+end

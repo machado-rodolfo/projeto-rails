@@ -20,16 +20,8 @@ element.classList.remove('btn-danger');
     $.bootstrapGrowl('Você ERROU!', {
       type: 'danger',
       align: 'center',
-      allow_dismiss: true,
+      allow_dismiss: true,.
       stackup_spacing: 10
     });
   }
 <% end %>
-
-// Adicione o seguinte código para desabilitar o formulário após a resposta ser enviada
-var form = element.closest('form');
-if (form) {
-  form.querySelectorAll('input[type="radio"]').forEach(function(input) {
-    input.disabled = true;
-  });
-}

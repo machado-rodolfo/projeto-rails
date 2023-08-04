@@ -1,0 +1,7 @@
+class Language < ApplicationRecord
+  has_many :subjects
+
+  def number_of_subjects_not_completely_answered_by_user(user)
+    subjects.not_completely_answered_by_user(user).length
+  end
+end

@@ -10,8 +10,7 @@ class Site::AnswerController < SiteController
       AnswerAttempt.create(user: current_user, question: question, answer: @answer)
 
       question.update(answered: true)
-      session[:answered_questions] ||= []
-      session[:answered_questions] << question.id
     end
+
   end
 end
