@@ -14,7 +14,14 @@ class AdminsBackoffice::SubjectsController < AdminsBackofficeController
     end
 
     def create
-      @subject = Subject.new(params_subject)
+      language_id = params[:subject][:language_id]
+
+      language = Language.find_by(id: language_id)
+
+      language_name = language.language_name
+
+      @subject = language.subjects.build(params_subject)
+
       if @subject.save
         redirect_to admins_backoffice_subjects_path, notice: "Assunto/Área cadastrado com Sucesso"
       else
@@ -44,7 +51,7 @@ class AdminsBackoffice::SubjectsController < AdminsBackofficeController
     private
 
     def params_subject
-      params.require(:subject).permit(:description)
+      params.require(:subject).permit(:description, :language_id, :language_name)
     end
 
     def set_subject

@@ -6,4 +6,15 @@ class Subject < ApplicationRecord
 
     # Kaminari
     paginates_per 5
+
+    accepts_nested_attributes_for :language
+
+    private
+
+    def language_association_presence
+        if language_id.blank?
+          errors.add(:base, "A disciplina deve estar associada a uma linguagem")
+        end
+    end
+
 end

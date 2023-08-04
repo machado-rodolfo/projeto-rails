@@ -16,10 +16,15 @@ class Question < ApplicationRecord
   scope :answered_by_user, -> (user) {
     joins(:answer_attempts).where('answer_attempts.user_id = ?', user.id)
   }
+
   scope :not_answered_by_user, -> (user) {
-    joins("LEFT JOIN answer_attempts ON (answer_attempts.question_id = questions.id AND answer_attempts.user_id = #{user.id})").
-      where('answer_attempts.id IS NULL').
-      group('questions.id')
+    if user
+      joins("LEFT JOIN answer_attempts ON (answer_attempts.question_id = questions.id AND answer_attempts.user_id = #{user.id})").
+        where('answer_attempts.id IS NULL').
+        group('questions.id')
+    else
+      all
+    end
   }
 
   scope :_search_subject_, ->(page, subject_id) {

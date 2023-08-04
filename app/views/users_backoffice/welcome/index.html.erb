@@ -1,28 +1,37 @@
-<h1>Seja bem-vindo!</h1>
+<h1>Confira seu progresso:</h1>
 
-  <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 ">
-    <div class="tile-stats">
-      <div class="icon"><i class="fa fa-comments-o"></i></div>
-      <div class="count"><%= @user_statistic.total_questions %></div>
-      <h3>Total</h3>
-      <p>Quantidade total de questões respondidas</p>
-    </div>
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6">
+  <div class="tile-stats">
+    <div class="icon"><i class="fa fa-comments-o"></i></div>
+    <div class="count"><%= @user_statistic.total_questions %></div>
+    <h3>Total</h3>
+    <p>Quantidade total de questões respondidas</p>
   </div>
+</div>
 
-  <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 ">
-    <div class="tile-stats">
-      <div class="icon"><i class="fa fa-check-square-o"></i></div>
-      <div class="count"><%= @user_statistic.right_questions %></div>
-      <h3>Certas</h3>
-      <p>Questões corretas</p>
-    </div>
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6">
+  <div class="tile-stats">
+    <div class="icon"><i class="fa fa-tasks"></i></div>
+    <div class="count"><%= @questions.count - @user_statistic.total_questions %></div>
+    <h3>Restantes</h3>
+    <p>Quantidade de questões restantes</p>
   </div>
+</div>
 
-  <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 ">
-    <div class="tile-stats">
-      <div class="icon"><i class="fa fa-close"></i></div>
-      <div class="count"><%= @user_statistic.wrong_questions %></div>
-      <h3>Erradas</h3>
-      <p>Questões incorretas</p>
-    </div>
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6">
+  <div class="tile-stats">
+    <div class="icon"><i class="fa fa-check-square-o"></i></div>
+    <div class="count"><%= @user_statistic.right_questions %></div>
+    <h3>Certas</h3>
+    <p>Questões corretas</p>
   </div>
+</div>
+
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6">
+  <div class="tile-stats">
+    <div class="icon"><i class="fa fa-close"></i></div>
+    <div class="count"><%= @user_statistic.wrong_questions %></div>
+    <h3>Erradas</h3>
+    <p>Questões incorretas</p>
+  </div>
+</div>
