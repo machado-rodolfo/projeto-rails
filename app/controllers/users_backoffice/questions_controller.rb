@@ -13,13 +13,18 @@ module UsersBackoffice
 
     def set_previous_and_next_questions
       subject = @question.subject
-      all_questions = subject.questions.where.not(id: @question.id)
+      questions = subject.questions
+                         .not_answered_by_user(current_user)
+                         .where
+                         .not(id: @question.id)
+                         .to_a
 
-      if all_questions.length >= 2
-        @previous_question = all_questions.sample
-        @next_question = (all_questions - [@previous_question]).sample
+      questions.delete(@question)
+      questions.shuffle!
+
+      if questions.length >= 1
+        @next_question = questions.first
       else
-        @previous_question = all_questions.first
         @next_question = nil
       end
     end

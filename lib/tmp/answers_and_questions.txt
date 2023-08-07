@@ -2912,7 +2912,7 @@ A: Bibliotecas para manipulação de banco de dados.
 CA: APIs para recursos avançados, como geolocalização e armazenamento local.
 
 L: HTML5
-S: Estrutura básica do HTML5
+S: Introdução ao HTML5 e sua evolução
 Q: Qual é o elemento usado para definir o conteúdo principal de uma página HTML5?
 A: <header>
 A: <content>
@@ -2920,7 +2920,7 @@ A: <main>
 CA: <body>
 
 L: HTML5
-S: Elementos de semântica em HTML5
+S: Introdução ao HTML5 e sua evolução
 Q: Qual é o elemento HTML5 usado para agrupar conteúdo relacionado, como cabeçalhos, parágrafos e listas?
 A: <section>
 A: <div>
@@ -2928,7 +2928,7 @@ A: <group>
 CA: <article>
 
 L: HTML5
-S: Formulários em HTML5
+S: Introdução ao HTML5 e sua evolução
 Q: Qual é o atributo usado em um campo de formulário para especificar um texto de ajuda que é exibido quando o usuário passa o mouse sobre o campo?
 A: placeholder
 A: tooltip
@@ -2936,7 +2936,7 @@ A: info
 CA: title
 
 L: HTML5
-S: Áudio e Vídeo em HTML5
+S: Introdução ao HTML5 e sua evolução
 Q: Qual é o formato de arquivo de áudio amplamente suportado pelo elemento <audio> em HTML5?
 A: .mp3
 A: .wav
@@ -2944,7 +2944,7 @@ A: .ogg
 CA: .mp4
 
 L: HTML5
-S: Imagens em HTML5
+S: Introdução ao HTML5 e sua evolução
 Q: Qual é o atributo usado para especificar uma descrição de texto para uma imagem em HTML5?
 A: alt
 A: title
@@ -2952,7 +2952,7 @@ A: caption
 CA: alt-text
 
 L: HTML5
-S: Estilos CSS em HTML5
+S: Introdução ao HTML5 e sua evolução
 Q: Qual é o elemento HTML5 usado para incluir folhas de estilo CSS em uma página?
 A: <link>
 A: <style>
@@ -2960,7 +2960,7 @@ A: <css>
 CA: <link>
 
 L: HTML5
-S: Elementos de Texto em HTML5
+S: Introdução ao HTML5 e sua evolução
 Q: Qual é o elemento HTML5 usado para criar um hyperlink em uma página?
 A: <a>
 A: <link>
@@ -2968,7 +2968,7 @@ A: <href>
 CA: <a>
 
 L: HTML5
-S: Elementos de Listas em HTML5
+S: Introdução ao HTML5 e sua evolução
 Q: Qual é o elemento HTML5 usado para criar uma lista ordenada?
 A: <ol>
 A: <ul>
@@ -2976,7 +2976,7 @@ A: <dl>
 CA: <ol>
 
 L: HTML5
-S: Elementos de Tabelas em HTML5
+S: Introdução ao HTML5 e sua evolução
 Q: Qual é o elemento HTML5 usado para criar uma célula de cabeçalho em uma tabela?
 A: <th>
 A: <td>
@@ -2984,7 +2984,7 @@ A: <head>
 CA: <th>
 
 L: HTML5
-S: Armazenamento Web em HTML5
+S: Estrutura básica de uma página HTML5
 Q: Qual é a API em HTML5 usada para armazenar dados no navegador de forma persistente?
 A: localStorage
 A: sessionStorage

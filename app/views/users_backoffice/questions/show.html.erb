@@ -43,19 +43,16 @@
 <% end %>
 
   <div class="fixed-buttons">
-      <% if @previous_question.present? %>
-        <button type="button" class="btn btn-default btn-circle">
-          <i class="fa fa-caret-left"></i>
-          <%= link_to 'Questão Anterior', users_backoffice_question_path(@previous_question) %>
-        </button>
-      <% else %>
-      <% end %>
-
       <% if @next_question.present? %>
         <button type="button" class="btn btn-default btn-circle">
           <%= link_to 'Próxima Questão', users_backoffice_question_path(@next_question) %>
           <i class="fa fa-caret-right"></i>
         </button>
       <% else %>
+        <% if @question.present? %>
+        <div class="alert alert-info" role="alert">
+          Essa é a última pergunta desse assunto. Responda e volte para a página anterior!
+        </div>
+        <% end %>
       <% end %>
   </div>
