@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     get   'profile', to: 'profile#edit'
     patch 'profile', to: 'profile#update'
     get   'list_questions', to: 'questions#list_questions', as: 'list_questions'
+    get   'zip_code', to: 'zip_code#show'
     resources :languages, only: [:show]
     resources :questions, only: [:show]
   end

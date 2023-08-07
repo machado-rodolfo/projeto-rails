@@ -46,13 +46,22 @@
   <p>Faça download do material para estudo</p>
   <% if user_signed_in? %>
     <%= link_to 'Ruby', '/pdfs/Treinamento_Ruby.pdf', download: 'Treinamento_Ruby.pdf',
-                                                      onclick: 'return confirmDownload()',
-                                                      class: 'download-link' %>
-    <%= link_to 'Java', '#', onclick: 'return false;' %>
-    <%= link_to 'Html', '#', onclick: 'return false;' %>
-    <%= link_to 'Javascript', '#', onclick: 'return false;' %>
-    <%= link_to 'Css', '#', onclick: 'return false;' %>
-    <%= link_to 'Cilia', '#', onclick: 'return false;' %>
+                                                      onclick:  'return confirmDownload()',
+                                                      class:    'download-link' %>
+    <%= link_to 'Java', '/pdfs/Treinamento_Java.pdf', download: 'Treinamento_Java.pdf',
+                                                      onclick:  'return confirmDownload()',
+                                                      class:    'download-link' %>
+    <%= link_to 'Html', '/pdfs/Treinamento_Html.pdf', download: 'Treinamento_Html.pdf',
+                                                      onclick:  'return confirmDownload()',
+                                                      class:    'download-link' %>
+    <%= link_to 'Javascript', '/pdfs/Treinamento_Javascript.pdf',
+                                                      download: 'Treinamento_Javascript.pdf',
+                                                      onclick:  'return confirmDownload()',
+                                                      class:    'download-link' %>
+    <%= link_to 'CSS', '/pdfs/Treinamento_CSS.pdf',   download: 'Treinamento_CSS.pdf',
+                                                      onclick:  'return confirmDownload()',
+                                                      class:    'download-link' %>
+
   <% else %>
     <p>Faça seu <%= link_to 'login', users_backoffice_welcome_index_path %> ou
                 <%= link_to 'cadastre-se', new_user_registration_path %> para participar </p>
