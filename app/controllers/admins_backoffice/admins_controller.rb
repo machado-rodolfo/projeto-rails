@@ -1,9 +1,22 @@
 class AdminsBackoffice::AdminsController < AdminsBackofficeController
   before_action :verify_password, only: [:update]
-  before_action :set_admin, only: [:edit, :update, :destroy]
+  before_action :set_admin,       only: [:edit, :update, :destroy]
+
+  def new
+    @user = User.new
+  end
+
+  def create
+    @user = User.new(params_user)
+    if @auser.save
+      redirect_to admins_backoffice_admins_path, notice: "Usuário Criado com Sucesso"
+    else
+      render :new
+    end
+  end
 
   def index
-      @admins = Admin.all.page(params[:page])
+    @admins = Admin.all.page(params[:page])
   end
 
   def new

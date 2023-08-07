@@ -22,7 +22,8 @@
         <div class="col-md-3 left_col menu_fixed">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="#index" class="site_title"><i class="fa fa-space-shuttle"></i> <span>Projeto Rodolfo</span></a>
+              <%= link_to begin_path, class: "site_title", style: "padding-left: 45px;" do %> Home Page
+              <% end %>
             </div>
 
             <div class="clearfix"></div>
@@ -57,9 +58,15 @@
                   </li>
                   <li>
                     <%= link_to site_welcome_index_path do %>
-                      <i class="fa fa-gamepad"></i>Perguntas
+                      <i class="fa fa-gamepad"></i>Todas as Perguntas
                     <% end %>
                   </li>
+
+                   <li>
+                    <%= link_to users_backoffice_list_questions_path do %>
+                      <i class="fa fa-language"></i> Perguntas por tópico
+                    <% end %>
+                   </li>
                 </ul>
               </div>
             </div>
@@ -104,13 +111,6 @@
                       <a>
                         <span class="image">
                           <%= image_tag 'images.png', alt:"Profile Image" %>
-                        </span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
                         </span>
                       </a>
                     </li>

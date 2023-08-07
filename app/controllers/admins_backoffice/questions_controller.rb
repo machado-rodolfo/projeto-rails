@@ -1,11 +1,11 @@
 class AdminsBackoffice::QuestionsController < AdminsBackofficeController
-     before_action :set_question, only: [:edit, :update, :destroy]
-     before_action :get_subjects, only: [:new, :edit]
+     before_action :set_question, only: %i[edit update destroy]
+     before_action :get_subjects, only: %i[new edit]
 
   def index
     respond_to do |format|
-    format.html { @questions = Question.includes(:subject).page(params[:page]) }
-    format.pdf { @questions = Question.includes(:subject) }
+      format.html { @questions = Question.includes(:subject).page(params[:page]) }
+      format.pdf  { @questions = Question.includes(:subject) }
     end
   end
 
@@ -16,7 +16,7 @@ class AdminsBackoffice::QuestionsController < AdminsBackofficeController
   def create
     @question = Question.new(params_question)
     if @question.save
-      redirect_to admins_backoffice_questions_path, notice: "Questão cadastrada com sucesso!"
+      redirect_to admins_backoffice_questions_path, notice: 'Questão cadastrada com sucesso!'
     else
     render :new
     end
@@ -27,7 +27,7 @@ class AdminsBackoffice::QuestionsController < AdminsBackofficeController
 
   def update
     if @question.update(params_question)
-    redirect_to admins_backoffice_questions_path, notice: "Questão atualizada com sucesso!"
+      redirect_to admins_backoffice_questions_path, notice: 'Questão atualizada com sucesso!'
     else
       render :edit
     end
@@ -36,7 +36,7 @@ class AdminsBackoffice::QuestionsController < AdminsBackofficeController
   def destroy
     @question = Question.find(params[:id])
     if @question.destroy
-    redirect_to admins_backoffice_questions_path, notice: "Questão excluída com sucesso!"
+      redirect_to admins_backoffice_questions_path, notice: "Questão excluída com sucesso!"
     else
       render :index
     end
@@ -44,16 +44,17 @@ class AdminsBackoffice::QuestionsController < AdminsBackofficeController
 
   private
 
-    def params_question
-        params.require(:question).permit(:description, :subject_id,
-          answers_attributes: [:id, :description, :correct, :_destroy])
-    end
+  def params_question
+    params.require(:question).permit(:description,
+                                      :subject_id,
+                                      answers_attributes: %i[id description correct _destroy])
+  end
 
-    def set_question
-        @question = Question.find(params[:id])
-    end
+  def set_question
+    @question = Question.find(params[:id])
+  end
 
-    def get_subjects
+  def get_subjects
     @subjects = Subject.all
-    end
+  end
 end

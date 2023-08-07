@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_07_26_122010) do
+ActiveRecord::Schema.define(version: 2023_08_07_113107) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -52,6 +52,17 @@ ActiveRecord::Schema.define(version: 2023_07_26_122010) do
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
 
+  create_table "answer_attempts", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "question_id"
+    t.integer "answer_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["answer_id"], name: "index_answer_attempts_on_answer_id"
+    t.index ["question_id"], name: "index_answer_attempts_on_question_id"
+    t.index ["user_id"], name: "index_answer_attempts_on_user_id"
+  end
+
   create_table "answers", force: :cascade do |t|
     t.integer "question_id"
     t.text "description", null: false
@@ -61,11 +72,16 @@ ActiveRecord::Schema.define(version: 2023_07_26_122010) do
     t.index ["question_id"], name: "index_answers_on_question_id"
   end
 
+  create_table "languages", force: :cascade do |t|
+    t.string "language_name"
+  end
+
   create_table "questions", force: :cascade do |t|
     t.text "description", null: false
     t.integer "subject_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "answered", default: false
     t.index ["subject_id"], name: "index_questions_on_subject_id"
   end
 
@@ -74,6 +90,8 @@ ActiveRecord::Schema.define(version: 2023_07_26_122010) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "questions_count"
+    t.string "language_name"
+    t.integer "language_id"
   end
 
   create_table "user_profiles", force: :cascade do |t|
@@ -83,6 +101,7 @@ ActiveRecord::Schema.define(version: 2023_07_26_122010) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "zip_code"
     t.index ["user_id"], name: "index_user_profiles_on_user_id"
   end
 

@@ -1,0 +1,15 @@
+  <%= render partial: 'admins_backoffice/users/shared/form',
+             locals: { action_message: t('message.editing', model: @user.model_name.human) } %>
+
+
+  <p> <strong>Criado em:</strong> <%= @user.created_at.strftime("%d/%m/%Y às %H:%M:%S") %>
+      <strong>/ Atualizado em:<strong> <%= @user.updated_at.strftime("%d/%m/%Y às %H:%M:%S") %> </p>
+  <p> <strong>Nome:</strong> <%= @user.first_name %> /
+      <strong>Sobrenome:</strong> <%= @user.last_name %> </p>
+  <% if @user_statistic %>
+    <p><strong>Total de questões:</strong> <%= @user_statistic.right_questions.to_i + @user_statistic.wrong_questions.to_i %> </p>
+    <p><strong>Questões corretas:</strong> <%= @user_statistic.right_questions %> </p>
+    <p><strong>Questões erradas:</strong> <%= @user_statistic.wrong_questions %> </p>
+  <% else %>
+    <p><strong>Algumas estatísticas ainda não estão disponíveis.</strong></p>
+  <% end %>

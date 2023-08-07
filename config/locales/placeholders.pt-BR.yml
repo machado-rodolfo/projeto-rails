@@ -3,5 +3,9 @@
     admin_email: Email do administrador
     admin_password: Digite uma senha
     admin_password_confirmation: Confirme a senha
+    user_email: Email do Usuário
+    user_password: Digite uma senha
+    user_password_confirmation: Confirme a senha
     question_description: Descrição da pergunta
     subject_description: Descrição do assunto/área
+    language_description: Descrição da linguagem

@@ -1,39 +1,272 @@
-<div class="row">
-  <div class="col-lg-12">
-       <h1 class="page-header"><%= "Bem vindo #{current_admin.email}" %></h1>
-   </div>
-    <!-- /.col-lg-12 -->
+<!DOCTYPE html>
+
+  <head>
+
+    <title>Painel Administrativo</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">Bem-vindo administrador (<%= current_admin.email %>)</h1>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <div class="panel panel-default" data-toggle="modal" data-target="#modalAdmins">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="fa fa-user fa-5x"></i>
+                </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge"><%= @admins_count %></div>
+                  <div>Total de administradores</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-lg-6 col-md-6">
+          <div class="panel panel-default" data-toggle="modal" data-target="#modalUsers">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="fa fa-users fa-5x"></i>
+                </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge"><%= @total_users %></div>
+                  <div>Total de usuários</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+          <div class="panel panel-black" data-toggle="modal" data-target="#modalLanguages">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="fa fa-folder-o fa-5x"></i>
+                </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge"><%= @languages_count %></div>
+                  <div>Total de Linguagens</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+          <div class="panel panel-black" data-toggle="modal" data-target="#modalSubjects">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="fa fa-folder-open-o fa-5x"></i>
+                </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge"><%= @subjects_count %></div>
+                  <div>Total de Assuntos</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+          <div class="panel panel-warning" data-toggle="modal" data-target="#modalQuestions">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="fa fa-file-o fa-5x"></i>
+                </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge"><%= @total_questions %></div>
+                  <div>Total de questões</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+  <div class="col-lg-6 col-md-6">
+    <a href="<%= edit_admins_backoffice_user_path(@user_most_total_questions) %>">
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-3">
+              <i class="fa fa-th-list fa-5x"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <% if @user_most_total_questions %>
+                <div class="huge"><%= user_display_name(@user_most_total_questions) %></div>
+              <% else %>
+                <div class="huge">N/A</div>
+              <% end %>
+              <div>Usuário com maior número de questões respondidas </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-lg-6 col-md-6">
+    <a href="<%= edit_admins_backoffice_user_path(@user_most_right_questions) %>">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-3">
+              <i class="fa fa-check fa-5x"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <% if @user_most_right_questions %>
+                <div class="huge"><%= user_display_name(@user_most_right_questions) %></div>
+              <% else %>
+                <div class="huge">N/A</div>
+              <% end %>
+              <div>Usuário com mais acertos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-lg-6 col-md-6">
+    <a href="<%= edit_admins_backoffice_user_path(@user_most_wrong_questions) %>">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-3">
+              <i class="fa fa-times fa-5x"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <% if @user_most_wrong_questions %>
+                <div class="huge"><%= user_display_name(@user_most_wrong_questions) %></div>
+              <% else %>
+                <div class="huge">N/A</div>
+              <% end %>
+              <div>Usuário com mais erros</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  </div>
 </div>
 
-<div class="row">
-    <div class="col-lg-3 col-md-6">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <i class="fa fa-users fa-5x"></i>
-                    </div>
-                    <div class="col-xs-9 text-right">
-                        <div class="huge"><%= @total_users %></div>
-                        <div>Total de usuários</div>
-                    </div>
-                </div>
-            </div>
+  <!-- Modais -->
+
+  <div class="modal fade" id="modalAdmins" tabindex="-1" role="dialog" aria-labelledby="modalAdminsLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title" id="modalAdminsLabel">Total de administradores (<%= @admins.count %>)</h4>
         </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <div class="panel panel-green">
-            <div class="panel-heading">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <i class="fa fa-comments fa-5x"></i>
-                    </div>
-                    <div class="col-xs-9 text-right">
-                        <div class="huge"><%= @total_questions %></div>
-                        <div>Total de questões do sistema</div>
-                    </div>
-                </div>
-            </div>
+        <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+          <ul>
+            <% @admins.each do |admin| %>
+              <li><%= admin.email %></li>
+            <% end %>
+          </ul>
         </div>
+        <div class="modal-footer">
+          <a href="<%= '/admins_backoffice/admins' %>" class="btn btn-default">Ir</a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+
+  <div class="modal fade" id="modalUsers" tabindex="-1" role="dialog" aria-labelledby="modalUsersLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modalUsersLabel">Total de usuários (<%= @users.count %>)</h4>
+        </div>
+        <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+          <% @users.each do |user| %>
+            <li><%= user.full_name.present? ? "#{user.full_name} (#{user.email})" : user.email %></li>
+          <% end %>
+        </div>
+        <div class="modal-footer">
+          <a href="<%= '/admins_backoffice/users' %>" class="btn btn-default">Ir</a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalLanguages" tabindex="-1" role="dialog" aria-labelledby="modalLanguagesLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modalLanguagesLabel">Total de linguagens (<%= @languages.count %>)</h4>
+        </div>
+        <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+            <% @languages.each do |language| %>
+              <li><%= language.language_name %></li>
+            <% end %>
+        </div>
+        <div class="modal-footer">
+          <a href="<%= '/admins_backoffice/subjects' %>" class="btn btn-default">Ir</a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalSubjects" tabindex="-1" role="dialog" aria-labelledby="modalSubjectsLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modalSubjectsLabel">Total de assuntos (<%= @subjects.count %>)</h4>
+        </div>
+        <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+            <% @subjects.each do |subject| %>
+              <li><%= subject.description %></li>
+            <% end %>
+        </div>
+        <div class="modal-footer">
+          <a href="<%= '/admins_backoffice/subjects' %>" class="btn btn-default">Ir</a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalQuestions" tabindex="-1" role="dialog" aria-labelledby="modalQuestionsLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modalQuestionsLabel">Total de questões (<%= @questions.count %>)</h4>
+        </div>
+        <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+          <% @questions.each do |question| %>
+            <li><%= question.description %></li>
+          <% end %>
+        </div>
+        <div class="modal-footer">
+          <a href="<%= '/admins_backoffice/questions' %>" class="btn btn-default">Ir</a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

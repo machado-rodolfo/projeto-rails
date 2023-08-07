@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'pages' %>
+
+  <title>Material</title>
+  <style>
+
+    .content-container {
+      background-color: rgba(195, 155, 200, 0.9);
+      margin: 80px auto;
+      padding: 20px;
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 800px;
+      width: 70%;
+      border: 5px solid #8A2BE2;
+      box-shadow: 0 0 10px 5px #8A2BE2;
+    }
+
+.content-container h1 {
+      color: purple;
+      font-size: 30px;
+    }
+
+    .content-container p {
+      color: blue;
+    }
+
+    a:link {
+      color: #8A2BE2;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<div class="content-container">
+  <h1>Material</h1>
+  <p>Faça download do material para estudo</p>
+  <% if user_signed_in? %>
+    <%= link_to 'Ruby', '/pdfs/Treinamento_Ruby.pdf', download: 'Treinamento_Ruby.pdf',
+                                                      onclick:  'return confirmDownload()',
+                                                      class:    'download-link' %>
+    <%= link_to 'Java', '/pdfs/Treinamento_Java.pdf', download: 'Treinamento_Java.pdf',
+                                                      onclick:  'return confirmDownload()',
+                                                      class:    'download-link' %>
+    <%= link_to 'Html', '/pdfs/Treinamento_Html.pdf', download: 'Treinamento_Html.pdf',
+                                                      onclick:  'return confirmDownload()',
+                                                      class:    'download-link' %>
+    <%= link_to 'Javascript', '/pdfs/Treinamento_Javascript.pdf',
+                                                      download: 'Treinamento_Javascript.pdf',
+                                                      onclick:  'return confirmDownload()',
+                                                      class:    'download-link' %>
+    <%= link_to 'CSS', '/pdfs/Treinamento_CSS.pdf',   download: 'Treinamento_CSS.pdf',
+                                                      onclick:  'return confirmDownload()',
+                                                      class:    'download-link' %>
+
+  <% else %>
+    <p>Faça seu <%= link_to 'login', users_backoffice_welcome_index_path %> ou
+                <%= link_to 'cadastre-se', new_user_registration_path %> para participar </p>
+  <% end %>
+</div>
+
+<% if notice %>
+  <%= javascript_tag do %>
+    $.bootstrapGrowl('<%= notice %>', {
+      type: 'success', // (null, 'info', 'danger', 'success')
+      align: 'center', // ('left', 'right', or 'center')
+      allow_dismiss: true, // If true then will display a cross to close the popup.
+      stackup_spacing: 10 // spacing between consecutively stacked growls.
+    });
+  <% end %>
+<% end %>
+
+</html>

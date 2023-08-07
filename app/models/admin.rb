@@ -5,5 +5,5 @@ class Admin < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   # Kaminari (gem para definir quantidade de elementos por página)
-  paginates_per 5
+  paginates_per 10
 end

@@ -1,0 +1,58 @@
+<div style="position: absolute; top: 90px; right: 10px;">
+  <button type="button" class="btn btn-default btn-circle">
+    <i class="fa fa-undo"></i>
+    <%= link_to users_backoffice_list_questions_path, style: "margin-left: 10px;" do %>
+      Voltar à Lista de Questões
+    <% end %>
+  </button>
+</div>
+
+<p style="color: black;"><strong><%= @question.subject.description %> (<%= @question.subject.questions.not_answered_by_user(current_user).length %> questões)</strong></p>
+<h3 style="margin-top: 20px; color: blue;"><%= @question.description %></h3>
+
+<style>
+.colored-hr {
+    border-top: 2px solid blue;
+}
+
+.fixed-buttons {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+</style>
+
+<div class="colored-hr"></div>
+<div style="margin-top: 20px;">
+  <%= form_with url: site_answer_path do |form| %>
+    <% @question.answers.each do |answer| %>
+      <li style="list-style:none;">
+        <div class="radio">
+          <label>
+            <%= radio_button_tag 'answer_id', answer.id %>
+            <p style="color: black;"><%= answer.description %></p>
+          </label>
+        </div>
+      </li>
+    <% end %>
+</div>
+<li style="list-style:none;">
+<% if user_signed_in? %>
+  <%= form.submit "Responder", class: "btn btn-default", id: "submit_#{@question.id}", style:"margin-top: 20px;" %>
+<% end %>
+<% end %>
+
+  <div class="fixed-buttons">
+      <% if @next_question.present? %>
+        <button type="button" class="btn btn-default btn-circle">
+          <%= link_to 'Próxima Questão', users_backoffice_question_path(@next_question) %>
+          <i class="fa fa-caret-right"></i>
+        </button>
+      <% else %>
+        <% if @question.present? %>
+        <div class="alert alert-info" role="alert">
+          Essa é a última pergunta desse assunto. Responda e volte para a página anterior!
+        </div>
+        <% end %>
+      <% end %>
+  </div>

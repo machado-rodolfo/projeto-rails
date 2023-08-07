@@ -1,0 +1,100 @@
+/*
+*= require bootstrap/dist/css/bootstrap
+*= require surface-fix
+*= require navbar
+*= require font-awesome/css/font-awesome
+*/
+/* Estilo compartilhado para todas as páginas */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #2e76a7;
+  color: #fff;
+  padding: 0;
+}
+
+.main-content {
+  flex: 1;
+}
+
+header {
+  background-color: #102069;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  margin: 0;
+}
+
+.header-title {
+  text-align: center;
+  font-size: 45px;
+  text-shadow: 20px 20px 20px rgb(0, 0, 0);
+}
+
+#header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+#header-time {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header-button {
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 12px;
+  background-color: transparent;
+  border: 2px solid white;
+  text-decoration: none;
+}
+
+.header-button:hover,
+.header-button:focus,
+.header-button:active {
+  background-color: #fff;
+  color: #102069;
+  border-color: #ccc;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  font-size: 14px;
+  background-color: #102069;
+  color: #fff;
+  padding: 10px;
+}
+
+body::after {
+  content: "";
+  background-image: url('cilia1.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

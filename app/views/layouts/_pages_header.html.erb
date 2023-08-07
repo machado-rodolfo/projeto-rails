@@ -1,0 +1,64 @@
+<header>
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'pages' %>
+
+  <div id="header-content">
+    <span id="header-info"></span>
+
+    <div class="header-buttons">
+      <% unless user_signed_in? %>
+        <%= link_to "Home", "/begin", class: "header-button" %>
+        <%= link_to "News", "/news", class: "header-button" %>
+        <%= link_to "Material", "/material", class: "header-button" %>
+        <%= link_to "Perguntas", "/site/welcome/index", class: "header-button" %>
+        <%= link_to "Entrar", users_backoffice_welcome_index_path, class: "header-button" %>
+        <%= link_to "Cadastrar-se", new_user_registration_path, class: "header-button" %>
+      <% else %>
+        <%= link_to "Home", "/begin", class: "header-button" %>
+        <%= link_to "News", "/news", class: "header-button" %>
+        <%= link_to "Material", "/material", class: "header-button" %>
+        <%= link_to "Perguntas", "/site/welcome/index", class: "header-button" %>
+        <%= link_to "Meu Perfil", users_backoffice_welcome_index_path, class: "header-button" %>
+        <%= button_to "Sair", destroy_user_session_path, method: :delete, class: "header-button" %>
+      <% end %>
+    </div>
+  </div>
+
+  <h1 class="header-title">Cilia Trainee</h1>
+</header>
+
+<script>
+
+function displayCurrentDateTime() {
+    const now = new Date();
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = now.toLocaleString('default', { month: 'long' });
+    const year = now.getFullYear();
+    const time = now.toLocaleTimeString('pt-BR');
+    const location = "Goiânia";
+
+    const headerInfoElement = document.getElementById('header-info');
+    headerInfoElement.textContent = `${location}, ${day} de ${month} / ${time}`;
+  }
+
+  setInterval(displayCurrentDateTime, 1000);
+
+  window.onload = displayCurrentDateTime;
+</script>
+
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'site' %>
+
+    <% if notice %>
+       <%= javascript_tag do %>
+          $.bootstrapGrowl('<%= notice %>', {
+          type: 'success', // (null, 'info', 'danger', 'success')
+          align: 'center', // ('left', 'right', or 'center')
+          allow_dismiss: true, // If true then will display a cross to close the popup.
+          stackup_spacing: 10 // spacing between consecutively stacked growls.
+          });
+      <% end %>
+    <% end %>
