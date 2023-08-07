@@ -7,7 +7,7 @@
   </button>
 </div>
 
-<p style="color: black;"><strong><%= @question.subject.description %></strong></p>
+<p style="color: black;"><strong><%= @question.subject.description %> (<%= @question.subject.questions.not_answered_by_user(current_user).length %> questões)</strong></p>
 <h3 style="margin-top: 20px; color: blue;"><%= @question.description %></h3>
 
 <style>
