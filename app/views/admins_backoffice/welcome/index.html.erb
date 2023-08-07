@@ -4,11 +4,6 @@
 
     <title>Painel Administrativo</title>
 
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application' %>
-    <%= stylesheet_link_tag    'admins_backoffice' %>
 </head>
 
 <body>
@@ -21,7 +16,7 @@
 
     <div class="row">
         <div class="col-lg-6 col-md-6">
-          <div class="panel panel-default" data-toggle="modal-hover" data-target="#modalAdmins">
+          <div class="panel panel-default" data-toggle="modal" data-target="#modalAdmins">
             <div class="panel-heading">
               <div class="row">
                 <div class="col-xs-3">
@@ -37,7 +32,7 @@
         </div>
 
       <div class="col-lg-6 col-md-6">
-          <div class="panel panel-default" data-toggle="modal-hover" data-target="#modalUsers">
+          <div class="panel panel-default" data-toggle="modal" data-target="#modalUsers">
             <div class="panel-heading">
               <div class="row">
                 <div class="col-xs-3">
@@ -54,7 +49,7 @@
       </div>
 
       <div class="col-lg-6 col-md-6">
-          <div class="panel panel-black" data-toggle="modal-hover" data-target="#modalLanguages">
+          <div class="panel panel-black" data-toggle="modal" data-target="#modalLanguages">
             <div class="panel-heading">
               <div class="row">
                 <div class="col-xs-3">
@@ -71,7 +66,7 @@
       </div>
 
       <div class="col-lg-6 col-md-6">
-          <div class="panel panel-black" data-toggle="modal-hover" data-target="#modalSubjects">
+          <div class="panel panel-black" data-toggle="modal" data-target="#modalSubjects">
             <div class="panel-heading">
               <div class="row">
                 <div class="col-xs-3">
@@ -88,7 +83,7 @@
       </div>
 
       <div class="col-lg-6 col-md-6">
-          <div class="panel panel-warning" data-toggle="modal-hover" data-target="#modalQuestions">
+          <div class="panel panel-warning" data-toggle="modal" data-target="#modalQuestions">
             <div class="panel-heading">
               <div class="row">
                 <div class="col-xs-3">
@@ -272,40 +267,6 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_include_tag 'admins_backoffice' %>
-
-<script>
-    $(function() {
-      var timer;
-
-      $('[data-toggle="modal-hover"]').mouseenter(function() {
-        var target = $(this).data('target');
-        clearTimeout(timer); // Limpa o timer para evitar que o modal seja fechado
-        $(target).modal('show');
-      });
-
-      $('[data-toggle="modal-hover"]').mouseleave(function() {
-        var target = $(this).data('target');
-        timer = setTimeout(function() {
-          $(target).modal('hide');
-        }, 300); // Adicione um valor adequado (em milissegundos) para o tempo de pausa antes de esconder o modal.
-      });
-
-      // Adicione essa parte para manter o modal aberto quando o mouse estiver sobre o modal
-      $('.modal').mouseenter(function() {
-        clearTimeout(timer); // Limpa o timer para evitar que o modal seja fechado
-      });
-
-      $('.modal').mouseleave(function() {
-        var target = '#' + $(this).attr('id');
-        timer = setTimeout(function() {
-          $(target).modal('hide');
-        }, 300); // Adicione um valor adequado (em milissegundos) para o tempo de pausa antes de esconder o modal.
-      });
-    });
-  </script>
 </body>
 
 </html>
