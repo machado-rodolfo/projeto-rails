@@ -7439,3 +7439,651 @@ A: A colaboração entre designers, desenvolvedores e stakeholders não é afeta
 A: A falta de habilidades de comunicação pode levar a mal-entendidos, confusões e interpretações errôneas das intenções de design, requisitos dos usuários e decisões de design. Isso pode resultar em retrabalho, implementações incorretas e falta de alinhamento entre as partes envolvidas, prejudicando a qualidade do projeto de design de UX/UI.
 A: A colaboração eficaz entre designers, desenvolvedores e stakeholders não é importante no processo de design de UX/UI.
 CA: A falta de habilidades de comunicação pode levar a mal-entendidos, confusões e interpretações errôneas das intenções de design, requisitos dos usuários e decisões de design. Isso pode resultar em retrabalho, implementações incorretas e falta de alinhamento entre as partes envolvidas, prejudicando a qualidade do projeto de design de UX/UI.
+
+L: QA
+S: Introdução ao QA - Conceitos Básicos e Importância
+Q: O que significa a sigla "QA" no contexto de desenvolvimento de software?
+A: Qualidade Assegurada
+A: Questões Avançadas
+A: Quaisquer Ajustes
+CA: Garantia de Qualidade
+
+L: QA
+S: Introdução ao QA - Conceitos Básicos e Importância
+Q: Qual é o principal objetivo da Garantia de Qualidade (QA) no desenvolvimento de produtos e software?
+A: Aumentar o custo de produção
+A: Agilizar o processo de desenvolvimento
+A: Minimizar a comunicação com os clientes
+CA: Garantir que o produto ou software atenda aos requisitos de qualidade e funcionalidade estabelecidos.
+
+L: QA
+S: Introdução ao QA - Conceitos Básicos e Importância
+Q: O que envolve o processo de Garantia de Qualidade (QA) em termos gerais?
+A: Apenas testes automatizados de código.
+A: A criação de requisitos de projeto.
+A: Planejamento, execução e monitoramento de atividades para garantir que o produto ou software atenda aos padrões de qualidade.
+CA: Planejamento, execução e monitoramento de atividades para garantir que o produto ou software atenda aos padrões de qualidade.
+
+L: QA
+S: Introdução ao QA - Conceitos Básicos e Importância
+Q: Qual é o papel do QA no ciclo de desenvolvimento de software?
+A: Desenvolver os recursos do software.
+A: Fornecer suporte ao cliente após o lançamento.
+A: Testar a usabilidade do software com os usuários finais.
+CA: Garantir que o software seja testado e validado para atender aos requisitos de qualidade antes do lançamento.
+
+L: QA
+S: Introdução ao QA - Conceitos Básicos e Importância
+Q: Por que a Garantia de Qualidade (QA) é importante para as empresas que desenvolvem produtos ou software?
+A: Não é importante, pois aumenta o custo de desenvolvimento.
+A: É importante apenas para empresas de pequeno porte.
+A: É importante para garantir que os produtos ou software atendam às expectativas dos clientes, sejam confiáveis e funcionem corretamente.
+CA: É importante para garantir que os produtos ou software atendam às expectativas dos clientes, sejam confiáveis e funcionem corretamente.
+
+L: QA
+S: Introdução ao QA - Conceitos Básicos e Importância
+Q: O que significa "defeito" no contexto de QA?
+A: Uma característica desejável do produto.
+A: Um processo de melhoria contínua.
+A: Um erro ou problema no produto ou software que afeta sua funcionalidade.
+CA: Um erro ou problema no produto ou software que afeta sua funcionalidade.
+
+L: QA
+S: Introdução ao QA - Conceitos Básicos e Importância
+Q: Qual é o papel dos testes de QA na identificação de defeitos em um software?
+A: Testes de QA não têm relação com a identificação de defeitos.
+A: Testes de QA podem identificar defeitos, mas não são eficazes para isso.
+A: Testes de QA são projetados para identificar defeitos, avaliar a qualidade do software e garantir que ele funcione conforme o esperado.
+CA: Testes de QA são projetados para identificar defeitos, avaliar a qualidade do software e garantir que ele funcione conforme o esperado.
+
+L: QA
+S: Introdução ao QA - Conceitos Básicos e Importância
+Q: O que é "escopo" no contexto de um projeto de Garantia de Qualidade (QA)?
+A: Uma ferramenta de automação de testes.
+A: A quantidade de defeitos em um software.
+A: A definição clara das metas, objetivos e atividades que serão abordados pela Garantia de Qualidade em um projeto.
+CA: A definição clara das metas, objetivos e atividades que serão abordados pela Garantia de Qualidade em um projeto.
+
+L: QA
+S: Processos de QA - Etapas e Fases do Processo de QA
+Q: Qual é a primeira etapa do processo de QA?
+A: Realização de testes de usabilidade.
+A: Planejamento e definição de objetivos.
+A: Lançamento do produto no mercado.
+CA: Planejamento e definição de objetivos.
+
+L: QA
+S: Processos de QA - Etapas e Fases do Processo de QA
+Q: Qual é a fase do processo de QA em que os testes são realizados para avaliar se o software funciona conforme o esperado?
+A: Fase de Planejamento.
+A: Fase de Monitoramento.
+A: Fase de Execução.
+CA: Fase de Execução.
+
+L: QA
+S: Processos de QA - Etapas e Fases do Processo de QA
+Q: Durante a fase de Planejamento do processo de QA, o que é definido?
+A: Apenas as datas para realização dos testes.
+A: Apenas a equipe responsável pelo desenvolvimento do software.
+A: Metodologia, escopo, cronograma, recursos e critérios de sucesso para os testes.
+CA: Metodologia, escopo, cronograma, recursos e critérios de sucesso para os testes.
+
+L: QA
+S: Processos de QA - Etapas e Fases do Processo de QA
+Q: O que envolve a fase de Preparação no processo de QA?
+A: Apenas a instalação de ferramentas de testes automatizados.
+A: Preparar o ambiente de testes, criar casos de teste e definir os critérios de aceitação.
+A: Preparar a equipe de desenvolvimento para o lançamento do software.
+CA: Preparar o ambiente de testes, criar casos de teste e definir os critérios de aceitação.
+
+L: QA
+S: Processos de QA - Etapas e Fases do Processo de QA
+Q: Qual é a principal função da fase de Execução no processo de QA?
+A: Apenas documentar os resultados dos testes.
+A: Realizar os testes de acordo com os casos de teste e critérios de aceitação definidos.
+A: Criar um relatório final de testes.
+CA: Realizar os testes de acordo com os casos de teste e critérios de aceitação definidos.
+
+L: QA
+S: Processos de QA - Etapas e Fases do Processo de QA
+Q: O que é a fase de Monitoramento no processo de QA?
+A: Apenas observar o desenvolvimento do software.
+A: Monitorar as métricas de desempenho do software em produção.
+A: Monitorar o progresso dos testes em execução e identificar eventuais desvios do plano.
+CA: Monitorar o progresso dos testes em execução e identificar eventuais desvios do plano.
+
+L: QA
+S: Processos de QA - Etapas e Fases do Processo de QA
+Q: Qual é a fase final do processo de QA, na qual os resultados dos testes são documentados e compartilhados?
+A: Fase de Execução.
+A: Fase de Preparação.
+A: Fase de Planejamento.
+CA: Fase de Finalização.
+
+L: QA
+S: Processos de QA - Etapas e Fases do Processo de QA
+Q: O que é um "caso de teste" no contexto do processo de QA?
+A: Um documento de marketing para promover o produto.
+A: Um arquivo de registro de bugs.
+A: Um conjunto de passos detalhados que descrevem um cenário de teste específico e os resultados esperados.
+CA: Um conjunto de passos detalhados que descrevem um cenário de teste específico e os resultados esperados.
+
+L: QA
+S: Processos de QA - Etapas e Fases do Processo de QA
+Q: O que é "critério de aceitação" no contexto de QA?
+A: Um teste que não foi aprovado.
+A: Um documento legal para aceitar a entrega do software.
+A: Um conjunto de condições que definem quando um teste é considerado bem-sucedido.
+CA: Um conjunto de condições que definem quando um teste é considerado bem-sucedido.
+
+L: QA
+S: Processos de QA - Etapas e Fases do Processo de QA
+Q: Qual é o principal objetivo da fase de Finalização no processo de QA?
+A: Realizar uma avaliação final do software.
+A: Aprovar os testes apenas com base na opinião da equipe de desenvolvimento.
+A: Documentar os resultados dos testes, relatar problemas encontrados e concluir as atividades de QA.
+CA: Documentar os resultados dos testes, relatar problemas encontrados e concluir as atividades de QA.
+
+L: QA
+S: Processos de QA - Etapas e Fases do Processo de QA
+Q: Qual é a importância do processo de Retrospectiva ao final do ciclo de QA?
+A: Apenas para cumprir formalidades.
+A: Não há importância na Retrospectiva.
+A: Avaliar o processo de QA, identificar pontos fortes e áreas de melhoria, e usar essas lições aprendidas para aprimorar futuros projetos de QA.
+CA: Avaliar o processo de QA, identificar pontos fortes e áreas de melhoria, e usar essas lições aprendidas para aprimorar futuros projetos de QA.
+
+L: QA
+S: Tipos de Testes - Diferentes tipos de testes utilizados em QA
+Q: O que são testes funcionais no contexto de QA?
+A: Testes que avaliam apenas a aparência visual do software.
+A: Testes que verificam a performance do software.
+A: Testes que verificam se o software está funcionando conforme o esperado em termos de funcionalidades.
+CA: Testes que verificam se o software está funcionando conforme o esperado em termos de funcionalidades.
+
+L: QA
+S: Tipos de Testes - Diferentes tipos de testes utilizados em QA
+Q: Qual é o objetivo dos testes de usabilidade no processo de QA?
+A: Verificar a velocidade de carregamento do software.
+A: Testar a capacidade do software lidar com um grande número de usuários.
+A: Avaliar a facilidade de uso, a experiência do usuário e a eficiência do software.
+CA: Avaliar a facilidade de uso, a experiência do usuário e a eficiência do software.
+
+L: QA
+S: Tipos de Testes - Diferentes tipos de testes utilizados em QA
+Q: O que são testes de desempenho no contexto de QA?
+A: Testes que verificam a gramática e ortografia do software.
+A: Testes que avaliam a aparência visual do software.
+A: Testes que avaliam a capacidade do software lidar com diferentes cargas e condições, como picos de tráfego.
+CA: Testes que avaliam a capacidade do software lidar com diferentes cargas e condições, como picos de tráfego.
+
+L: QA
+S: Tipos de Testes - Diferentes tipos de testes utilizados em QA
+Q: Qual é o propósito dos testes de segurança no processo de QA?
+A: Avaliar a performance do software.
+A: Verificar a eficiência dos algoritmos de criptografia usados no software.
+A: Identificar vulnerabilidades e falhas de segurança no software.
+CA: Identificar vulnerabilidades e falhas de segurança no software.
+
+L: QA
+S: Tipos de Testes - Diferentes tipos de testes utilizados em QA
+Q: O que são testes de regressão no contexto de QA?
+A: Testes que verificam se o software está funcionando de acordo com as expectativas dos usuários.
+A: Testes que avaliam a satisfação do cliente com o software.
+A: Testes que garantem que as alterações ou atualizações no software não afetem negativamente funcionalidades já existentes.
+CA: Testes que garantem que as alterações ou atualizações no software não afetem negativamente funcionalidades já existentes.
+
+L: QA
+S: Tipos de Testes - Diferentes tipos de testes utilizados em QA
+Q: O que são testes de integração no contexto de QA?
+A: Testes que verificam a aparência visual do software.
+A: Testes que avaliam a performance do software.
+A: Testes que verificam a interação entre diferentes partes ou módulos do software.
+CA: Testes que verificam a interação entre diferentes partes ou módulos do software.
+
+L: QA
+S: Tipos de Testes - Diferentes tipos de testes utilizados em QA
+Q: Qual é o objetivo dos testes de aceitação no processo de QA?
+A: Avaliar a eficiência dos algoritmos usados no software.
+A: Garantir que o software atende aos requisitos de negócios e às necessidades dos usuários.
+A: Verificar a gramática e ortografia do software.
+CA: Garantir que o software atende aos requisitos de negócios e às necessidades dos usuários.
+
+L: QA
+S: Tipos de Testes - Diferentes tipos de testes utilizados em QA
+Q: O que são testes de compatibilidade no contexto de QA?
+A: Testes que avaliam a performance do software.
+A: Testes que verificam se o software funciona em diferentes navegadores, dispositivos e sistemas operacionais.
+A: Testes que avaliam a satisfação do cliente com o software.
+CA: Testes que verificam se o software funciona em diferentes navegadores, dispositivos e sistemas operacionais.
+
+L: QA
+S: Tipos de Testes - Diferentes tipos de testes utilizados em QA
+Q: O que são testes de carga no contexto de QA?
+A: Testes que avaliam a performance do software.
+A: Testes que verificam a eficiência dos algoritmos de criptografia usados no software.
+A: Testes que avaliam a aparência visual do software.
+CA: Testes que avaliam a performance do software sob diferentes cargas e condições para avaliar sua capacidade de lidar com picos de tráfego.
+
+L: QA
+S: Ferramentas de QA - Utilização de ferramentas e softwares
+Q: Qual é o propósito das ferramentas de automação de testes no contexto de QA?
+A: Apenas para gerar relatórios visuais sobre o progresso dos testes.
+A: Ajudar a equipe de desenvolvimento a escrever código mais eficiente.
+A: Automatizar a execução de testes repetitivos para acelerar o processo e melhorar a precisão.
+CA: Automatizar a execução de testes repetitivos para acelerar o processo e melhorar a precisão.
+
+L: QA
+S: Ferramentas de QA - Utilização de ferramentas e softwares
+Q: O que é uma ferramenta de gerenciamento de defeitos (bug tracking) no contexto de QA?
+A: Apenas um repositório para armazenar documentos de projeto.
+A: Uma ferramenta para criar planilhas de cálculo.
+A: Uma ferramenta usada para rastrear e gerenciar problemas e defeitos identificados durante o processo de QA.
+CA: Uma ferramenta usada para rastrear e gerenciar problemas e defeitos identificados durante o processo de QA.
+
+L: QA
+S: Ferramentas de QA - Utilização de ferramentas e softwares
+Q: O que é uma ferramenta de testes de desempenho no contexto de QA?
+A: Uma ferramenta para verificar a qualidade do código fonte.
+A: Uma ferramenta usada para criar testes de regressão.
+A: Uma ferramenta usada para simular diferentes cenários de carga e avaliar o desempenho do software.
+CA: Uma ferramenta usada para simular diferentes cenários de carga e avaliar o desempenho do software.
+
+L: QA
+S: Ferramentas de QA - Utilização de ferramentas e softwares
+Q: Qual é a função de uma ferramenta de teste de segurança no contexto de QA?
+A: Apenas criar relatórios visuais sobre o progresso dos testes.
+A: Avaliar a satisfação do cliente com o software.
+A: Identificar vulnerabilidades e falhas de segurança no software.
+CA: Identificar vulnerabilidades e falhas de segurança no software.
+
+L: QA
+S: Ferramentas de QA - Utilização de ferramentas e softwares
+Q: O que é uma ferramenta de virtualização no contexto de QA?
+A: Uma ferramenta usada para gerar ideias criativas para o design do software.
+A: Uma ferramenta usada para emular ambientes de hardware e software, permitindo a execução de testes em diferentes configurações.
+A: Uma ferramenta usada apenas para criar diagramas de fluxo.
+CA: Uma ferramenta usada para emular ambientes de hardware e software, permitindo a execução de testes em diferentes configurações.
+
+L: QA
+S: Ferramentas de QA - Utilização de ferramentas e softwares
+Q: Qual é a finalidade de uma ferramenta de captura de tela no contexto de QA?
+A: Apenas criar gráficos e imagens para a documentação do software.
+A: Capturar screenshots de bugs e problemas para compartilhar com a equipe de desenvolvimento.
+A: Ajudar a criar animações e vídeos de marketing para o software.
+CA: Capturar screenshots de bugs e problemas para compartilhar com a equipe de desenvolvimento.
+
+L: QA
+S: Ferramentas de QA - Utilização de ferramentas e softwares
+Q: O que é uma ferramenta de testes de regressão no contexto de QA?
+A: Uma ferramenta usada para testar a eficiência de algoritmos de criptografia.
+A: Uma ferramenta usada para verificar a ortografia e gramática do software.
+A: Uma ferramenta usada para automatizar a execução de testes repetitivos para garantir que novas mudanças não afetem funcionalidades existentes.
+CA: Uma ferramenta usada para automatizar a execução de testes repetitivos para garantir que novas mudanças não afetem funcionalidades existentes.
+
+L: QA
+S: Ferramentas de QA - Utilização de ferramentas e softwares
+Q: Qual é o propósito de uma ferramenta de testes de usabilidade no contexto de QA?
+A: Avaliar a performance do software.
+A: Criar relatórios de status do projeto.
+A: Avaliar a facilidade de uso e a experiência do usuário do software.
+CA: Avaliar a facilidade de uso e a experiência do usuário do software.
+
+L: QA
+S: Ferramentas de QA - Utilização de ferramentas e softwares
+Q: O que é uma ferramenta de testes de carga no contexto de QA?
+A: Uma ferramenta usada para avaliar a qualidade do código fonte.
+A: Uma ferramenta usada para testar a aparência visual do software.
+A: Uma ferramenta usada para simular diferentes cenários de carga para avaliar o desempenho e capacidade do software.
+CA: Uma ferramenta usada para simular diferentes cenários de carga para avaliar o desempenho e capacidade do software.
+
+L: QA
+S: Ferramentas de QA - Utilização de ferramentas e softwares
+Q: Qual é a função de uma ferramenta de gerenciamento de testes no contexto de QA?
+A: Apenas para criar documentos de design do software.
+A: Gerenciar casos de teste, planejar testes, monitorar o progresso e relatar resultados.
+A: Criar animações e gráficos para promover o software.
+CA: Gerenciar casos de teste, planejar testes, monitorar o progresso e relatar resultados.
+
+L: QA
+S: Ferramentas de QA - Utilização de ferramentas e softwares
+Q: O que é uma ferramenta de relatórios de testes no contexto de QA?
+A: Uma ferramenta usada apenas para criar gráficos e imagens para a documentação do software.
+A: Uma ferramenta usada para criar diagramas de fluxo para processos de QA.
+A: Uma ferramenta usada para registrar os resultados dos testes, gerar métricas e relatórios visuais.
+CA: Uma ferramenta usada para registrar os resultados dos testes, gerar métricas e relatórios visuais.
+
+L: QA
+S: Ferramentas de QA - Utilização de ferramentas e softwares
+Q: Qual é a finalidade de uma ferramenta de automação de testes de regressão no contexto de QA?
+A: Avaliar a experiência do usuário do software.
+A: Automatizar a execução de testes de segurança.
+A: Automatizar a execução de testes repetitivos para verificar se novas mudanças não afetam funcionalidades existentes.
+CA: Automatizar a execução de testes repetitivos para verificar se novas mudanças não afetam funcionalidades existentes.
+
+L: QA
+S: Ferramentas de QA - Utilização de ferramentas e softwares
+Q: O que é uma ferramenta de análise estática no contexto de QA?
+A: Uma ferramenta usada para avaliar a performance do software.
+A: Uma ferramenta usada para monitorar métricas de desempenho.
+A: Uma ferramenta usada para analisar o código fonte em busca de erros, vulnerabilidades e más práticas.
+CA: Uma ferramenta usada para analisar o código fonte em busca de erros, vulnerabilidades e más práticas.
+
+L: QA
+S: Ferramentas de QA - Utilização de ferramentas e softwares
+Q: Qual é a função de uma ferramenta de teste de usabilidade no contexto de QA?
+A: Verificar a eficiência dos algoritmos usados no software.
+A: Avaliar a qualidade do código fonte.
+A: Avaliar a facilidade de uso e a experiência do usuário do software.
+CA: Avaliar a facilidade de uso e a experiência do usuário do software.
+
+L: QA
+S: Testes Manuais vs. Automatizados
+Q: Quais são algumas vantagens dos testes manuais em comparação com os testes automatizados?
+A: Os testes manuais são mais rápidos e eficientes.
+A: Os testes manuais são mais precisos e confiáveis.
+A: Os testes manuais podem identificar problemas visuais no software.
+CA: Os testes manuais podem identificar problemas visuais no software.
+
+L: QA
+S: Testes Manuais vs. Automatizados
+Q: Quais são algumas vantagens dos testes automatizados em comparação com os testes manuais?
+A: Os testes automatizados podem lidar com cenários complexos e repetitivos.
+A: Os testes automatizados são mais rápidos e precisos.
+A: Os testes automatizados não requerem intervenção humana.
+CA: Os testes automatizados podem lidar com cenários complexos e repetitivos.
+
+L: QA
+S: Testes Manuais vs. Automatizados
+Q: Em que situações os testes manuais são mais apropriados do que os testes automatizados?
+A: Quando é necessário testar cenários complexos em diferentes navegadores.
+A: Quando é preciso verificar o desempenho do software em diferentes dispositivos.
+A: Quando há necessidade de avaliar a experiência do usuário de forma subjetiva.
+CA: Quando há necessidade de avaliar a experiência do usuário de forma subjetiva.
+
+L: QA
+S: Testes Manuais vs. Automatizados
+Q: Quais são algumas desvantagens dos testes manuais?
+A: Os testes manuais são mais rápidos em comparação com os testes automatizados.
+A: Os testes manuais podem ser suscetíveis a erros humanos.
+A: Os testes manuais não podem ser repetidos facilmente.
+CA: Os testes manuais podem ser suscetíveis a erros humanos.
+
+L: QA
+S: Testes Manuais vs. Automatizados
+Q: Quais são algumas desvantagens dos testes automatizados?
+A: Os testes automatizados são mais eficientes em comparação com os testes manuais.
+A: Os testes automatizados podem ser mais propensos a erros de codificação.
+A: Os testes automatizados não podem ser reutilizados em diferentes projetos.
+CA: Os testes automatizados podem ser mais propensos a erros de codificação.
+
+L: QA
+S: Testes Manuais vs. Automatizados
+Q: Em que tipos de projetos os testes automatizados são mais recomendados?
+A: Projetos que requerem avaliação subjetiva da experiência do usuário.
+A: Projetos que envolvem apenas a criação de documentação.
+A: Projetos que têm processos repetitivos e cenários de teste bem definidos.
+CA: Projetos que têm processos repetitivos e cenários de teste bem definidos.
+
+L: QA
+S: Testes Manuais vs. Automatizados
+Q: Quais são algumas considerações importantes ao escolher entre testes manuais e automatizados?
+A: O custo de aquisição de ferramentas de automação.
+A: O nível de experiência da equipe de QA em testes automatizados.
+A: A preferência pessoal do gerente de projeto.
+CA: O nível de experiência da equipe de QA em testes automatizados.
+
+L: QA
+S: Testes Manuais vs. Automatizados
+Q: Qual é o principal benefício dos testes automatizados em relação à repetição de testes?
+A: Os testes automatizados podem ser executados em qualquer ambiente sem alterações.
+A: Os testes automatizados são mais baratos do que os testes manuais.
+A: Os testes automatizados são mais rápidos em comparação com os testes manuais.
+CA: Os testes automatizados podem ser executados em qualquer ambiente sem alterações.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: O que é QA Contínuo?
+A: Um processo de teste de software que ocorre apenas após a conclusão do desenvolvimento.
+A: A prática de realizar testes de software de forma contínua e integrada ao longo do ciclo de desenvolvimento.
+A: Um método de documentação de código fonte.
+CA: A prática de realizar testes de software de forma contínua e integrada ao longo do ciclo de desenvolvimento.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: Qual é o principal objetivo da Integração Contínua no processo de desenvolvimento ágil?
+A: Realizar testes de aceitação do cliente no final do desenvolvimento.
+A: Integrar novos recursos no software de forma manual.
+A: Integridade e verificação automatizada de código em um repositório compartilhado várias vezes ao dia.
+CA: Integridade e verificação automatizada de código em um repositório compartilhado várias vezes ao dia.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: Como a prática de Integração Contínua se relaciona com a automação de testes?
+A: A Integração Contínua não está relacionada à automação de testes.
+A: A Integração Contínua envolve apenas a revisão manual de código.
+A: A Integração Contínua envolve a execução automatizada de testes a cada integração de código.
+CA: A Integração Contínua envolve a execução automatizada de testes a cada integração de código.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: Qual é a principal vantagem de integrar práticas de QA no processo de desenvolvimento ágil?
+A: Redução da necessidade de documentação do software.
+A: Aumento da velocidade de desenvolvimento, eliminando a necessidade de testes.
+A: Identificação precoce de problemas e defeitos, resultando em um software de melhor qualidade.
+CA: Identificação precoce de problemas e defeitos, resultando em um software de melhor qualidade.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: O que é um teste automatizado de regressão?
+A: Um teste que verifica a ortografia e gramática do software.
+A: Um teste que verifica a qualidade do código fonte.
+A: Um teste automatizado que verifica se as funcionalidades existentes continuam funcionando conforme as mudanças são feitas no software.
+CA: Um teste automatizado que verifica se as funcionalidades existentes continuam funcionando conforme as mudanças são feitas no software.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: O que é uma esteira de integração (pipeline) no contexto de Integração Contínua?
+A: Uma ferramenta usada para criar documentação do projeto.
+A: Um processo manual de integração de código.
+A: Um conjunto de etapas automatizadas que envolvem compilação, testes e implantação de software.
+CA: Um conjunto de etapas automatizadas que envolvem compilação, testes e implantação de software.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: Como a Integração Contínua contribui para a detecção precoce de problemas?
+A: Automatizando a documentação do software.
+A: Realizando apenas testes manuais no final do ciclo de desenvolvimento.
+A: Executando testes automatizados sempre que houver integração de código, identificando problemas de forma imediata.
+CA: Executando testes automatizados sempre que houver integração de código, identificando problemas de forma imediata.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: Quais são alguns exemplos de ferramentas usadas para a Integração Contínua?
+A: Ferramentas de design de interface.
+A: Ferramentas de planejamento de projeto.
+A: Jenkins, Travis CI, CircleCI, GitLab CI/CD.
+CA: Jenkins, Travis CI, CircleCI, GitLab CI/CD.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: Como o QA Contínuo contribui para a entrega de software de melhor qualidade?
+A: Apenas documentando todos os aspectos do software.
+A: Automatizando todos os testes de regressão.
+A: Identificando problemas e defeitos rapidamente, permitindo correções imediatas.
+CA: Identificando problemas e defeitos rapidamente, permitindo correções imediatas.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: Quais são os principais benefícios de integrar práticas de QA no desenvolvimento ágil?
+A: Redução da necessidade de revisões de código.
+A: Aumento da pressão sobre os desenvolvedores.
+A: Entrega de software de melhor qualidade, redução de retrabalho e detecção precoce de problemas.
+CA: Entrega de software de melhor qualidade, redução de retrabalho e detecção precoce de problemas.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: Quais são os principais desafios ao integrar práticas de QA no desenvolvimento ágil?
+A: Falta de recursos financeiros para adquirir ferramentas de automação.
+A: Resistência dos desenvolvedores em colaborar com a equipe de QA.
+A: Garantir que os testes de regressão sejam executados manualmente.
+CA: Resistência dos desenvolvedores em colaborar com a equipe de QA.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: Qual é o objetivo principal do QA Contínuo no desenvolvimento ágil?
+A: Garantir que todos os testes sejam realizados manualmente.
+A: Automatizar todos os aspectos do desenvolvimento de software.
+A: Identificar e corrigir problemas de qualidade à medida que surgem durante todo o ciclo de desenvolvimento.
+CA: Identificar e corrigir problemas de qualidade à medida que surgem durante todo o ciclo de desenvolvimento.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: Como a Integração Contínua afeta a colaboração entre desenvolvedores e a equipe de QA?
+A: A Integração Contínua não tem impacto na colaboração entre as equipes.
+A: Aumenta a segregação entre as equipes, tornando a colaboração mais difícil.
+A: Promove a colaboração ao automatizar a execução de testes e a entrega contínua.
+CA: Promove a colaboração ao automatizar a execução de testes e a entrega contínua.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: Quais são as principais vantagens da Integração Contínua para o desenvolvimento ágil?
+A: Maior dependência em processos manuais.
+A: Menos foco em testes automatizados.
+A: Detecção mais rápida de problemas, redução de retrabalho e melhoria da qualidade do software.
+CA: Detecção mais rápida de problemas, redução de retrabalho e melhoria da qualidade do software.
+
+L: QA
+S: QA Contínuo e Integração Contínua - Integração de práticas de QA no processo de desenvolvimento ágil
+Q: Como o QA Contínuo contribui para a agilidade do desenvolvimento de software?
+A: Torna o processo de desenvolvimento mais lento, devido à necessidade de testes frequentes.
+A: Automatiza todo o processo de desenvolvimento, eliminando a necessidade de revisões.
+A: Identifica problemas mais cedo, permitindo ajustes imediatos e entregas mais frequentes.
+CA: Identifica problemas mais cedo, permitindo ajustes imediatos e entregas mais frequentes.
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: O que significa a sigla "TDD" no contexto de desenvolvimento de software?
+A: Test-Driven Development
+A: Total Developer Deployment
+A: Technical Design Documentation
+CA: Test-Driven Development
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: Qual é o conceito fundamental por trás do Test-Driven Development (TDD)?
+A: Escrever código sem pensar nos testes.
+A: Escrever testes após a implementação do código.
+A: Escrever testes antes da implementação do código.
+CA: Escrever testes antes da implementação do código.
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: Quais são as três etapas principais do ciclo TDD?
+A: Implementação, Refatoração, Validação
+A: Validação, Implementação, Documentação
+A: Documentação, Refatoração, Implementação
+CA: Implementação, Validação, Refatoração
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: No TDD, qual é a ordem correta para escrever os testes?
+A: Validação, Implementação, Refatoração
+A: Implementação, Validação, Refatoração
+A: Refatoração, Validação, Implementação
+CA: Validação, Implementação, Refatoração
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: O que é o RSpec no contexto de Ruby?
+A: Uma ferramenta de integração contínua.
+A: Uma linguagem de programação.
+A: Um framework de teste para Ruby.
+CA: Um framework de teste para Ruby.
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: Quais são os tipos de testes que podem ser criados usando o RSpec?
+A: Apenas testes de unidade.
+A: Testes de unidade, testes de integração e testes funcionais.
+A: Apenas testes de aceitação.
+CA: Testes de unidade, testes de integração e testes funcionais.
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: Qual é a vantagem de seguir a abordagem TDD no desenvolvimento de software?
+A: TDD não oferece vantagens claras sobre outras abordagens.
+A: Ajuda a identificar problemas mais cedo, melhora a qualidade do código e facilita a manutenção.
+A: Torna o processo de desenvolvimento mais rápido, eliminando a necessidade de testes.
+CA: Ajuda a identificar problemas mais cedo, melhora a qualidade do código e facilita a manutenção.
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: Qual é a principal premissa por trás do TDD?
+A: Implementar primeiro, testar depois.
+A: Escrever testes complexos para cobrir todas as situações.
+A: Escrever testes antes da implementação do código.
+CA: Escrever testes antes da implementação do código.
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: O que é um teste de unidade no contexto do TDD?
+A: Um teste que verifica a interface do software com o usuário.
+A: Um teste que verifica a interação entre diferentes módulos do software.
+A: Um teste que verifica uma unidade isolada de código, como um método ou função.
+CA: Um teste que verifica uma unidade isolada de código, como um método ou função.
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: Qual é o objetivo do RSpec na prática de TDD?
+A: Criar documentação visual para o código.
+A: Automatizar a compilação do código.
+A: Fornecer um framework para escrever testes em uma linguagem legível para humanos.
+CA: Fornecer um framework para escrever testes em uma linguagem legível para humanos.
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: O que é o conceito de "Red-Green-Refactor" no contexto do TDD?
+A: Uma técnica de design de interface.
+A: Uma abordagem para testes manuais.
+A: O ciclo de desenvolvimento do TDD, onde você começa com um teste falhando (Red), faz a implementação passar no teste (Green) e então refatora o código (Refactor).
+CA: O ciclo de desenvolvimento do TDD, onde você começa com um teste falhando (Red), faz a implementação passar no teste (Green) e então refatora o código (Refactor).
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: Quais são os principais passos do ciclo "Red-Green-Refactor" no TDD?
+A: Red, Validate, Refactor
+A: Red, Green, Validate
+A: Green, Red, Refactor
+CA: Red, Green, Refactor
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: Qual é a importância de escrever testes antes da implementação no TDD?
+A: Não há importância, pois os testes são irrelevantes no TDD.
+A: Isso garante que o código seja implementado corretamente desde o início e que as funcionalidades sejam testadas automaticamente.
+A: Testes são escritos apenas após a implementação, não antes.
+CA: Isso garante que o código seja implementado corretamente desde o início e que as funcionalidades sejam testadas automaticamente.
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: O que é um teste de aceitação no contexto de TDD?
+A: Um teste que verifica a aceitação do código pelos desenvolvedores.
+A: Um teste que verifica a aceitação do software por parte dos usuários finais.
+A: Um teste que verifica a conformidade do código com padrões de codificação.
+CA: Um teste que verifica a aceitação do software por parte dos usuários finais.
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: Como o RSpec permite descrever os comportamentos esperados de um software?
+A: Através de linguagem de programação de baixo nível.
+A: Através de descrições em linguagem natural que são convertidas em testes automatizados.
+A: Através da geração automática de testes a partir do código fonte.
+CA: Através de descrições em linguagem natural que são convertidas em testes automatizados.
+
+L: QA
+S: TDD e RSpec em Ruby
+Q: Quais são os principais benefícios de usar testes automatizados, como o RSpec, no desenvolvimento de software?
+A: Não há benefícios em usar testes automatizados.
+A: Redução da necessidade de desenvolvedores.
+A: Maior confiança na estabilidade do código, detecção precoce de regressões e documentação dos comportamentos esperados.
+CA: Maior confiança na estabilidade do código, detecção precoce de regressões e documentação dos comportamentos esperados.
